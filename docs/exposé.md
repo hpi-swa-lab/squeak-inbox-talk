@@ -98,3 +98,10 @@ For this, a separate *code view* should be integrated.
   At the time of writing a response, the thread should be updated in the draft window of the reply to the entire conversation (see use case "Reply to a conversation").
   Threads are represented by citing a relevant code range or existing threads in the new reply.
   Analogously, at the time of editing the draft of a reply to the conversation, all discussion threads in the code view should be updated.
+
+## Wireframes
+
+![image](https://user-images.githubusercontent.com/38782922/117220815-48d7b680-ae08-11eb-8445-60b06614ba35.png)
+![image](https://user-images.githubusercontent.com/38782922/117220826-51c88800-ae08-11eb-9eeb-92ea4b0a94ef.png)
+![image](https://user-images.githubusercontent.com/38782922/117220836-555c0f00-ae08-11eb-8dc1-8daa5e56f4e9.png)
+![image](https://user-images.githubusercontent.com/38782922/117220849-58ef9600-ae08-11eb-8c68-f1af2ed009ac.png)
