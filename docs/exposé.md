@@ -114,3 +114,19 @@ For this, a separate *code view* should be integrated.
 ![image](https://user-images.githubusercontent.com/38782922/117220826-51c88800-ae08-11eb-9eeb-92ea4b0a94ef.png)
 ![image](https://user-images.githubusercontent.com/38782922/117220836-555c0f00-ae08-11eb-8dc1-8daa5e56f4e9.png)
 ![image](https://user-images.githubusercontent.com/38782922/117220849-58ef9600-ae08-11eb-8c68-f1af2ed009ac.png)
+
+## References
+
+Existing solutions and their limitations include:
+
+- [squeak-history](https://github.com/hpi-swa/squeak-history) for parsing `pipermail` archives
+  * no microscaling at the moment (requires to download entire >200MB archives)
+  * encoding problems
+  * identification of separated messages sometimes imperfect
+- [IMAPClient](https://github.com/hpi-swa-teaching/IMAPClient) for individual metadata such as unread (optional!)
+  * suppports SSL
+  * monolithic structure (Core depends on UI)
+  * connection and encoding errors, see [bug issues](https://github.com/hpi-swa-teaching/IMAPClient/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+- `SMTPClient` for sending messages:
+  * suppports STARTTLS, SSL currently broken
+  * formatted text can be sent manually using html-typed MIME document
