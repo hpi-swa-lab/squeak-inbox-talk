@@ -1,6 +1,6 @@
 # Squeak Inbox Talk – Exposé
 
-A tool to empower volunteers to contribute features and discussions to Squeak, freeing them from the need of leaving them to do so, and making overall collaboration as live and fluent as possible.
+A tool to empower volunteers to contribute features and discussions to Squeak, freeing them from the need of leaving it to do so, and making overall collaboration as live and fluent as possible.
 
 ## Applicability
 
@@ -12,16 +12,16 @@ A tool to empower volunteers to contribute features and discussions to Squeak, f
 - **Maintain the UI responsive** whenever performing expensive background operations such as receiving or sending contributions.
 - **Design a Smalltalk-stylish dialog structure** that does not enforce singleton windows but comprises many small windows to facilitate multitasking and free arrangement of contents.
 - **Emphasize liveness of the entire UI,** i.e., try to avoid displaying outdated information.
-- **Avoid customer retention** by avoiding flooding the centralized data sources with proprietary (meta) information.
+- **Avoid customer retention** by avoiding flooding the public data sources with proprietary (meta) information.
   Don't force users to make a binary decision between Squeak Inbox Talk and traditional communication interfaces.
 
 ## Use Cases
 
 ### Bootstrapping
 
-The tool should present itself to newcomers in a very familiar and clear way.
+The tool should present itself to newcomers in a familiar and clear way.
 
-- **On the first of the tool, display a short introductory welcome message.**
+- **On the first start of the tool, display a short introductory welcome message.**
   It should teach the user about the general philosophy of the tool and provide some simple usage introduction.
   This information shall also be accessible at a later point (i.e., via a menu).
 
@@ -52,6 +52,7 @@ The tool shall allow the user to browse all current and past contributions and r
   * Domain (e.g., by repository or package)
   * Code ownership (e.g., derived from former/related timestamps)
   * Type (i.e., changeset/repository version/others)
+  * Intent (e.g., bugfix, new feature)
 
 ### Create a contribution
 
@@ -79,7 +80,7 @@ The tool shall provide basic features to participate in ongoing discussions simi
 
 ### Review or revise a submission (advanced)
 
-To benefit from the integration into a wonderful live Squeak system, the tool should provide more convenient and interactive ways to review submitted code and revise it on-demand.
+To benefit from the integration into the wonderful live Squeak system, the tool should provide more convenient and interactive ways to review submitted code and revise it on-demand.
 For this, a separate *code view* should be integrated.
 
 - **Browse proposed patches together with any annotated discussion threads.**
