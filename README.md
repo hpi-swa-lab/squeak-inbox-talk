@@ -4,3 +4,12 @@
 [![Coverage Status](https://coveralls.io/repos/github/hpi-swa-lab/squeak-inbox-talk/badge.svg?branch=main)](https://coveralls.io/github/hpi-swa-lab/squeak-inbox-talk)
 
 LiveProg Seminar 2021
+
+Installation:
+
+```smalltalk
+Metacello new
+    baseline: 'SqueakInboxTalk';
+    repository: 'github://hpi-swa-lab/squeak-inbox-talk';
+    load.
+```
