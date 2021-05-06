@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: hpi-swa/setup-smalltalkCI@v1
+      - id: smalltalkci
+        uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-image: Squeak64-Trunk
       - run: smalltalkci -s ${{ steps.smalltalkci.outputs.smalltalk-image }}
