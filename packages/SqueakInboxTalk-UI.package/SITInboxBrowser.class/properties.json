@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalk-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SITInboxBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }
