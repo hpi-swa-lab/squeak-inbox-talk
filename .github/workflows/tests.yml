@@ -15,4 +15,5 @@ jobs:
         timeout-minutes: 15
         env:
           # for uploading coverage reports
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          SIT_GIST_TOKEN: ${{ secrets.SIT_GIST_TOKEN }}
