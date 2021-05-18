@@ -5,21 +5,11 @@
 
 LiveProg Seminar 2021
 
-## Installation
+Installation:
 
 ```smalltalk
 Metacello new
     baseline: 'SqueakInboxTalk';
     repository: 'github://hpi-swa-lab/squeak-inbox-talk';
     load.
-```
-
-## Usage
-
-You can open the inbox browser via the world main docking bar > "Apps" > "Squeak Inbox Talk".
-
-Alternatively, evaluate the following command in a workspace:
-
-```smalltalk
-SITInboxBrowser open.
 ```
