@@ -1,0 +1,4 @@
+accessing
+trunkRepository
+
+	^ trunkRepository

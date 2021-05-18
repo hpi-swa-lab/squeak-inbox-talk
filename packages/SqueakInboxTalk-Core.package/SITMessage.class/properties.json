@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalk-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mail" ],
+	"name" : "SITMessage",
+	"pools" : [
+		 ],
+	"super" : "SITDataView",
+	"type" : "normal" }

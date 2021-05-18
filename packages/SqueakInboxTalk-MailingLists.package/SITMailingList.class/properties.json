@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalk-MailingLists",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name" ],
+	"name" : "SITMailingList",
+	"pools" : [
+		 ],
+	"super" : "SITDataView",
+	"type" : "normal" }

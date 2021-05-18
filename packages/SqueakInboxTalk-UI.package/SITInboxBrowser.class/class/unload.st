@@ -1,0 +1,4 @@
+initialization
+unload
+
+	self unregisterFromWorldMenu
