@@ -2,5 +2,5 @@ tests
 testBuild
 
 	| browser |
-	browser := SITInboxBrowser new.
-	self shouldnt: [ToolBuilder build: browser] raise: Error.
+	browser := SITInboxBrowser newDefault.
+	self shouldnt: [ToolBuilder build: browser] raise: Error

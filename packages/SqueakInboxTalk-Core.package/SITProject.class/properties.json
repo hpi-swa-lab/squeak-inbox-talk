@@ -1,0 +1,18 @@
+{
+	"category" : "SqueakInboxTalk-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"inboxRepository",
+		"trunkRepository",
+		"treatedRepository",
+		"repositoryGroup" ],
+	"name" : "SITProject",
+	"pools" : [
+		"SITProjects" ],
+	"super" : "SITDataView",
+	"type" : "normal" }

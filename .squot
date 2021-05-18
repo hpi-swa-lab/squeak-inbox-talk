@@ -2,5 +2,6 @@ OrderedDictionary {
 	'packages/SqueakInboxTalk-Core.package' : #SquotCypressCodeSerializer,
 	'packages/SqueakInboxTalk-UI.package' : #SquotCypressCodeSerializer,
 	'packages/SqueakInboxTalk-Tests.package' : #SquotCypressCodeSerializer,
-	'packages/BaselineOfSqueakInboxTalk.package' : #SquotCypressCodeSerializer
+	'packages/BaselineOfSqueakInboxTalk.package' : #SquotCypressCodeSerializer,
+	'packages/SqueakInboxTalk-MailingLists.package' : #SquotCypressCodeSerializer
 }
