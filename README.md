@@ -10,9 +10,9 @@ LiveProg Seminar 2021
 
 ```smalltalk
 Metacello new
-    baseline: 'SqueakInboxTalk';
-    repository: 'github://hpi-swa-lab/squeak-inbox-talk';
-    load.
+	baseline: 'SqueakInboxTalk';
+	repository: 'github://hpi-swa-lab/squeak-inbox-talk';
+	load.
 ```
 
 ## Usage
