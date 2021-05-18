@@ -1,4 +1,4 @@
-as yet unclassified
+private
 findHttpRepository: location
 
 	^ MCRepositoryGroup default repositories

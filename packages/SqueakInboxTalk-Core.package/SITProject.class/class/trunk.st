@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 trunk
 
 	^ SITProjects at: #trunk ifAbsentPut: [

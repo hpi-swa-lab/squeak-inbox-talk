@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 squeakDev
 
 	^ self on: SITMailingList squeakDev

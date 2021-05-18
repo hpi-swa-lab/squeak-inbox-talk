@@ -1,4 +1,4 @@
-as yet unclassified
+contribution parsing
 subjectPattern
 
 	^ RxParser parse: '(.+)\: (.+)\.mcz'

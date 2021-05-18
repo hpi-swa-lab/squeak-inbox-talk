@@ -1,4 +1,4 @@
-as yet unclassified
+contribution parsing
 parseFor: anInbox fromSubject: aString
 
 	| matcher project version |
