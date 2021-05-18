@@ -10,7 +10,7 @@ baseline: spec
 				spec
 					repository: 'github://LinqLover/SimulationStudio/packages';
 					loads: 'SimulationStudio-Base'];
-			baseline: 'SqueakHistory' with: [spec repository: 'github://hpi-swa/squeak-history/packages'].
+			baseline: 'SqueakHistory' with: [spec repository: 'github://LinqLover/squeak-history:loadable-on-ci/packages'].
 		"packages"
 		
 		spec
