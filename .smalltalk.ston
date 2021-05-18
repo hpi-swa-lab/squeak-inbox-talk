@@ -10,7 +10,7 @@ SmalltalkCISpec {
 	#testing : {
 		#packages : [ 'SqueakInboxTalk-Tests-*' ],
 		#coverage : {
-			#packages : [ 'SqueakInboxTalk-Core', 'SqueakInboxTalk-MailingLists' ],
+			#packages : [ 'SqueakInboxTalk-Base', 'SqueakInboxTalk-Core', 'SqueakInboxTalk-MailingLists' ],
 			#format : #coveralls
 		}
 	}
