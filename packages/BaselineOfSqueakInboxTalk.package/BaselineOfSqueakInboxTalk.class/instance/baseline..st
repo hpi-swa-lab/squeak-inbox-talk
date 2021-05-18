@@ -22,11 +22,12 @@ baseline: spec
 		spec
 			package: 'SqueakInboxTalk-Tests-Abstract' with: [spec requires: #('JSON' 'SimulationStudio')];
 			package: 'SqueakInboxTalk-Tests-Acceptance'
-				with: [spec requires: #('SqueakInboxTalk-Tests-Abstract' #default)];
+				with: [spec requires: #('SqueakInboxTalk-Tests-Abstract' #app)];
 			package: 'SqueakInboxTalk-Tests-Core'
 				with: [spec requires: #('SqueakInboxTalk-Tests-Abstract' 'SqueakInboxTalk-Core')].
 		
 		"groups"
 		spec
-			group: #default with: #('SqueakInboxTalk-Core' 'SqueakInboxTalk-UI' #tests);
+			group: #app with: #('SqueakInboxTalk-Core' 'SqueakInboxTalk-UI' #tests);
+			group: #default with: #(#app #tests);
 			group: #tests with: #('SqueakInboxTalk-Tests-Acceptance' 'SqueakInboxTalk-Tests-Core')]
