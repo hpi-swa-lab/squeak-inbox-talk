@@ -2,5 +2,5 @@ accessing
 gistToken
 
 	^ (self environment classNamed: 'SmalltalkCI')
-		ifNil: [self environment at: #SCIGistToken]
-		ifNotNil: [:sci | sci getEnv: (#SCIGistToken findFeatures joinSeparatedBy: $_) asUppercase]
+		ifNil: [self environment at: #SITGistToken]
+		ifNotNil: [:sci | sci getEnv: (#SITGistToken findFeatures joinSeparatedBy: $_) asUppercase]
