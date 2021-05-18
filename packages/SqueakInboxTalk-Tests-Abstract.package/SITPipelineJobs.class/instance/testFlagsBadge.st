@@ -7,4 +7,8 @@ testFlagsBadge
 		localToPackage: 'SqueakInboxTalk'.
 	flagsCount := flags size.
 	
-	self updateBadgeNamed: 'flags' label: 'open flags' value: flagsCount asString color: #informational
+	self
+		updateBadgeNamed: ('flags/{1}' format: {self githubRefName})
+		label: 'open flags'
+		value: flagsCount asString
+		color: #informational
