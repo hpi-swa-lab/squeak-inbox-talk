@@ -9,7 +9,7 @@ SmalltalkCISpec {
 	],
 	#testing : {
 		#coverage : {
-			#packages : [ 'SqueakInboxTalk-Core' ],
+			#packages : [ 'SqueakInboxTalk-Core', 'SqueakInboxTalk-MailingLists' ],
 			#format : #coveralls
 		}
 	}
