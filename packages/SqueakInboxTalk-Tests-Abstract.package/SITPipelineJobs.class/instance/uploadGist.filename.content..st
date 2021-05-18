@@ -1,7 +1,7 @@
 badges
 uploadGist: gistId filename: filename content: aString
 
-	| client request |
+	| client request result |
 	request := JsonObject new
 		files: (JsonObject new
 			at: filename put: (JsonObject new
@@ -11,8 +11,9 @@ uploadGist: gistId filename: filename content: aString
 		yourself.
 	client := WebClient new.
 	client token: self gistToken.
-	client
+	result := client
 		httpPost: ('https://api.github.com/gists/{1}' format: {gistId})
 		content: request asJsonString
 		type: 'application/json'
-		do: [:req | req headerAt: 'Authorization' put: 'token ', client token]
+		do: [:req | req headerAt: 'Authorization' put: 'token ', client token].
+	result isSuccess ifFalse: [self error: result content]
