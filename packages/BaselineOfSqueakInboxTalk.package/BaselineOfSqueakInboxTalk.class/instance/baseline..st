@@ -10,7 +10,10 @@ baseline: spec
 				spec
 					repository: 'github://LinqLover/SimulationStudio/packages';
 					loads: 'SimulationStudio-Base'];
-			baseline: 'SqueakHistory' with: [spec repository: 'github://LinqLover/squeak-history:loadable-on-ci/packages'].
+			baseline: 'SqueakHistory' with: [
+				self flag: #workaround.
+				"Once PR has been accepted, revert to upstream of squeak-history. See: https://github.com/hpi-swa/squeak-history/pull/5"
+				spec repository: 'github://LinqLover/squeak-history:loadable-on-ci/packages'].
 		"packages"
 		
 		spec
@@ -19,8 +22,8 @@ baseline: spec
 				spec
 					requires: #('SqueakInboxTalk-Base' 'SqueakInboxTalk-MailingLists');
 					preLoadDoIt: #preLoadCore];
-			package: 'SqueakInboxTalk-MailingLists'
-				with: [spec
+			package: 'SqueakInboxTalk-MailingLists' with: [
+				spec
 					requires: #('SqueakInboxTalk-Base' 'SqueakHistory');
 					preLoadDoIt: #preLoadMailingLists];
 			package: 'SqueakInboxTalk-UI' with: [spec requires: 'SqueakInboxTalk-Core'].
