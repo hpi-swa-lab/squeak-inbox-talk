@@ -8,7 +8,7 @@ SmalltalkCISpec {
 		}
 	],
 	#testing : {
-		#packages : [ 'SqueakInboxTalk-Tests' ],
+		#packages : [ 'SqueakInboxTalk-Tests-*' ],
 		#coverage : {
 			#packages : [ 'SqueakInboxTalk-Core', 'SqueakInboxTalk-MailingLists' ],
 			#format : #coveralls
