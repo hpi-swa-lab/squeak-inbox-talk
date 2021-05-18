@@ -24,13 +24,13 @@ A tool to empower volunteers to contribute to code changes and related discussio
 
 The tool should present itself to newcomers in a familiar and clear way.
 
-- **Initialy unless dismissed, display a short introductory welcome message.**
+- **Initially unless dismissed, display a short introductory welcome message.**
   It should teach the user about the general philosophy of the tool and provide some simple usage introduction.
   This information shall also be accessible at a later point (e.g., via a menu).
 
   Maybe extract some contents into a `HelpTopic`.
 
-- **Initialy unless dismissed, present a simple configuration dialog.**
+- **Initially unless dismissed, present a simple configuration dialog.**
   The dialog should ask the user for permission before loading all data from the mailing lists.
   Furthermore, the user should be able to save login credentials for SMTP/IMAP access.
   For reconfiguration, this dialog shall also be accessible at a later point (e.g., via a menu).
@@ -80,6 +80,7 @@ The tool shall provide basic features to participate in ongoing conversations si
 
   Use text styling to emphasize primary/secondary parts of a message, e.g., use gray color/italic for citations or apply syntax highlighting to code sections.
   Insert links to mentioned objects such as other conversations or code objects (e.g., classes or selectors).
+  Maybe also show other conversations or code objects that refer to the current conversation/contribution.
 
   Support the user to write useful messages, e.g., remind of missing attachments or note very short messages.
 

@@ -15,8 +15,8 @@
   * implemented by an **e-mail**
   * synonyms: **~~post~~**
 
-## Threads (see [exposé](exposé.md#review-or-revise-a-submission-advanced))
+## Threads (see [exposé](exposé.md#review-or-revise-a-contribution-advanced))
 
-- **(discssion) thread:** sequence of comments concerning a contributed **patch**
+- **(discussion) thread:** sequence of comments concerning a contributed **patch**
 - **comment:** element of thread
   * either an initial comment or an **answer** to a previous comment
