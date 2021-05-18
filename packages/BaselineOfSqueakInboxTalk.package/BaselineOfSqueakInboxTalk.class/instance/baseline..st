@@ -14,15 +14,21 @@ baseline: spec
 		"packages"
 		
 		spec
-			package: 'SqueakInboxTalk-Core' with: [spec preLoadDoIt: #preLoadCore];
+			package: 'SqueakInboxTalk-Base';
+			package: 'SqueakInboxTalk-Core' with: [
+				spec
+					requires: #('SqueakInboxTalk-Base' 'SqueakInboxTalk-MailingLists');
+					preLoadDoIt: #preLoadCore];
 			package: 'SqueakInboxTalk-MailingLists'
-				with: [spec requires: #('SqueakInboxTalk-Core' 'SqueakHistory')];
+				with: [spec requires: #('SqueakInboxTalk-Base' 'SqueakHistory')];
 			package: 'SqueakInboxTalk-UI' with: [spec requires: 'SqueakInboxTalk-Core'].
 		"test packages"
 		spec
 			package: 'SqueakInboxTalk-Tests-Abstract' with: [spec requires: #('JSON' 'SimulationStudio')];
 			package: 'SqueakInboxTalk-Tests-Acceptance'
 				with: [spec requires: #('SqueakInboxTalk-Tests-Abstract' #app)];
+			package: 'SqueakInboxTalk-Tests-Base'
+				with: [spec requires: #('SqueakInboxTalk-Tests-Abstract' 'SqueakInboxTalk-Base')];
 			package: 'SqueakInboxTalk-Tests-Core'
 				with: [spec requires: #('SqueakInboxTalk-Tests-Abstract' 'SqueakInboxTalk-Core')].
 		
@@ -30,4 +36,5 @@ baseline: spec
 		spec
 			group: #app with: #('SqueakInboxTalk-Core' 'SqueakInboxTalk-UI');
 			group: #default with: #(#app #tests);
-			group: #tests with: #('SqueakInboxTalk-Tests-Acceptance' 'SqueakInboxTalk-Tests-Core')]
+			group: #tests
+				with: #('SqueakInboxTalk-Tests-Acceptance' 'SqueakInboxTalk-Tests-Base' 'SqueakInboxTalk-Tests-Core')]

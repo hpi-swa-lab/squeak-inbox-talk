@@ -1,4 +1,0 @@
-comparing
-dataKey
-
-	^ {self species}
