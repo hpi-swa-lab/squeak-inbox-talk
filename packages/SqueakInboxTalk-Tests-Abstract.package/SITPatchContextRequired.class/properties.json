@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalk-Tests-Abstract",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SITPatchContextRequired",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

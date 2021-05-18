@@ -1,0 +1,15 @@
+{
+	"category" : "SqueakInboxTalk-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"project",
+		"versionName" ],
+	"name" : "SITRepositoryContribution",
+	"pools" : [
+		 ],
+	"super" : "SITContribution",
+	"type" : "normal" }

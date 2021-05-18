@@ -1,0 +1,17 @@
+{
+	"category" : "SqueakInboxTalk-UI",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSITChangePropagator classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"conversation",
+		"selectedMessage" ],
+	"name" : "SITConversationBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"traitcomposition" : "TSITChangePropagator",
+	"type" : "normal" }

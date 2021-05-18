@@ -1,4 +1,4 @@
 opening
 open
 
-	^ ToolBuilder open: self
+	^ self openDefault
