@@ -29,4 +29,4 @@ baseline: spec
 		"groups"
 		spec
 			group: #default with: #('SqueakInboxTalk-Core' 'SqueakInboxTalk-UI' 'SqueakInboxTalk-Tests');
-			group: #tests with: #('SqueakInboxTalk-Tests')]
+			group: #tests with: #('SqueakInboxTalk-Tests-Acceptance' 'SqueakInboxTalk-Tests-Core')]

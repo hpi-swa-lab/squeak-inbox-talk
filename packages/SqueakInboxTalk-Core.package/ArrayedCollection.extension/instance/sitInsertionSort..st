@@ -1,8 +1,5 @@
 *SqueakInboxTalk-Core-sorting
 sitInsertionSort: aSortBlock
-	"Sort this array using aSortBlock. The block should take two arguments
-	and return true if the first element should preceed the second one.
-	If aSortBlock is nil then <= is used for comparison."
 
 	| count hasChanged first second |
 	self flag: #moveUpstream.
