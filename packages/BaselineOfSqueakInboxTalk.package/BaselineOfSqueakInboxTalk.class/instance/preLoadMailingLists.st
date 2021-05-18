@@ -7,6 +7,7 @@ preLoadMailingLists
 	
 	"Make sure to download some demo mails. Copied from SqhMailmanAggregator >> #downloadList:from:to:."
 	listSpec := SqhMailmanAggregator allLists detect: [:spec | spec value = 'squeak-dev'].
+	SqhMailmanAggregator archivePath: SqhMailmanAggregator archivePathDefault.
 	directory := FileDirectory on: SqhMailmanAggregator archivePath, FileDirectory slash, listSpec value.
 	directory assureExistence.
 	fileNames := ((WebClient httpGet: listSpec key) content findTokens: '"')
