@@ -5,5 +5,7 @@ OrderedDictionary {
 	'packages/SqueakInboxTalk-MailingLists.package' : #SquotCypressCodeSerializer,
 	'packages/SqueakInboxTalk-Tests-Abstract.package' : #SquotCypressCodeSerializer,
 	'packages/SqueakInboxTalk-Tests-Acceptance.package' : #SquotCypressCodeSerializer,
-	'packages/SqueakInboxTalk-Tests-Core.package' : #SquotCypressCodeSerializer
+	'packages/SqueakInboxTalk-Tests-Core.package' : #SquotCypressCodeSerializer,
+	'packages/SqueakInboxTalk-Base.package' : #SquotCypressCodeSerializer,
+	'packages/SqueakInboxTalk-Tests-Base.package' : #SquotCypressCodeSerializer
 }
