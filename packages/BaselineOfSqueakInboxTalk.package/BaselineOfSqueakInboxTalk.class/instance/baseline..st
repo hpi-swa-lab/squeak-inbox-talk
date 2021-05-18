@@ -14,7 +14,7 @@ baseline: spec
 		"packages"
 		
 		spec
-			package: 'SqueakInboxTalk-Core';
+			package: 'SqueakInboxTalk-Core' with: [spec preLoadDoIt: #preLoadCore];
 			package: 'SqueakInboxTalk-MailingLists'
 				with: [spec requires: #('SqueakInboxTalk-Core' 'SqueakHistory')];
 			package: 'SqueakInboxTalk-UI' with: [spec requires: 'SqueakInboxTalk-Core'].
