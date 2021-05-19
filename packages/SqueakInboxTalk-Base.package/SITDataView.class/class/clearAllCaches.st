@@ -1,0 +1,4 @@
+caching
+clearAllCaches
+
+	Cache := nil
