@@ -1,5 +1,6 @@
 accessing
 conversationsPerContributions
+	"Cached."
 
 	^ conversationsPerContributions ifNil: [ | dictionary |
 		dictionary := Dictionary new.
