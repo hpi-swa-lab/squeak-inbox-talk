@@ -1,4 +1,6 @@
 instance creation
 on: aMailingList
 
-	^ self new mailingList: aMailingList
+	^ self new
+		mailingList: aMailingList;
+		cached

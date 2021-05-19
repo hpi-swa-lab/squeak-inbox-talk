@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mailingList" ],
+		"mailingList",
+		"conversationsPerContributions" ],
 	"name" : "SITInbox",
 	"pools" : [
 		 ],
