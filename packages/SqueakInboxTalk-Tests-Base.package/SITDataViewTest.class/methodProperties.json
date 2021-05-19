@@ -3,4 +3,5 @@
 		 },
 	"instance" : {
 		"classUnderTest" : "ct 5/9/2021 00:24",
-		"testEquals" : "ct 5/18/2021 11:33" } }
+		"testCached" : "ct 5/19/2021 19:38",
+		"testEquality" : "ct 5/19/2021 19:33" } }
