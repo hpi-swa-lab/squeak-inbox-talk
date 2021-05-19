@@ -1,4 +1,4 @@
 accessing
 contributions
 
-	^ self inbox parseContributionsFrom: self
+	^ contributions ifNil: [contributions := self inbox parseContributionsFrom: self]
