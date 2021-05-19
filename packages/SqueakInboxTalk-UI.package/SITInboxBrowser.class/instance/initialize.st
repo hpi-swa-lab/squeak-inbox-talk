@@ -3,5 +3,5 @@ initialize
 
 	super initialize.
 	
-	numberOfConversations := 0.
+	numberOfConversations := self defaultNumberOfConversations.
 	showingNonContributions := false
