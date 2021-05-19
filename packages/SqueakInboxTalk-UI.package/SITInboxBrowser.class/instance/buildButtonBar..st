@@ -5,11 +5,6 @@ buildButtonBar: aBuilder
 		model: self;
 		layout: #horizontal;
 		children: {
-			aBuilder pluggableButtonSpec new
-				model: self;
-				label: 'Fetch more';
-				action: #fetchMoreConversations;
-				yourself.
 			aBuilder pluggableCheckBoxSpec new
 				model: self;
 				label: #labelShowingNonContributions;

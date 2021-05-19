@@ -5,7 +5,7 @@ testConversationList
 
 	| browser |
 	browser := SITInboxBrowser newDefault.
-	browser fetchMoreConversations.
+	browser numberOfConversations: 500. "be fast"
 	
 	browser selectedConversationIndex: 1.
 	
