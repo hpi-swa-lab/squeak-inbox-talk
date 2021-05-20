@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkTests-Abstract",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"patchProvider" ],
+	"name" : "SITPatchContext",
+	"pools" : [
+		 ],
+	"super" : "SimulationContext",
+	"type" : "variable" }
