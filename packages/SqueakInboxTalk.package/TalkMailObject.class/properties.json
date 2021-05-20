@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalk-MailingLists",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"wrapper" ],
+	"name" : "TalkMailObject",
+	"pools" : [
+		 ],
+	"super" : "TalkDataView",
+	"type" : "normal" }

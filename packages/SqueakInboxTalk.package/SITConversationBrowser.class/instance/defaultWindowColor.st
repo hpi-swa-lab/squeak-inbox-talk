@@ -1,4 +1,0 @@
-toolbuilder
-defaultWindowColor
-
-	^ SITInboxBrowser defaultWindowColor

@@ -1,0 +1,15 @@
+{
+	"category" : "SqueakInboxTalk-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mail",
+		"contributions" ],
+	"name" : "TalkMessage",
+	"pools" : [
+		 ],
+	"super" : "TalkDataView",
+	"type" : "normal" }

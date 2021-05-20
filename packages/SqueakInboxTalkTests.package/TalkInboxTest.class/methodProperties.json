@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"classUnderTest" : "ct 5/20/2021 18:59",
+		"testMostRecentConversations" : "ct 5/20/2021 16:13",
+		"testParseContributions" : "ct 5/20/2021 18:57",
+		"testPrintString" : "ct 5/20/2021 16:14" } }

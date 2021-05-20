@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalk-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Cache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TalkDataView",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
