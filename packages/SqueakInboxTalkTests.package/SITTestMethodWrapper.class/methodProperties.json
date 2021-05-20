@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"behavior:selector:block:" : "ct 5/14/2021 19:03",
+		"object:selector:block:" : "ct 5/14/2021 18:49" },
+	"instance" : {
+		"behavior:selector:block:" : "ct 5/14/2021 19:04",
+		"doesNotUnderstand:" : "ct 5/20/2021 18:14",
+		"flushCache" : "ct 5/14/2021 18:48",
+		"install" : "ct 5/14/2021 19:06",
+		"installDuring:" : "ct 5/20/2021 16:20",
+		"nullMethod" : "ct 5/20/2021 18:15",
+		"object:selector:block:" : "ct 5/14/2021 18:51",
+		"run:with:in:" : "ct 5/20/2021 18:13",
+		"uninstall" : "ct 5/20/2021 16:31",
+		"valueWithReceiver:arguments:" : "ct 5/20/2021 18:14" } }

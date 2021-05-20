@@ -1,0 +1,4 @@
+private
+nullMethod
+
+	^ CompiledMethod toReturnSelf

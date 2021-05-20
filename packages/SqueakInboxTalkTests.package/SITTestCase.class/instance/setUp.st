@@ -3,4 +3,7 @@ setUp
 
 	super setUp.
 	
-	wrappers := OrderedCollection new
+	wrappers := OrderedCollection new.
+	
+	methodWrappers := OrderedCollection new.
+	self wrapTest: [:block | block ensure: [methodWrappers reverseDo: [:wrapper | wrapper uninstall]]]
