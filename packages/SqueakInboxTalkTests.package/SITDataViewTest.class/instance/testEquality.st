@@ -8,21 +8,21 @@ testEquality
 	secondKey := first dataKey.
 	
 	self
-		patch: first at: #dataKey to: [firstKey, {1}];
-		patch: second at: #dataKey to: [secondKey, {1}].
+		patch: first at: #dataKey with: [firstKey, {1}];
+		patch: second at: #dataKey with: [secondKey, {1}].
 	self assert: first = second.
 	self assert: first hash = second hash.
 	
 	self
-		patch: first at: #dataKey to: [firstKey, {1}];
-		patch: second at: #dataKey to: [secondKey, {2}].
+		patch: first at: #dataKey with: [firstKey, {1}];
+		patch: second at: #dataKey with: [secondKey, {2}].
 	self deny: first = second.
 	self deny: first hash = second hash.
 	
-	self patch: first at: #species toValue: self class.
+	self patch: first at: #species withValue: self class.
 	firstKey := first dataKey.
 	self
-		patch: first at: #dataKey to: [firstKey, {1}];
-		patch: second at: #dataKey to: [secondKey, {1}].
+		patch: first at: #dataKey with: [firstKey, {1}];
+		patch: second at: #dataKey with: [secondKey, {1}].
 	self deny: first = second.
 	self deny: first hash = second hash

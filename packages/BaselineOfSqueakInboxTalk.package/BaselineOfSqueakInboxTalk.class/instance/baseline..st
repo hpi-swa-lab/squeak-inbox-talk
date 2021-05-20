@@ -6,10 +6,6 @@ baseline: spec
 		"dependencies"
 		spec
 			package: 'JSON' with: [spec repository: 'https://www.squeaksource.com/PostgresV3'];
-			baseline: 'SimulationStudio' with: [
-				spec
-					repository: 'github://LinqLover/SimulationStudio/packages';
-					loads: 'SimulationStudio-Base'];
 			baseline: 'SqueakHistory' with: [spec repository: 'github://hpi-swa/squeak-history/packages'].
 		"packages"
 		
@@ -18,7 +14,7 @@ baseline: spec
 				requires: 'SqueakHistory';
 				preLoadDoIt: #preLoad].
 		"test packages"
-		spec package: 'SqueakInboxTalkTests' with: [spec requires: #(#app 'JSON' 'SimulationStudio')].
+		spec package: 'SqueakInboxTalkTests' with: [spec requires: #(#app 'JSON')].
 		
 		"groups"
 		spec

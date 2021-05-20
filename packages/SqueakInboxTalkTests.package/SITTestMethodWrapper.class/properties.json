@@ -6,9 +6,13 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "SITPatchContextRequired",
+		"behavior",
+		"object",
+		"selector",
+		"block",
+		"method" ],
+	"name" : "SITTestMethodWrapper",
 	"pools" : [
 		 ],
-	"super" : "Error",
+	"super" : "ProtoObject",
 	"type" : "normal" }
