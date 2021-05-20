@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkTests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"project" ],
+	"name" : "SITProjectTest",
+	"pools" : [
+		 ],
+	"super" : "SITTestCase",
+	"type" : "normal" }

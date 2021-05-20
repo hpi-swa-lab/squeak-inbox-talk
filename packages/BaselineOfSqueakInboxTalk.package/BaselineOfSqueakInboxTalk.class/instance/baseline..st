@@ -13,30 +13,15 @@ baseline: spec
 			baseline: 'SqueakHistory' with: [spec repository: 'github://hpi-swa/squeak-history/packages'].
 		"packages"
 		
-		spec
-			package: 'SqueakInboxTalk-Base';
-			package: 'SqueakInboxTalk-Core' with: [
-				spec
-					requires: #('SqueakInboxTalk-Base' 'SqueakInboxTalk-MailingLists');
-					preLoadDoIt: #preLoadCore];
-			package: 'SqueakInboxTalk-MailingLists' with: [
-				spec
-					requires: #('SqueakInboxTalk-Base' 'SqueakHistory');
-					preLoadDoIt: #preLoadMailingLists];
-			package: 'SqueakInboxTalk-UI' with: [spec requires: 'SqueakInboxTalk-Core'].
+		spec package: 'SqueakInboxTalk' with: [
+			spec
+				requires: 'SqueakHistory';
+				preLoadDoIt: #preLoad].
 		"test packages"
-		spec
-			package: 'SqueakInboxTalk-Tests-Abstract' with: [spec requires: #('JSON' 'SimulationStudio')];
-			package: 'SqueakInboxTalk-Tests-Acceptance'
-				with: [spec requires: #('SqueakInboxTalk-Tests-Abstract' #app)];
-			package: 'SqueakInboxTalk-Tests-Base'
-				with: [spec requires: #('SqueakInboxTalk-Tests-Abstract' 'SqueakInboxTalk-Base')];
-			package: 'SqueakInboxTalk-Tests-Core'
-				with: [spec requires: #('SqueakInboxTalk-Tests-Abstract' 'SqueakInboxTalk-Core')].
+		spec package: 'SqueakInboxTalkTests' with: [spec requires: #(#app 'JSON' 'SimulationStudio')].
 		
 		"groups"
 		spec
-			group: #app with: #('SqueakInboxTalk-Core' 'SqueakInboxTalk-UI');
+			group: #app with: 'SqueakInboxTalk';
 			group: #default with: #(#app #tests);
-			group: #tests
-				with: #('SqueakInboxTalk-Tests-Acceptance' 'SqueakInboxTalk-Tests-Base' 'SqueakInboxTalk-Tests-Core')]
+			group: #tests with: 'SqueakInboxTalkTests']
