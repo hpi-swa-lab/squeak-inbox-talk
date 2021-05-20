@@ -10,10 +10,7 @@ baseline: spec
 				spec
 					repository: 'github://LinqLover/SimulationStudio/packages';
 					loads: 'SimulationStudio-Base'];
-			baseline: 'SqueakHistory' with: [
-				self flag: #workaround.
-				"Once PR has been accepted, revert to upstream of squeak-history. See: https://github.com/hpi-swa/squeak-history/pull/5"
-				spec repository: 'github://LinqLover/squeak-history:loadable-on-ci/packages'].
+			baseline: 'SqueakHistory' with: [spec repository: 'github://hpi-swa/squeak-history/packages'].
 		"packages"
 		
 		spec
