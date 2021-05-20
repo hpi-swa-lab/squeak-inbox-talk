@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"inbox",
-		"selectedConversation",
-		"conversations",
-		"showingNonContributions",
-		"numberOfConversations" ],
-	"name" : "SITInboxBrowser",
+		 ],
+	"name" : "SITModel",
 	"pools" : [
 		 ],
-	"super" : "SITModel",
+	"super" : "Model",
 	"type" : "normal" }
