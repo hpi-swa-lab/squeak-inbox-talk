@@ -1,0 +1,15 @@
+{
+	"category" : "SqueakInboxTalkTests-Abstract",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"wrappers",
+		"methodWrappers" ],
+	"name" : "TalkTestCase",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

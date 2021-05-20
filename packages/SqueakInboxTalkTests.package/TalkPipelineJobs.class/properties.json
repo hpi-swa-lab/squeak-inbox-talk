@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkTests-Abstract",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TalkPipelineJobs",
+	"pools" : [
+		 ],
+	"super" : "TalkTestCase",
+	"type" : "normal" }

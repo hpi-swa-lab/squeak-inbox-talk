@@ -1,0 +1,4 @@
+toolbuilder
+defaultWindowColor
+
+	^ TalkInboxBrowser defaultWindowColor

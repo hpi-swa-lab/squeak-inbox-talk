@@ -1,0 +1,18 @@
+{
+	"category" : "SqueakInboxTalkTests-Abstract",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"behavior",
+		"object",
+		"selector",
+		"block",
+		"method" ],
+	"name" : "TalkTestMethodWrapper",
+	"pools" : [
+		 ],
+	"super" : "ProtoObject",
+	"type" : "normal" }

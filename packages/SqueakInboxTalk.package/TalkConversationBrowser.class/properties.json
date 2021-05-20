@@ -1,0 +1,15 @@
+{
+	"category" : "SqueakInboxTalk-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"conversation",
+		"selectedMessage" ],
+	"name" : "TalkConversationBrowser",
+	"pools" : [
+		 ],
+	"super" : "TalkModel",
+	"type" : "normal" }
