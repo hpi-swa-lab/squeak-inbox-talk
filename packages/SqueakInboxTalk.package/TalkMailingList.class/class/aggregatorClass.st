@@ -1,0 +1,4 @@
+support
+aggregatorClass
+
+	^ SqhMailmanAggregator

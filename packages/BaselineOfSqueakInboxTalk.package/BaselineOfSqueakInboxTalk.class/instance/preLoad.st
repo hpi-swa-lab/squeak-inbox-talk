@@ -1,6 +1,4 @@
 scripts
 preLoad
 
-	self
-		preLoadCore;
-		preLoadMailingLists
+	self preLoadCore.

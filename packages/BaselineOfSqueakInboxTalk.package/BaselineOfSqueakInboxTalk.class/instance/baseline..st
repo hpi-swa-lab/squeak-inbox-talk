@@ -6,13 +6,17 @@ baseline: spec
 		"dependencies"
 		spec
 			package: 'JSON' with: [spec repository: 'https://www.squeaksource.com/PostgresV3'];
-			baseline: 'SqueakHistory' with: [spec repository: 'github://hpi-swa/squeak-history/packages'].
+			baseline: 'SqueakHistory' with: [
+				spec
+					repository: 'github://LinqLover/squeak-history:stream-github--hpi-swa-lab--squeak-inbox-talk/packages';
+					loads: 'SqueakHistory'].
 		"packages"
 		
 		spec package: 'SqueakInboxTalk' with: [
 			spec
 				requires: 'SqueakHistory';
-				preLoadDoIt: #preLoad].
+				preLoadDoIt: #preLoad;
+				postLoadDoIt: #postLoad].
 		"test packages"
 		spec package: 'SqueakInboxTalkTests' with: [spec requires: #(#app 'JSON')].
 		

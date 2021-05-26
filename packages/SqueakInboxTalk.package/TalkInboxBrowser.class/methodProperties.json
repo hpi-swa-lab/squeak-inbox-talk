@@ -12,13 +12,15 @@
 		"unload" : "ct 5/18/2021 16:31",
 		"unregisterFromWorldMenu" : "ct 5/18/2021 16:33" },
 	"instance" : {
+		"addModelItemsToWindowMenu:" : "ct 5/25/2021 18:35",
 		"appName" : "ct 5/20/2021 19:04",
 		"browseContribution" : "ct 5/7/2021 21:58",
-		"buildButtonBar:" : "ct 5/19/2021 21:03",
+		"buildButtonBar:" : "ct 5/25/2021 12:37",
 		"buildConversationPreview:" : "ct 5/5/2021 22:46",
 		"buildConversationsList:" : "ct 5/7/2021 17:47",
 		"buildWith:" : "ct 5/5/2021 22:45",
 		"buttonHeight" : "ct 5/7/2021 15:46",
+		"clearAllCaches" : "ct 5/26/2021 00:21",
 		"conversationColumns" : "ct 5/25/2021 19:18",
 		"conversationPreview" : "ct 5/8/2021 20:14",
 		"conversations" : "ct 5/19/2021 21:04",
@@ -40,5 +42,7 @@
 		"selectedConversation" : "ct 5/7/2021 16:00",
 		"selectedConversationIndex" : "ct 5/7/2021 16:40",
 		"selectedConversationIndex:" : "ct 5/7/2021 18:17",
+		"setDownloadRange" : "ct 5/25/2021 18:39",
 		"showingNonContributions" : "ct 5/8/2021 17:47",
-		"toggleShowingNonContributions" : "ct 5/8/2021 17:47" } }
+		"toggleShowingNonContributions" : "ct 5/8/2021 17:47",
+		"updateMessages" : "ct 5/25/2021 18:14" } }

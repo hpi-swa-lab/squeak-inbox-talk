@@ -10,5 +10,5 @@
 	"name" : "TalkInboxBrowserTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "TalkTestCase",
 	"type" : "normal" }
