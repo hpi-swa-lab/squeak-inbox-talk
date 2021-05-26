@@ -1,5 +1,5 @@
 scripts
-preLoadMailingLists
+postLoadMailingLists
 
 	| aggregatorClass |
 	self isCI ifFalse: [^ self].

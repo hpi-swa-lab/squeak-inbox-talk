@@ -1,0 +1,4 @@
+scripts
+postLoad
+
+	self postLoadMailingLists

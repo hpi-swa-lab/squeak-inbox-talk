@@ -15,7 +15,8 @@ baseline: spec
 		spec package: 'SqueakInboxTalk' with: [
 			spec
 				requires: 'SqueakHistory';
-				preLoadDoIt: #preLoad].
+				preLoadDoIt: #preLoad;
+				postLoadDoIt: #postLoad].
 		"test packages"
 		spec package: 'SqueakInboxTalkTests' with: [spec requires: #(#app 'JSON')].
 		
