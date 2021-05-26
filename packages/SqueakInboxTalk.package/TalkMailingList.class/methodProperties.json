@@ -1,11 +1,16 @@
 {
 	"class" : {
+		"aggregatorClass" : "ct 5/26/2021 14:20",
 		"named:" : "ct 5/7/2021 13:31",
-		"squeakDev" : "ct 5/7/2021 13:33" },
+		"squeakDev" : "ct 5/7/2021 13:33",
+		"wrapperClass" : "ct 5/26/2021 14:20" },
 	"instance" : {
+		"aggregatorClass" : "ct 5/26/2021 14:19",
 		"conversations" : "ct 5/20/2021 18:54",
 		"dataKey" : "ct 5/7/2021 17:36",
 		"mails" : "ct 5/20/2021 18:54",
 		"name" : "ct 5/7/2021 13:20",
 		"name:" : "ct 5/7/2021 13:21",
-		"printOn:" : "ct 5/7/2021 15:00" } }
+		"printOn:" : "ct 5/7/2021 15:00",
+		"updateMessagesFor:" : "ct 5/26/2021 14:19",
+		"wrapperClass" : "ct 5/26/2021 14:19" } }
