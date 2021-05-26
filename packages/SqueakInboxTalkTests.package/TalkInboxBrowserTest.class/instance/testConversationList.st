@@ -5,8 +5,10 @@ testConversationList
 
 	| browser |
 	browser := self classUnderTest newDefault.
-	browser numberOfConversations: 500.
+	self patch: browser inbox at: #downloadRange withValue: 10 days.
 	"be fast"
+	browser updateMessages.
+	
 	browser selectedConversationIndex: 1.
 	
 	self assert: browser selectedConversation notNil.
