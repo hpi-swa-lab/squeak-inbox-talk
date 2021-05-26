@@ -1,4 +1,4 @@
 accessing
 text
 
-	^ self mailMessage bodyTextFormatted
+	^ self wrapper bodyText
