@@ -5,9 +5,7 @@ updateMessagesFor: downloadRange
 	self wrapperClass closeAllStreams.
 	
 	minDownloadDate := downloadRange
-		ifNil: [
-			Date new asMonth
-			"min"]
+		ifNil: [DateAndTime new "min"]
 		ifNotNil: [:duration | DateAndTime now - duration].
 	(self mails collect: #date) ifNotEmpty: [:dates |
 		minDownloadDate := dates min > minDownloadDate
