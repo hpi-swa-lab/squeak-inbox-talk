@@ -2,5 +2,5 @@ self-updating
 selfUpdateGitRepositoryPattern
 
 	^ self selfUpdateGitRepository
-		copyReplaceAll: self selfUpdateRepositoryParams first
+		copyReplaceAll: self githubRepositoryParams first
 		with: '*'
