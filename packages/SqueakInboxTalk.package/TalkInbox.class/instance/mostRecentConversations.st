@@ -1,6 +1,6 @@
 accessing
 mostRecentConversations
 
-	^ (self conversations sitSortedByHeavy: #latestDate) reversed
+	^ (self conversations talkSortedByHeavy: #latestDate) reversed
 	"sorted: #latestDate descending
 	optimized (~900% faster)"

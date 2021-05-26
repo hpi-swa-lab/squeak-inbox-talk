@@ -1,10 +1,10 @@
 *SqueakInboxTalk-Core-sorting
-sitInsertionSort: aSortBlock
+talkInsertionSort: aSortBlock
 
 	| count hasChanged first second |
 	self flag: #moveUpstream.
 	
-	aSortBlock ifNil: [^ self sitInsertionSort: [:a :b | a <= b]].
+	aSortBlock ifNil: [^ self talkInsertionSort: [:a :b | a <= b]].
 	
 	count := self size.
 	[

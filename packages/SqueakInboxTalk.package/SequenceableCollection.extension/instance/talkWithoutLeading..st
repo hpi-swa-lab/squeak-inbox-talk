@@ -1,5 +1,5 @@
 *SqueakInboxTalk-Core-converting
-ssiWithoutLeading: prefix
+talkWithoutLeading: prefix
 
 	^ (self beginsWith: prefix)
 		ifTrue: [self allButFirst: prefix size]

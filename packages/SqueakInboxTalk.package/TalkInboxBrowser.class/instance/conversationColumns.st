@@ -2,10 +2,21 @@ accessing
 conversationColumns
 
 	^ {
-		[:conversation | conversation latestDate sitPrintString].
+		[:conversation | conversation latestDate talkPrintString].
 		[:conversation |
-			'   {1} ({2})' format: {
-				conversation subject.
-				(conversation contributions
-					ifNotEmpty: [:contributions | contributions gather: #conversations]
-					ifEmpty: [conversation messages]) size}]} collect: [:columnBlock | self conversations collect: columnBlock]
+			String streamContents: [:stream | | contributions count |
+				stream
+					space: 3;
+					flag: #hacked.
+				"custom spacing..."
+				stream nextPutAll: conversation subject.
+				contributions := conversation contributions.
+				count := contributions size > 1
+					ifTrue: [contributions size]
+					ifFalse: [conversation messages size].
+				count > 1 ifTrue: [
+					stream
+						space;
+						nextPut: $(;
+						print: count;
+						nextPut: $)]]]} collect: [:columnBlock | self conversations collect: columnBlock]
