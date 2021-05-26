@@ -5,4 +5,8 @@ addModelItemsToWindowMenu: aMenu
 	aMenu defaultTarget: self.
 	
 	aMenu add: 'set download range...' action: #setDownloadRange.
-	aMenu add: 'clear all caches' action: #clearAllCaches
+	aMenu add: 'clear all caches' action: #clearAllCaches.
+	
+	aMenu addLine.
+	
+	aMenu add: 'self-update' action: #doSelfUpdate
