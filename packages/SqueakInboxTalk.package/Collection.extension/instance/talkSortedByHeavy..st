@@ -1,5 +1,5 @@
 *SqueakInboxTalk-Core-sorting
-sitSortedByHeavy: aPropertyBlock
+talkSortedByHeavy: aPropertyBlock
 
 	self flag: #moveUpstream.
 	

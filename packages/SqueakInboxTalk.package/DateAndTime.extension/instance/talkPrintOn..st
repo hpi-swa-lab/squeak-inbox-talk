@@ -1,7 +1,9 @@
 *SqueakInboxTalk-UI-squeak protocol
-sitPrintOn: aStream
+talkPrintOn: aStream
 
 	self flag: #moveUpstream.
+	
+	self offset = self class localOffset ifFalse: [^ self asLocal talkPrintOn: aStream].
 	
 	self printYMDOn: aStream.
 	aStream space.

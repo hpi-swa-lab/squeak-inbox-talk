@@ -1,8 +1,6 @@
 accessing
 mails
 
-	^ ((SqhMailmanAggregator conversations at: self wrapper) collect: [:eachWrapper | TalkMailObject on: eachWrapper])
-		
-		"sorted: #date ascending
+	^ ((TalkMailingList aggregator conversations at: self wrapper) collect: [:eachWrapper | TalkMailObject on: eachWrapper]) reversed talkInsertionSorted: #date ascending
+	"sorted: #date ascending
 		optimized (~12% faster)"
-		reversed sitInsertionSorted: #date ascending

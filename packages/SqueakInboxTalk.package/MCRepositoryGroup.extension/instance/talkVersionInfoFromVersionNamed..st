@@ -1,5 +1,5 @@
 *SqueakInboxTalk-Core-repository-api
-sitVersionInfoFromVersionNamed: aString
+talkVersionInfoFromVersionNamed: aString
 
 	self flag: #moveUpstream.
 	
