@@ -5,7 +5,7 @@ selfUpdate
 
 	((self environment classNamed: #SquotWorkingCopy)
 		ifNotNil: #registered
-		ifNil: #())
+		ifNil: [#()])
 		detect: [:each | | gitRepository |
 			(each repository respondsTo: #git) and: [
 				gitRepository := each repository git.
