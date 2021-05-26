@@ -16,4 +16,4 @@ selfUpdateWithSquot: aWorkingCopy
 		ifCanceled: [^ self].
 	(repository historianNamed: self selfUpdateBranch) version: newVersion
 	"-- or, for non-developers of Squot: --"
-	"UpdateWorkingCopy loadVersion: UpdateWorkingCopy baseVersion interactive: false."
+	"SelfUpdateWorkingCopy loadVersion: SelfUpdateWorkingCopy baseVersion interactive: false."
