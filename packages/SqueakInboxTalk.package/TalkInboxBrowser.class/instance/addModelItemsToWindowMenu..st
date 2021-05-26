@@ -9,4 +9,5 @@ addModelItemsToWindowMenu: aMenu
 	
 	aMenu addLine.
 	
-	aMenu add: 'self-update' action: #doSelfUpdate
+	aMenu add: 'self-update' action: #doSelfUpdate.
+	aMenu add: 'send feedback...' action: #sendFeedback
