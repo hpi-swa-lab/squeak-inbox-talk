@@ -1,4 +1,4 @@
 accessing
 projectClass
 
-	^ MetacelloCypressBaselineProject
+	^ (self environment classNamed: #MetacelloCypressBaselineProject) ifNil: [super projectClass]
