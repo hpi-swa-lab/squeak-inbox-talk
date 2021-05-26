@@ -4,8 +4,9 @@
 		"openOn:" : "ct 4/30/2021 00:07" },
 	"instance" : {
 		"buildMessageList:" : "ct 5/7/2021 17:57",
+		"buildReplyButton:" : "ct 5/26/2021 16:09",
 		"buildTextPane:" : "ct 4/30/2021 00:08",
-		"buildWith:" : "ct 5/7/2021 17:57",
+		"buildWith:" : "ct 5/26/2021 16:09",
 		"conversation" : "ct 4/30/2021 00:06",
 		"conversation:" : "ct 5/8/2021 20:23",
 		"defaultWindowColor" : "ct 5/20/2021 18:56",
@@ -14,6 +15,7 @@
 		"messageColumns" : "ct 5/7/2021 18:22",
 		"messages" : "ct 5/7/2021 18:27",
 		"open" : "ct 5/8/2021 20:16",
+		"reply" : "ct 5/26/2021 16:16",
 		"selectedMessage" : "ct 5/7/2021 17:58",
 		"selectedMessage:" : "ct 5/7/2021 18:16",
 		"selectedMessageIndex" : "ct 5/7/2021 17:57",
