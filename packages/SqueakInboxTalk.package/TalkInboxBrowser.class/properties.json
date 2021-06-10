@@ -10,7 +10,8 @@
 		"selectedConversation",
 		"conversations",
 		"showingNonContributions",
-		"numberOfConversations" ],
+		"numberOfConversations",
+		"conversationPreview" ],
 	"name" : "TalkInboxBrowser",
 	"pools" : [
 		 ],
