@@ -1,0 +1,4 @@
+testing
+isWrapperForExistingMethod
+
+	^ method ~~ #new

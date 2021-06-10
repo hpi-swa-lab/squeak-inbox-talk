@@ -1,5 +1,5 @@
-tests
-testPatch
+tests - patching
+testPatchNew
 
 	| object |
 	object := Object new.

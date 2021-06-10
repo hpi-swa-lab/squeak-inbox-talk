@@ -5,6 +5,8 @@
 		"patch:at:with:" : "ct 5/20/2021 18:55",
 		"patch:at:with:during:" : "ct 5/20/2021 18:55",
 		"patch:at:withValue:" : "ct 5/20/2021 16:14",
+		"patch:at:withValue:during:" : "ct 6/9/2021 22:01",
+		"patchAll:at:withValue:during:" : "ct 6/10/2021 12:30",
 		"patchClass:at:with:" : "ct 5/20/2021 18:55",
 		"patchClass:at:with:during:" : "ct 5/20/2021 18:55",
 		"runCaseWithoutTimeout" : "ct 5/8/2021 23:30",
