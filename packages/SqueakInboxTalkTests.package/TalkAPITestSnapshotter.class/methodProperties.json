@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"takeSnapshotOf:" : "ct 6/10/2021 16:57",
+		"takeSnapshotOfContribution:" : "ct 6/10/2021 17:23",
+		"takeSnapshotOfConversation:" : "ct 6/10/2021 12:18",
+		"takeSnapshotOfInbox:" : "ct 6/10/2021 12:18",
+		"takeSnapshotOfMessage:" : "ct 6/10/2021 12:18",
+		"takeSnapshotOfMockMailingList:" : "ct 6/10/2021 12:19",
+		"takeSnapshotOfProject:" : "ct 6/10/2021 18:32",
+		"takeSnapshotOfRepositoryContribution:" : "ct 6/10/2021 19:44" } }

@@ -1,0 +1,3 @@
+testing
+isInstanceWrapper
+	^ behavior isNil

@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"deserialize:" : "ct 6/10/2021 17:00",
+		"deserialize:key:skipKey:" : "ct 6/10/2021 12:01",
+		"deserialize:key:skipKey:objects:" : "ct 6/10/2021 14:29",
+		"deserializeCollection:key:skipKey:objects:" : "ct 6/10/2021 18:52",
+		"deserializeDictionary:key:skipKey:objects:" : "ct 6/10/2021 12:03",
+		"keyPropertyName" : "ct 6/10/2021 17:00",
+		"store:intoClass:selector:" : "ct 6/10/2021 14:32",
+		"takeSnapshotOf:" : "ct 6/10/2021 12:18" },
+	"instance" : {
+		"initialize" : "ct 6/10/2021 17:01",
+		"keyProperty" : "ct 6/10/2021 17:01",
+		"objectDictionaryClass" : "ct 6/10/2021 16:51",
+		"objectSequenceClass" : "ct 6/10/2021 18:37",
+		"stringifyBlock:" : "ct 6/10/2021 19:43",
+		"stringifyProperty:" : "ct 6/10/2021 19:40",
+		"takeSnapshotOf:" : "ct 6/10/2021 14:32",
+		"takeSnapshotOfAssociation:" : "ct 6/10/2021 18:30",
+		"takeSnapshotOfCollection:" : "ct 6/10/2021 18:36",
+		"takeSnapshotOfCollection:class:" : "ct 6/10/2021 18:27",
+		"takeSnapshotOfDictionary:" : "ct 6/10/2021 20:00",
+		"takeSnapshotOfObject:" : "ct 6/10/2021 12:19",
+		"takeSnapshotOfObject:class:properties:" : "ct 6/10/2021 22:58",
+		"takeSnapshotOfObject:properties:" : "ct 6/10/2021 20:00",
+		"takeSnapshotOfSequenceableCollection:" : "ct 6/10/2021 18:36" } }

@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"do:" : "ct 6/10/2021 22:56" },
+	"instance" : {
+		"buildInbox:" : "ct 6/10/2021 19:01",
+		"expectedInboxProperties1" : "ct 6/10/2021 11:49",
+		"expectedInboxProperties2" : "ct 6/10/2021 22:57",
+		"expectedInboxProperties3" : "ct 6/10/2021 22:57",
+		"inboxClass" : "ct 6/9/2021 19:10",
+		"inboxSnapshots" : "ct 6/10/2021 18:59",
+		"mailingList1" : "ct 6/10/2021 17:37",
+		"mailingListNamed:address:mails:conversations:" : "ct 6/10/2021 02:03",
+		"messageClass" : "ct 6/10/2021 22:15",
+		"resetTalkCachesDuring:" : "ct 6/10/2021 12:28",
+		"storeInboxSnapshotAt:into:" : "ct 6/10/2021 22:57",
+		"testInboxSnapshots" : "ct 6/10/2021 19:00",
+		"testMessageNewReply" : "ct 6/10/2021 22:40" } }
