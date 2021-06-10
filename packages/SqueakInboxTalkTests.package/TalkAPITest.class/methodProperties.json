@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expectedInboxProperties1" : "ct 6/10/2021 11:49",
+		"expectedInboxProperties2" : "ct 6/10/2021 11:53",
+		"inboxClass" : "ct 6/9/2021 19:10",
+		"inboxSnapshots" : "ct 6/10/2021 13:57",
+		"mailingList1" : "ct 6/10/2021 11:48",
+		"mailingListNamed:address:mails:conversations:" : "ct 6/10/2021 02:03",
+		"resetTalkCachesDuring:" : "ct 6/10/2021 12:28",
+		"testInboxSnapshots" : "ct 6/10/2021 13:57" } }
