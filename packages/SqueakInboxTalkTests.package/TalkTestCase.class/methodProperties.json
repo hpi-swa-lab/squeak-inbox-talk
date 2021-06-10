@@ -9,7 +9,10 @@
 		"patchAll:at:withValue:during:" : "ct 6/10/2021 12:30",
 		"patchClass:at:with:" : "ct 5/20/2021 18:55",
 		"patchClass:at:with:during:" : "ct 5/20/2021 18:55",
+		"random" : "ct 6/10/2021 13:27",
+		"randomSeed" : "ct 6/9/2021 18:34",
 		"runCaseWithoutTimeout" : "ct 5/8/2021 23:30",
 		"setUp" : "ct 5/20/2021 16:54",
+		"setUpRandom" : "ct 6/10/2021 13:27",
 		"tearDown" : "ct 5/20/2021 18:36",
 		"wrapTest:" : "ct 5/8/2021 21:25" } }

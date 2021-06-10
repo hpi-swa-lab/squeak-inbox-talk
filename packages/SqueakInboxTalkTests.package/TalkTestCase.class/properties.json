@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"wrappers",
-		"methodWrappers" ],
+		"methodWrappers",
+		"random" ],
 	"name" : "TalkTestCase",
 	"pools" : [
 		 ],
