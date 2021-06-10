@@ -1,4 +1,4 @@
-support
+private
 mailingListNamed: name address: address mails: mailBlock conversations: conversationBlock
 
 	| list |
