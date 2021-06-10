@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 	
-	stack := OrderedCollection new
+	stack := OrderedCollection new.
+	ids := Dictionary new

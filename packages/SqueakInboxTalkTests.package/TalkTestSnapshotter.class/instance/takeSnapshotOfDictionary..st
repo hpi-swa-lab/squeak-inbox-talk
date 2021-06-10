@@ -1,6 +1,6 @@
 snapshotting
 takeSnapshotOfDictionary: aDictionary
 
-	self flag: #todo.
-	"does this only work for JsonObjects?"
-	^ self takeSnapshotOfObject: aDictionary properties: aDictionary keys
+	^ self
+		takeSnapshotOfObject: aDictionary
+		properties: (aDictionary keys collect: [:key | key -> [:object | object at: key]] as: Dictionary)

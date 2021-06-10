@@ -1,4 +1,4 @@
 deserialization
 deserialize: aDictionary
 
-	^ self deserialize: aDictionary key: self keyProperty skipKey: true
+	^ self deserialize: aDictionary key: self keyPropertyName skipKey: true

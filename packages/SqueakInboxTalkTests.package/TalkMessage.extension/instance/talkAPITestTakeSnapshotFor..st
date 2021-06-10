@@ -1,4 +1,4 @@
 *SqueakInboxTalkTests-Core-snapshots
-talkTestTakeSnapshotFor: snapshotter
+talkAPITestTakeSnapshotFor: snapshotter
 
 	^ snapshotter takeSnapshotOfMessage: self

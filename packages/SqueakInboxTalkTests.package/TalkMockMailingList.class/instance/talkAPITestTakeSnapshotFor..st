@@ -1,4 +1,4 @@
 snapshotting
-talkTestTakeSnapshotFor: snapshotter
+talkAPITestTakeSnapshotFor: snapshotter
 
 	^ snapshotter takeSnapshotOfMockMailingList: self
