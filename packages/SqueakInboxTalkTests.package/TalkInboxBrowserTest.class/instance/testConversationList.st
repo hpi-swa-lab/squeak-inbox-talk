@@ -12,4 +12,4 @@ testConversationList
 	browser selectedConversationIndex: 1.
 	
 	self assert: browser selectedConversation notNil.
-	self assert: (browser conversationPreview includesSubstring: browser selectedConversation subject)
+	self assert: (browser conversationPreview asString includesSubstring: browser selectedConversation subject)

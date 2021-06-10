@@ -1,4 +1,4 @@
-tests
+support
 storeInboxSnapshotAt: index into: selector
 	"
 	self do: [:test | test storeInboxSnapshotAt: 2 into: #expectedInboxProperties2].

@@ -3,16 +3,10 @@ dependentAspectsOn: aspect
 
 	^ aspect
 		caseOf: {
-			[#conversations] -> [
-				(self conversations includes: self selectedConversation) ifFalse: [self selectConversation: nil].
-				#(#conversationColumns)].
+			[#conversations] -> [#(#conversationColumns)].
 			[#inbox] -> [#(#conversations #labelString)].
 			[#labelString] -> [#(#windowTitle)].
-			[#numberOfConversations] -> [
-				conversations := nil.
-				#(#conversations)].
+			[#numberOfConversations] -> [#(#conversations)].
 			[#selectedConversation] -> [#(#conversationPreview #selectedConversationIndex #hasContributionsSelected #hasConversationSelected)].
-			[#showingNonContributions] -> [
-				conversations := nil.
-				#(#conversations)]}
+			[#showingNonContributions] -> [#(#conversations)]}
 		otherwise: [#()]

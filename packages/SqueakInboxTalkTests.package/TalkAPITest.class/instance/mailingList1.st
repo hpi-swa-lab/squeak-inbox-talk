@@ -79,14 +79,14 @@ mailingList1
 		conversations: [:list :mails |
 			{
 				JsonObject new
-					at: #basicSubject put: 'Hello world';
 					at: #mails put: (mails select: [:mail | #(-1 -2) includes: mail messageId]);
+					at: #simpleSubject put: 'Hello world';
 					yourself.
 				JsonObject new
-					at: #basicSubject put: 'What is your favorite language?';
 					at: #mails put: (mails select: [:mail | #(-2.5 -3 -4) includes: mail messageId]);
+					at: #simpleSubject put: 'What is your favorite language?';
 					yourself.
 				JsonObject new
-					at: #basicSubject put: 'The Inbox: Squeakland-author.123.mcz';
 					at: #mails put: (mails select: [:mail | #(-5) includes: mail messageId]);
+					at: #simpleSubject put: 'The Inbox: Squeakland-author.123.mcz';
 					yourself}]
