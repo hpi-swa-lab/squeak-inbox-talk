@@ -4,9 +4,9 @@
 	"instance" : {
 		"classUnderTest" : "ct 5/20/2021 18:55",
 		"setUp" : "ct 6/10/2021 13:19",
-		"testAssertPropertiesIn" : "ct 6/10/2021 14:11",
-		"testAssertPropertiesInCycle" : "ct 6/10/2021 14:16",
-		"testDeserializeAndSnapshot" : "ct 6/10/2021 17:02",
+		"testAssertPropertiesIn" : "ct 6/10/2021 18:40",
+		"testAssertPropertiesInLoop" : "ct 6/10/2021 18:45",
+		"testDeserializeAndSnapshot" : "ct 6/10/2021 18:54",
 		"testPatchAll" : "ct 6/10/2021 12:53",
 		"testPatchClass" : "ct 6/10/2021 13:43",
 		"testPatchExisting" : "ct 6/10/2021 12:51",
@@ -18,6 +18,6 @@
 		"testPatchWithValue" : "ct 6/10/2021 12:51",
 		"testRandom" : "ct 6/10/2021 13:40",
 		"testShouldNotChangeDuring" : "ct 6/10/2021 13:26",
-		"testSnapshotAndDeserialize" : "ct 6/10/2021 16:45",
+		"testSnapshotAndDeserialize" : "ct 6/10/2021 18:54",
 		"testWrapTest" : "ct 6/10/2021 13:30",
 		"withNewCaseDo:" : "ct 6/10/2021 13:30" } }

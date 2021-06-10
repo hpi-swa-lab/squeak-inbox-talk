@@ -10,6 +10,10 @@ testAssertPropertiesIn
 				add: (Dictionary new
 					at: #x put: 4;
 					at: #y put: 4;
+					at: [:point | {point leftRotated. point rightRotated}] put: (Set new
+						add: 4 @ -4;
+						add: -4 @ 4;
+						yourself);
 					yourself);
 				add: (Dictionary new
 					at: #u put: 3;

@@ -9,7 +9,7 @@ testDeserializeAndSnapshot
 		patchClass: Point
 		at: #talkTestTestTakeSnapshotFor:
 		with: [:this :someSnapshotter | this talkTestTakeSnapshotFor: someSnapshotter].
-	snapshot := '(OrderedDictionary new at: #snapshotId put: 1; at: #foo put: (6@7); at: #bar put: true; at: #baz put: (OrderedCollection new add: 1; add: ''Carpe Squeak!''; add: -0.5; yourself); yourself)'.
+	snapshot := '(OrderedDictionary new at: #snapshotId put: 1; at: #foo put: (6@7); at: #bar put: (IdentitySet new add: true; add: nil; yourself); at: #baz put: (OrderedCollection new add: 1; add: ''Carpe Squeak!''; add: -0.5; yourself); yourself)'.
 	
 	deserialized := TalkTestSnapshotter deserialize: (Compiler evaluate: snapshot).
 	newSnapshot := snapshotter takeSnapshotOf: deserialized.

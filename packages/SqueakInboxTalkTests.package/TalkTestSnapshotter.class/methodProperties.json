@@ -12,8 +12,12 @@
 		"initialize" : "ct 6/10/2021 17:01",
 		"keyProperty" : "ct 6/10/2021 17:01",
 		"objectDictionaryClass" : "ct 6/10/2021 16:51",
+		"objectSequenceClass" : "ct 6/10/2021 18:37",
 		"takeSnapshotOf:" : "ct 6/10/2021 14:32",
-		"takeSnapshotOfCollection:" : "ct 6/10/2021 16:56",
-		"takeSnapshotOfDictionary:" : "ct 6/10/2021 16:39",
+		"takeSnapshotOfAssociation:" : "ct 6/10/2021 18:30",
+		"takeSnapshotOfCollection:" : "ct 6/10/2021 18:36",
+		"takeSnapshotOfCollection:class:" : "ct 6/10/2021 18:27",
+		"takeSnapshotOfDictionary:" : "ct 6/10/2021 18:28",
 		"takeSnapshotOfObject:" : "ct 6/10/2021 12:19",
-		"takeSnapshotOfObject:properties:" : "ct 6/10/2021 17:00" } }
+		"takeSnapshotOfObject:properties:" : "ct 6/10/2021 17:00",
+		"takeSnapshotOfSequenceableCollection:" : "ct 6/10/2021 18:36" } }

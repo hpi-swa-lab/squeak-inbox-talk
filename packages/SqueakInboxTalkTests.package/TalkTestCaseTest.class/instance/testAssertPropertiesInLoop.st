@@ -1,5 +1,5 @@
 tests - asserting
-testAssertPropertiesInCycle
+testAssertPropertiesInLoop
 
 	| expectedInner expectedOuter inner outer |
 	inner := OrderedCollection new.

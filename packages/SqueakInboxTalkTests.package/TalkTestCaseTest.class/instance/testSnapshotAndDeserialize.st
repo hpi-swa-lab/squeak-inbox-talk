@@ -15,7 +15,7 @@ testSnapshotAndDeserialize
 		with: [:this :someSnapshotter | someSnapshotter takeSnapshotOfObject: this properties: #(#x #y)].
 	object := Dictionary new
 		at: #foo put: foo;
-		at: #bar put: true;
+		at: #bar put: #(true nil) asIdentitySet;
 		at: #baz put: #(1 'Carpe Squeak!' -0.5) asOrderedCollection;
 		yourself.
 	

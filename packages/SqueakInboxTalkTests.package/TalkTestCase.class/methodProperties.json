@@ -2,7 +2,7 @@
 	"class" : {
 		"isAbstract" : "ct 5/20/2021 18:55" },
 	"instance" : {
-		"assert:equalProperties:visitedObjects:path:" : "ct 6/10/2021 12:12",
+		"assert:equalProperties:visitedObjects:path:" : "ct 6/10/2021 18:55",
 		"assertProperties:in:" : "ct 6/10/2021 14:07",
 		"assertProperties:in:visitedObjects:path:" : "ct 6/10/2021 14:10",
 		"assertProperty:in:visitedObjects:path:" : "ct 6/10/2021 12:12",
