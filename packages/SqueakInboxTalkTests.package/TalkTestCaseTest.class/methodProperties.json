@@ -4,6 +4,8 @@
 	"instance" : {
 		"classUnderTest" : "ct 5/20/2021 18:55",
 		"setUp" : "ct 6/10/2021 13:19",
+		"testAssertPropertiesIn" : "ct 6/10/2021 14:11",
+		"testAssertPropertiesInCycle" : "ct 6/10/2021 14:16",
 		"testPatchAll" : "ct 6/10/2021 12:53",
 		"testPatchClass" : "ct 6/10/2021 13:43",
 		"testPatchExisting" : "ct 6/10/2021 12:51",

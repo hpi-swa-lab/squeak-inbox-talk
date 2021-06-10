@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkTests-Abstract",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stack" ],
+	"name" : "TalkTestSnapshotter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
