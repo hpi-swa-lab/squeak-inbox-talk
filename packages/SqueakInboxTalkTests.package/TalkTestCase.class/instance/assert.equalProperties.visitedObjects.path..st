@@ -2,7 +2,9 @@ asserting - properties
 assert: expectedValues equalProperties: actualValues visitedObjects: visitedObjects path: path
 
 	| index |
-	expectedValues isSequenceable ifFalse: [^ self assert: expectedValues sorted equalProperties: actualValues sorted visitedObjects: visitedObjects path: path].
+	expectedValues isSequenceable ifFalse: [ | sortFunction |
+		sortFunction := [:a :b | (a compareSafely: b) ifTrue: [-1] ifFalse: [1]] asSortFunction.
+		^ self assert: (expectedValues sorted: sortFunction) equalProperties: (actualValues sorted: sortFunction) visitedObjects: visitedObjects path: path].
 	
 	self assert: expectedValues size equals: actualValues size description: (path joinSeparatedBy: $/).
 	

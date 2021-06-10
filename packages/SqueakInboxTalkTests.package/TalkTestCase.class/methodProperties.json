@@ -2,10 +2,11 @@
 	"class" : {
 		"isAbstract" : "ct 5/20/2021 18:55" },
 	"instance" : {
-		"assert:equalProperties:visitedObjects:path:" : "ct 6/10/2021 18:55",
+		"assert:equalProperties:visitedObjects:path:" : "ct 6/10/2021 20:52",
 		"assertProperties:in:" : "ct 6/10/2021 14:07",
-		"assertProperties:in:visitedObjects:path:" : "ct 6/10/2021 14:10",
+		"assertProperties:in:visitedObjects:path:" : "ct 6/10/2021 19:46",
 		"assertProperty:in:visitedObjects:path:" : "ct 6/10/2021 12:12",
+		"getProperty:fromObject:" : "ct 6/10/2021 19:48",
 		"patch:at:with:" : "ct 5/20/2021 18:55",
 		"patch:at:with:during:" : "ct 5/20/2021 18:55",
 		"patch:at:withValue:" : "ct 5/20/2021 16:14",
