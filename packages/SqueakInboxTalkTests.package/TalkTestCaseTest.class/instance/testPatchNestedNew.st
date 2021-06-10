@@ -4,13 +4,13 @@ testPatchNestedNew
 	| object |
 	object := Object new.
 	
-	self patch: object at: #sitPatchedMessage with: [:o | 42] during: [
-		self assert: 42 equals: object sitPatchedMessage.
+	self patch: object at: #talkPatchedMessage with: [:o | 42] during: [
+		self assert: 42 equals: object talkPatchedMessage.
 		self
 			patch: object
-			at: #sitPatchedMessage
+			at: #talkPatchedMessage
 			with: [:o | 41]
-			during: [self assert: 41 equals: object sitPatchedMessage].
-		self assert: 42 equals: object sitPatchedMessage].
+			during: [self assert: 41 equals: object talkPatchedMessage].
+		self assert: 42 equals: object talkPatchedMessage].
 	
-	self should: [object sitPatchedMessage] raise: MessageNotUnderstood
+	self should: [object talkPatchedMessage] raise: MessageNotUnderstood

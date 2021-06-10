@@ -6,8 +6,8 @@ testPatchAll
 	
 	self
 		patchAll: objects
-		at: #sitPatchedMessage
+		at: #talkPatchedMessage
 		withValue: 42
-		during: [objects do: [:object | self assert: 42 equals: object sitPatchedMessage]].
+		during: [objects do: [:object | self assert: 42 equals: object talkPatchedMessage]].
 	
-	objects do: [:object | self should: [object sitPatchedMessage] raise: MessageNotUnderstood]
+	objects do: [:object | self should: [object talkPatchedMessage] raise: MessageNotUnderstood]

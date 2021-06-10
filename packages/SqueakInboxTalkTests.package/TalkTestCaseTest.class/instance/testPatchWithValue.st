@@ -6,8 +6,8 @@ testPatchWithValue
 	
 	self
 		patch: object
-		at: #sitPatchedMessage
+		at: #talkPatchedMessage
 		withValue: 42
-		during: [self assert: 42 equals: object sitPatchedMessage].
+		during: [self assert: 42 equals: object talkPatchedMessage].
 	
-	self should: [object sitPatchedMessage] raise: MessageNotUnderstood
+	self should: [object talkPatchedMessage] raise: MessageNotUnderstood
