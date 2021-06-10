@@ -63,6 +63,18 @@ mailingList1
 					at: #subject put: 'What is your favorite language?';
 					at: #text
 						put: 'Is there any simpler programming language than Smalltalk in the world?' withCRs;
+					yourself.
+				JsonObject new
+					at: #author put: 'commits@source.squeak.org';
+					at: #ccReceivers put: #();
+					at: #date put: (DateAndTime fromString: '2020-05-07T12:34:56.7890+01:00');
+					at: #mailingList put: list;
+					at: #messageId put: -5;
+					at: #receivers put: {list mailAddress};
+					at: #replyReceiver put: list mailAddress;
+					at: #subject put: 'The Inbox: Squeakland-author.123.mcz';
+					at: #text
+						put: 'A new version of Squeakland was added to project The Inbox:\Usually here would be some more helpful information.' withCRs;
 					yourself}]
 		conversations: [:list :mails |
 			{
@@ -73,4 +85,8 @@ mailingList1
 				JsonObject new
 					at: #basicSubject put: 'What is your favorite language?';
 					at: #mails put: (mails select: [:mail | #(-2.5 -3 -4) includes: mail messageId]);
+					yourself.
+				JsonObject new
+					at: #basicSubject put: 'The Inbox: Squeakland-author.123.mcz';
+					at: #mails put: (mails select: [:mail | #(-5) includes: mail messageId]);
 					yourself}]
