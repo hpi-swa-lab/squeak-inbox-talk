@@ -5,4 +5,4 @@ testSelect
 	self assert: browser selectedConversation notNil.
 	
 	self waitWhileBusy.
-	self assert: (browser contents asString includesSubstring: (browser selectedConversation text asString first: 100))
+	self assert: ({browser selectedConversation text. (browser selectedConversation contributions at: 1 ifAbsent: []) ifNotNil: #messageText} anySatisfy: [:text | browser contents asString includesSubstring: (text asString lines first take: 100)]).
