@@ -5,8 +5,7 @@ matchesRegex: aBoolean
 	
 	self doUpdate: [
 		self matchesRegex ifFalse: [
-			self flag: #discuss.
-			"Is this helpful or confusing?"
-			searchTermDraft := self searchTerm escapeRegex].
+			"I found this rather confusing..."
+			"searchTermDraft := self searchTerm escapeRegex"].
 		self searcher doUseRegex].
 	self changed: #matchesRegex
