@@ -5,5 +5,5 @@ printOn: aStream
 	aStream
 		space;
 		nextPut: $(;
-		nextPutAll: (self basicSubject printStringLimitedTo: 80);
+		nextPutAll: (self simpleSubject printStringLimitedTo: 80);
 		nextPut: $)

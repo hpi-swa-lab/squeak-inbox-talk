@@ -1,5 +1,5 @@
 system primitives
 doesNotUnderstand: aMessage
 
-	method = #new ifTrue: [^ aMessage sendTo: self nullMethod].
+	self isWrapperForExistingMethod ifFalse: [^ aMessage sendTo: self nullMethod].
 	^ aMessage sendTo: method

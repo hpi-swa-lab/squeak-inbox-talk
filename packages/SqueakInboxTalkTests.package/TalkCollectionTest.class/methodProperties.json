@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "ct 6/9/2021 18:34",
+		"testInsertionSort" : "ct 6/9/2021 18:28",
+		"testInsertionSorted" : "ct 6/9/2021 18:35" } }

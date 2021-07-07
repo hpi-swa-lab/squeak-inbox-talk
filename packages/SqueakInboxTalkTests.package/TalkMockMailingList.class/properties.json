@@ -1,0 +1,20 @@
+{
+	"category" : "SqueakInboxTalkTests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"mailAddress",
+		"fetchedMails",
+		"fetchedConversations",
+		"allMails",
+		"allConversations",
+		"now" ],
+	"name" : "TalkMockMailingList",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -2,6 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"backgroundWorkerFor:do:thenDo:" : "ct 6/10/2021 23:50",
 		"buttonHeight" : "ct 5/26/2021 16:07",
-		"changed:" : "ct 5/7/2021 16:05",
-		"dependentAspectsOn:" : "ct 5/7/2021 18:05" } }
+		"changed:" : "ct 6/9/2021 18:04",
+		"changedDependent:" : "ct 6/10/2021 23:29",
+		"dependentAspectsOn:" : "ct 5/7/2021 18:05",
+		"initialize" : "ct 6/9/2021 17:51",
+		"instVarNamed:put:ifAbsent:" : "ct 6/10/2021 23:29" } }

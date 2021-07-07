@@ -3,4 +3,4 @@ changed: aspect
 
 	super changed: aspect.
 	
-	(self dependentAspectsOn: aspect) do: [:dependentAspect | self changed: dependentAspect]
+	(self dependentAspectsOn: aspect) do: [:dependentAspect | self changedDependent: dependentAspect]
