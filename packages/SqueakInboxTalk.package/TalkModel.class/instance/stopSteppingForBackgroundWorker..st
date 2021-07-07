@@ -5,5 +5,6 @@ stopSteppingForBackgroundWorker: backgroundWorker
 	
 	(self backgroundWorkers anySatisfy: [:worker | worker environmentAt: #talkBackgroundWorkerWantsSteps ifAbsent: [false]]) ifTrue: [^ self].
 	
-	(self currentWorld isStepping: self selector: #stepForBackgroundWorkerAt:) ifFalse: [^ self].
-	self currentWorld stopStepping: self selector: #stepForBackgroundWorkerAt:
+	Project current addDeferredUIMessage: [
+		(self currentWorld isStepping: self selector: #stepForBackgroundWorkerAt:) ifTrue: [
+			self currentWorld stopStepping: self selector: #stepForBackgroundWorkerAt:]]
