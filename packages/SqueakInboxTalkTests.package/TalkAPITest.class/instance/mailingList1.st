@@ -74,7 +74,22 @@ mailingList1
 					at: #replyReceiver put: list mailAddress;
 					at: #subject put: 'The Inbox: Squeakland-author.123.mcz';
 					at: #text
-						put: 'A new version of Squeakland was added to project The Inbox:\Usually here would be some more helpful information.' withCRs;
+						put: 'A new version of Squeakland was added to project The Inbox:
+http://exanoke.com/inbox/Squeakland-author.123.mcz
+
+==================== Summary ====================
+
+Name: Squeakland-author.123.mcz
+Author: author
+Time: 7 May 2021, 12:34:56.7889 am
+UUID: 9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d
+Ancestors: Squeakland-author0.122.mcz
+
+Add X.
+
+=============== Diff against Squeakland-author0.122.mcz ===============
+
+Usually here would be some more helpful information.' withCRs;
 					yourself}]
 		conversations: [:list :mails |
 			{

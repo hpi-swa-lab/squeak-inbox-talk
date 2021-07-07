@@ -1,0 +1,17 @@
+{
+	"category" : "SqueakInboxTalk-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"searcher",
+		"helpText",
+		"searchTermDraft",
+		"searchError" ],
+	"name" : "TalkTextSearchModel",
+	"pools" : [
+		 ],
+	"super" : "TalkModel",
+	"type" : "normal" }

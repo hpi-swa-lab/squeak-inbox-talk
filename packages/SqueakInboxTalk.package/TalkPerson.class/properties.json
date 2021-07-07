@@ -1,0 +1,16 @@
+{
+	"category" : "SqueakInboxTalk-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Current" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"names",
+		"mailAddresses",
+		"allAuthorInitials" ],
+	"name" : "TalkPerson",
+	"pools" : [
+		 ],
+	"super" : "TalkDataView",
+	"type" : "normal" }

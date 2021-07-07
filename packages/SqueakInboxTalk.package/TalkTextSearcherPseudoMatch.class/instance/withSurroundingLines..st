@@ -1,0 +1,4 @@
+copying
+withSurroundingLines: numberOfLines
+
+	^ self

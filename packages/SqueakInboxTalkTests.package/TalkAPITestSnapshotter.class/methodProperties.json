@@ -3,10 +3,10 @@
 		 },
 	"instance" : {
 		"takeSnapshotOf:" : "ct 6/10/2021 16:57",
-		"takeSnapshotOfContribution:" : "ct 6/10/2021 17:23",
-		"takeSnapshotOfConversation:" : "ct 6/10/2021 23:31",
-		"takeSnapshotOfInbox:" : "ct 6/10/2021 12:18",
-		"takeSnapshotOfMessage:" : "ct 6/10/2021 12:18",
+		"takeSnapshotOfContribution:" : "ct 7/7/2021 18:44",
+		"takeSnapshotOfConversation:" : "ct 7/7/2021 18:55",
+		"takeSnapshotOfInbox:" : "ct 7/7/2021 23:24",
+		"takeSnapshotOfMessage:" : "ct 7/7/2021 18:58",
 		"takeSnapshotOfMockMailingList:" : "ct 6/10/2021 12:19",
-		"takeSnapshotOfProject:" : "ct 6/10/2021 18:32",
-		"takeSnapshotOfRepositoryContribution:" : "ct 6/10/2021 19:44" } }
+		"takeSnapshotOfProject:" : "ct 7/7/2021 18:58",
+		"takeSnapshotOfRepositoryContribution:" : "ct 7/7/2021 18:47" } }

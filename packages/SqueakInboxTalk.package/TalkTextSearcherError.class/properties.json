@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalk-Filters",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"position" ],
+	"name" : "TalkTextSearcherError",
+	"pools" : [
+		"TalkProjects" ],
+	"super" : "Error",
+	"type" : "normal" }

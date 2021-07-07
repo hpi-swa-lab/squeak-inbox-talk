@@ -10,7 +10,8 @@
 		"inboxRepository",
 		"trunkRepository",
 		"treatedRepository",
-		"repositoryGroup" ],
+		"repositoryGroup",
+		"allVersionNames" ],
 	"name" : "TalkProject",
 	"pools" : [
 		"TalkProjects" ],

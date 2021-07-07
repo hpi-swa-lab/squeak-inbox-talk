@@ -4,28 +4,41 @@ buildButtonBar: aBuilder
 	^ aBuilder pluggablePanelSpec new
 		model: self;
 		layout: #horizontal;
-		children: {
-			aBuilder pluggableActionButtonSpec new
+		children: (OrderedCollection new
+			add: (aBuilder pluggableActionButtonSpec new
 				model: self;
-				label: 'Update';
-				action: #updateMessages;
-				yourself.
-			aBuilder pluggableCheckBoxSpec new
+				label: 'Refresh';
+				action: #refreshMessages;
+				help: 'Download and prepare the latest messages from the mail archive';
+				yourself);
+			add: (aBuilder pluggableButtonSpec new
 				model: self;
-				label: #labelShowingNonContributions;
-				state: #showingNonContributions;
-				action: #toggleShowingNonContributions;
-				yourself.
-			aBuilder pluggableActionButtonSpec new
+				label: #filterLabel;
+				action: #offerFilterMenu;
+				style: #menuButton;
+				yourself);
+			add: aBuilder pluggableSpacerSpec new;
+			add: (aBuilder pluggableActionButtonSpec new
 				model: self;
 				label: 'Open';
 				action: #openConversation;
 				enabled: #hasConversationSelected;
-				yourself.
-			aBuilder pluggableActionButtonSpec new
+				help: 'Browse the selected conversation';
+				yourself);
+			add: (aBuilder pluggableActionButtonSpec new
 				model: self;
-				label: 'Browse contribution';
-				action: #browseContribution;
+				label: 'Browse contribution...';
+				action: #browseContributions;
 				enabled: #hasContributionsSelected;
-				yourself};
+				yourself);
+			add: aBuilder pluggableSpacerSpec new;
+			add: (aBuilder pluggableActionButtonSpec new
+				model: self;
+				label: self appVersionLabel;
+				action: #offerAppMenu;
+				color: #appVersionColor;
+				style: #menuButton;
+				help: 'Hello World!';
+				yourself);
+			yourself);
 		yourself

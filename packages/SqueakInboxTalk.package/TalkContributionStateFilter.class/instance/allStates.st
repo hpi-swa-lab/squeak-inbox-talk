@@ -1,0 +1,4 @@
+accessing
+allStates
+
+	^ TalkContribution allStates

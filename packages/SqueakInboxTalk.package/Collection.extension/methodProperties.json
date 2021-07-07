@@ -2,5 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"talkAsGenerator" : "ct 7/1/2021 22:47",
+		"talkGroupBy:as:of:" : "ct 6/29/2021 17:31",
 		"talkInsertionSorted:" : "ct 5/20/2021 20:42",
-		"talkSortedByHeavy:" : "ct 5/20/2021 20:41" } }
+		"talkIsEmpty" : "ct 6/18/2021 00:22",
+		"talkOrderedGroupBy:" : "ct 6/29/2021 17:31",
+		"talkSortedByHeavy:" : "ct 7/7/2021 19:19" } }

@@ -1,0 +1,4 @@
+accessing
+errors
+
+	^ TalkTextSearcherError,RegexError

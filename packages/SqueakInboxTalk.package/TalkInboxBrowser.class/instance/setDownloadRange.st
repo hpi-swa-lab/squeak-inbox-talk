@@ -5,11 +5,11 @@ setDownloadRange
 	range := self inbox downloadRange.
 	answer := Project uiManager
 		request: 'When downloading messages, browse as far back as how many days?'
-		initialAnswer: range days asString.
+		initialAnswer: (range ifNotNil: [range days asString] ifNil: [#infinite printString]).
 	answer isEmptyOrNil ifTrue: [^ false].
 	
-	range := answer asNumber days.
+	range := answer = #infinite printString ifFalse: [answer asNumber days].
 	self inbox downloadRange: range.
 	
-	self updateMessages.
+	self refreshMessages.
 	^ true

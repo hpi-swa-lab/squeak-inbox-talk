@@ -1,0 +1,16 @@
+{
+	"category" : "SqueakInboxTalk-Filters",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"filters",
+		"resetLabel",
+		"separateFilters" ],
+	"name" : "TalkFilterSet",
+	"pools" : [
+		 ],
+	"super" : "TalkFilter",
+	"type" : "normal" }

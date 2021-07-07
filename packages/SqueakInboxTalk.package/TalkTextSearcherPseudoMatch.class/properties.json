@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalk-Filters",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TalkTextSearcherPseudoMatch",
+	"pools" : [
+		 ],
+	"super" : "TalkTextSearcherMatch",
+	"type" : "normal" }

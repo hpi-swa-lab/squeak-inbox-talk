@@ -1,0 +1,15 @@
+{
+	"category" : "SqueakInboxTalk-Filters",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"withContributions",
+		"withoutContributions" ],
+	"name" : "TalkContributionFilter",
+	"pools" : [
+		 ],
+	"super" : "TalkFilter",
+	"type" : "normal" }

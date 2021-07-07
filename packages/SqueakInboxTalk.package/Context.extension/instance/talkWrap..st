@@ -7,7 +7,9 @@ talkWrap: executeAroundBlock
 		thisContext wrap: [:block | Utilities useAuthorInitials: 'BANG' during: block].
 		Transcript showln: Utilities authorInitials.
 		self error: 'Abort'] ensure: [
-		Transcript showln: Utilities authorInitials]
+		Transcript showln: Utilities authorInitials].
+	
+	Copied from SimulationStudio.
 	"
 
 	^ self insertSender: (self class talkContextWrap: executeAroundBlock)

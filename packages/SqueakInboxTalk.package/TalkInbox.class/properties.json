@@ -8,7 +8,8 @@
 	"instvars" : [
 		"mailingList",
 		"conversationsPerContributions",
-		"downloadRange" ],
+		"downloadRange",
+		"messagesPerContributions" ],
 	"name" : "TalkInbox",
 	"pools" : [
 		 ],

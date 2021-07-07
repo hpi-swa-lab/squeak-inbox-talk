@@ -1,0 +1,4 @@
+accessing
+person
+
+	^ TalkPerson currentOrNil

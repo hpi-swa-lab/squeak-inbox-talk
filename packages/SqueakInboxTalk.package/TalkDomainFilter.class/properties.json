@@ -1,0 +1,15 @@
+{
+	"category" : "SqueakInboxTalk-Filters",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"inbox",
+		"items" ],
+	"name" : "TalkDomainFilter",
+	"pools" : [
+		 ],
+	"super" : "TalkFilter",
+	"type" : "normal" }

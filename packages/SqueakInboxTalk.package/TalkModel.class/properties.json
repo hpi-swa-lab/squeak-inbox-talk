@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"backgroundWorkers" ],
+		"backgroundWorkers",
+		"backgroundWorkerUpdateMessages" ],
 	"name" : "TalkModel",
 	"pools" : [
 		 ],

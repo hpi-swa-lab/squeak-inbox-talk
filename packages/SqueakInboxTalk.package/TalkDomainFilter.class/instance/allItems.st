@@ -1,0 +1,4 @@
+accessing
+allItems
+
+	^ self subclassResponsibility
