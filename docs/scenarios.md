@@ -23,7 +23,7 @@
     7. If any reply requires a response, click the "Reply" button to write a reply message to the conversation.
     8. Write your reply and click the "Send" button to send the message.
 
-- [x] As an co-maintainer of a Squeak package (Nancy/Marius), I would like to survey all pending contributions to this package in SIT, in order to take some contributions forward to eventually being integrated into the trunk.
+- [x] As a co-maintainer of a Squeak package (Nancy/Marius), I would like to survey all pending contributions to this package in SIT, in order to take some contributions forward to eventually being integrated into the trunk.
   * **Problem:** Currently, you can choose from multiple data sources to list contributions:
     + Either you can list all conversations in your mailing client or a mailing archive.
       In this list, however, contributions that did not go through the inbox will appear, too, as well as conversations about contributions to different packages and also conversations that do not belong to any contribution at all.
