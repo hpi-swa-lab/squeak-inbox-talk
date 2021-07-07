@@ -1,7 +1,7 @@
 initialize-release
 newMenuFilter
 
-	^ TalkConversationFilterSet new
+	^ TalkFilterSet new
 		filters: {
 			TalkContributionFilter new.
 			TalkContributionStateFilter new.
