@@ -1,5 +1,5 @@
+| workspacePath oldArchivePath |
 [
-	| workspacePath |
 	FileStream startUp: true. "Reload stdio file handles"
 	TranscriptStream redirectToStdOut: true.
 	thisContext insertSender: (Context contextEnsure: [TranscriptStream redirectToStdOut: false]).
@@ -28,8 +28,17 @@
 	Transcript showln: 'SqueakInboxTalk was installed'.
 
 	(Smalltalk classNamed: #BaselineOfSqueakInboxTalk) new openWelcomeContentsSync.
+	Project current world doOneCycle. "fill caches"
+
+	oldArchivePath := TalkMailingList aggregatorClass archivePath.
 	TalkMailingList aggregatorClass archivePath: nil. "maybe not applicable on target host system"
+	TalkMailingList aggregatorClass closeAllStreams.
 ] value.
 
 Smalltalk snapshot: true andQuit: true.
-Project current world doOneCycle.
+
+"Recompute filenames for Squeak History"
+BaselineOfSqueakInboxTalk new initializeSqhPreferences.
+TalkMailingList wrapperClass allSubInstancesDo: [:ea |
+	self assert: (ea fileName beginsWith: oldArchivePath).
+	ea fileName: TalkMailingList aggregatorClass archivePath , (ea fileName allButFirst: oldArchivePath size)].
