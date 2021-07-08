@@ -23,20 +23,19 @@ jobs:
     #if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
+      - uses: benjlevesque/short-sha@v1.2
+        id: short-sha
       - uses: actions/download-artifact@master
         with:
           name: image
-          path: Squeak.zip
-      - uses: benjlevesque/short-sha@v1.2
-        id: short-sha
-      - run: mv Squeak.zip SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}.zip
+          path: SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}.zip
       - run: ls -la # DEBUG
       - uses: softprops/action-gh-release@v1
         with:
           tag_name: untagged-${{ steps.short-sha.outputs.sha }}
           body: ${{ github.event.head_commit.message }}
           files: |
-            SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}.zip
+            SqueakInboxTalk-*.zip
           prerelease: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
