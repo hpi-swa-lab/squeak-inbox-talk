@@ -29,7 +29,8 @@ jobs:
           path: Squeak.zip
       - uses: benjlevesque/short-sha@v1.2
         id: short-sha
-      - run: mv {Squeak*,SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}}.zip
+      - run: mv Squeak.zip SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}.zip
+      - run: ls -la # DEBUG
       - uses: softprops/action-gh-release@v1
         with:
           tag_name: untagged-${{ steps.short-sha.outputs.sha }}
