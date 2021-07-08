@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: benjlevesque/short-sha@v1.2
         id: short-sha
-      - run: ./scripts/prepare_image.sh
+      - run: ./scripts/create_image.sh
       - run: mv {Squeak*,SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}}.zip
       - uses: softprops/action-gh-release@v1
         with:
