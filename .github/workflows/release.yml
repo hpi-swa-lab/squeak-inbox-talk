@@ -1,0 +1,23 @@
+name: Release
+
+on: [push, workflow_dispatch]
+
+jobs:
+  release:
+    if: github.event.pull_request.draft != true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: benjlevesque/short-sha@v1.2
+        id: short-sha
+      - run: ./scripts/create_image.sh
+      - run: mv {Squeak*,SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}}.zip
+      - if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: untagged-${{ steps.short-sha.outputs.sha }}
+          body: ${{ github.event.head_commit.message }}
+          files: SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}.zip
+          prerelease: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
