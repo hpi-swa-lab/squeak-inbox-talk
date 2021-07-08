@@ -35,7 +35,8 @@ jobs:
         with:
           tag_name: untagged-${{ steps.short-sha.outputs.sha }}
           body: ${{ github.event.head_commit.message }}
-          files: SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}.zip
+          files: |
+            SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}.zip
           prerelease: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
