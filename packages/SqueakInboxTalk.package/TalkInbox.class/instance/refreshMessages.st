@@ -7,3 +7,4 @@ refreshMessages
 	"Reset caches"
 	conversationsPerContributions := nil.
 	messagesPerContributions := nil.
+	lastRefreshed := DateAndTime now.

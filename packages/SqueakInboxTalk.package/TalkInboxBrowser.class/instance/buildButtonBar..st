@@ -9,7 +9,7 @@ buildButtonBar: aBuilder
 				model: self;
 				label: 'Refresh';
 				action: #refreshMessages;
-				help: 'Download and prepare the latest messages from the mail archive';
+				help: #refreshMessagesHelp;
 				yourself);
 			add: (aBuilder pluggableButtonSpec new
 				model: self;

@@ -9,7 +9,8 @@
 		"mailingList",
 		"conversationsPerContributions",
 		"downloadRange",
-		"messagesPerContributions" ],
+		"messagesPerContributions",
+		"lastRefreshed" ],
 	"name" : "TalkInbox",
 	"pools" : [
 		 ],
