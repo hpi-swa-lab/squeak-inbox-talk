@@ -3,7 +3,7 @@ name: Release
 on: [push, workflow_dispatch]
 
 jobs:
-  release:
+  create-image:
     if: github.event.pull_request.draft != true
     runs-on: ubuntu-latest
     steps:
@@ -13,11 +13,15 @@ jobs:
         with:
           smalltalk-image: Squeak64-Trunk
       - run: ./scripts/create_image.sh
-      - run: mv {Squeak*,SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}}.zip
+  release-image:
+    needs: create-image
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
       - uses: benjlevesque/short-sha@v1.2
         id: short-sha
-      - if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: softprops/action-gh-release@v1
+      - run: mv {Squeak*,SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}}.zip
+      - uses: softprops/action-gh-release@v1
         with:
           tag_name: untagged-${{ steps.short-sha.outputs.sha }}
           body: ${{ github.event.head_commit.message }}
