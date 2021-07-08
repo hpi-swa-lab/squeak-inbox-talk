@@ -4,4 +4,5 @@ initialize
 	super initialize.
 	
 	numberOfConversations := self defaultNumberOfConversations.
-	showingNonContributions := false
+	
+	self initializeFilters

@@ -1,7 +1,24 @@
 {
 	"class" : {
-		 },
+		"resources" : "ct 7/7/2021 22:27" },
 	"instance" : {
 		"classUnderTest" : "ct 5/20/2021 19:01",
-		"testBuild" : "ct 5/20/2021 19:01",
-		"testConversationList" : "ct 6/10/2021 23:36" } }
+		"defaultTimeout" : "ct 7/7/2021 19:48",
+		"findFilterItem:" : "ct 7/7/2021 22:18",
+		"setUp" : "ct 7/7/2021 22:28",
+		"shouldBeFiltered" : "ct 7/7/2021 22:09",
+		"shouldBeFiltered:" : "ct 7/7/2021 22:11",
+		"shouldntFail:" : "ct 7/7/2021 19:45",
+		"testBrowseContribution" : "ct 7/7/2021 22:48",
+		"testBuild" : "ct 7/7/2021 23:06",
+		"testFilterContributionStates" : "ct 7/7/2021 22:53",
+		"testFilterContributions" : "ct 7/7/2021 22:53",
+		"testFilterCustom" : "ct 7/7/2021 22:54",
+		"testFilterPackage" : "ct 7/7/2021 22:55",
+		"testRefresh" : "ct 7/7/2021 22:33",
+		"testSearch" : "ct 7/8/2021 00:33",
+		"testSearchAndFilter" : "ct 7/7/2021 22:55",
+		"testSelect" : "ct 7/8/2021 01:22",
+		"testSelectRush" : "ct 7/7/2021 19:52",
+		"toggleFilter:to:" : "ct 7/7/2021 22:54",
+		"waitWhileBusy" : "ct 7/7/2021 18:13" } }

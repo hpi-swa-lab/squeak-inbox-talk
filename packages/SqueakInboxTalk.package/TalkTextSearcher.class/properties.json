@@ -1,0 +1,20 @@
+{
+	"category" : "SqueakInboxTalk-Filters",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"term",
+		"matchesCase",
+		"matchesWholeWord",
+		"matchStrategy",
+		"hasComplexTerm",
+		"numberOfSurroundingLines",
+		"regex" ],
+	"name" : "TalkTextSearcher",
+	"pools" : [
+		"TalkProjects" ],
+	"super" : "TalkFilter",
+	"type" : "normal" }

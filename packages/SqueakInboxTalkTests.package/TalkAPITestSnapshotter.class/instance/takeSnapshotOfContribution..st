@@ -1,4 +1,6 @@
 snapshotting
 takeSnapshotOfContribution: aContribution
 
-	^ self takeSnapshotOfObject: aContribution properties: #(#conversations #state #summary)
+	^ self
+		takeSnapshotOfObject: aContribution
+		properties: #(#conversations #latestConversation #message #messageText #package #state #summary)

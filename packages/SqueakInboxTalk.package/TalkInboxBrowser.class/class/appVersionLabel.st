@@ -1,0 +1,4 @@
+constants
+appVersionLabel
+
+	^ 'Alpha version'

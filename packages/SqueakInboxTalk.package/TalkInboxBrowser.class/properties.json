@@ -7,11 +7,13 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"inbox",
+		"searchModel",
 		"selectedConversation",
-		"conversations",
-		"showingNonContributions",
+		"allConversations",
 		"numberOfConversations",
-		"conversationPreview" ],
+		"conversations",
+		"menuFilter",
+		"contents" ],
 	"name" : "TalkInboxBrowser",
 	"pools" : [
 		 ],

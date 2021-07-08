@@ -3,9 +3,23 @@ buildWith: aBuilder
 
 	| windowSpec |
 	windowSpec := self buildWindowWith: aBuilder specs: {
-		(LayoutFrame fractions: (0 @ 0 corner: 1 @ 0) offsets: (0 @ 0 corner: 0 @ self buttonHeight)) -> [self buildButtonBar: aBuilder].
-		(LayoutFrame
-			fractions: (0 @ 0 corner: 1 @ (1 / 2))
-			offsets: (0 @ self buttonHeight corner: 1 @ 0)) -> [self buildConversationsList: aBuilder].
-		(LayoutFrame fractions: (0 @ 1 / 2 corner: 1 @ 1)) -> [self buildConversationPreview: aBuilder]}.
+		(LayoutFrame new
+			rightFraction: 1;
+			bottomOffset: self buttonHeight;
+			yourself) -> [self buildButtonBar: aBuilder].
+		(LayoutFrame new
+			rightFraction: 1;
+			topOffset: self buttonHeight;
+			bottomOffset: self buttonHeight * 2;
+			yourself) -> [self buildFilterBar: aBuilder].
+		(LayoutFrame new
+			rightFraction: 1;
+			bottomFraction: 1 / 2;
+			topOffset: self buttonHeight * 2;
+			yourself) -> [self buildConversationsList: aBuilder].
+		(LayoutFrame new
+			topFraction: 1 / 2;
+			rightFraction: 1;
+			bottomFraction: 1;
+			yourself) -> [self buildTextPane: aBuilder]}.
 	^ aBuilder build: windowSpec

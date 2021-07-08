@@ -1,22 +1,17 @@
-accessing
+accessing - toolbuilder
 conversationColumns
 
 	^ {
 		[:conversation | conversation latestDate talkPrintString].
-		[:conversation |
-			String streamContents: [:stream | | contributions count |
-				stream
-					space: 3;
-					flag: #hacked.
-				"custom spacing..."
-				stream nextPutAll: conversation subject.
-				contributions := conversation contributions.
-				count := contributions size > 1
-					ifTrue: [contributions size]
-					ifFalse: [conversation messages size].
-				count > 1 ifTrue: [
-					stream
-						space;
-						nextPut: $(;
-						print: count;
-						nextPut: $)]]]} collect: [:columnBlock | self conversations collect: columnBlock]
+		[:conversation | self subjectFor: conversation].
+		[:conversation | '']} withIndexCollect: [:columnBlock :columnIndex |
+		self conversations collect: [:conversation |
+			conversation = #searching
+				ifFalse: [columnBlock value: conversation]ifTrue: [
+					columnIndex = 1
+						ifTrue: [
+							'Searching...' asText
+								addAttribute: TextEmphasis italic;
+								yourself]
+						ifFalse: ['']]
+				]]

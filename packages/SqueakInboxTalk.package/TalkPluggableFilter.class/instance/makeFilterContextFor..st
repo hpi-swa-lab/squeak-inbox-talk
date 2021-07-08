@@ -1,0 +1,4 @@
+private
+makeFilterContextFor: each
+
+	^ thisContext

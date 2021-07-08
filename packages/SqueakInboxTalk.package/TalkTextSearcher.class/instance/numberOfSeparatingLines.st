@@ -1,0 +1,4 @@
+accessing
+numberOfSeparatingLines
+
+	^ 1

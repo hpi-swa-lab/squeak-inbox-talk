@@ -1,14 +1,10 @@
 updating
 changed: aspect
 
-	aspect
-		caseOf: {
-			[#conversations] -> [(self conversations includes: self selectedConversation) ifFalse: [self selectConversation: nil]].
-			[#conversationPreview] -> [
-				self
-					backgroundWorkerFor: #conversationPreview
-					do: [self complexConversationPreview]
-					thenDo: [self changed: #conversationPreview]]}
-		otherwise: [].
+	aspect = #conversations ifTrue: [
+		conversations ifNil: [self startGatheringConversations].
+		self hasConversationSelected
+			ifTrue: [(self conversations includes: self selectedConversation) ifFalse: [self selectConversation: nil]]
+			ifFalse: [(contents isNil or: [self totalFilter isActive]) ifTrue: [self changedDependent: #contents]]].
 	
 	^ super changed: aspect

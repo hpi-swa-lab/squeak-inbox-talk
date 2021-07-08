@@ -1,4 +1,4 @@
 versions
 versionNamed: aString
 
-	^ self repositoryGroup versionNamed: aString , '.mcz'
+	^ self versionNamed: aString in: self repositoryGroup

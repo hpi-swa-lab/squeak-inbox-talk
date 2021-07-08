@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"accepts:" : "ct 7/2/2021 22:39",
+		"allInvolvements" : "ct 7/8/2021 02:33",
+		"assurePerson" : "ct 7/3/2021 01:54",
+		"filterMenu:for:" : "ct 7/2/2021 17:14",
+		"hasInvolvement:" : "ct 7/1/2021 13:38",
+		"initialize" : "ct 7/1/2021 14:17",
+		"involvements" : "ct 7/1/2021 13:37",
+		"isActive" : "ct 7/1/2021 13:45",
+		"person" : "ct 7/3/2021 01:52",
+		"reset" : "ct 7/1/2021 14:16",
+		"setInvolvement:to:" : "ct 7/3/2021 01:53",
+		"singleFilterCount" : "ct 7/2/2021 22:30",
+		"worstCaseCost" : "ct 7/1/2021 23:21" } }

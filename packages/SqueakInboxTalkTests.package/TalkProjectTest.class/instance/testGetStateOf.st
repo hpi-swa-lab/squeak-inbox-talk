@@ -3,11 +3,11 @@ testGetStateOf
 
 	self
 		patch: project trunkRepository
-			at: #versionNamed:
-			with: [:this :name | name = 'foo.mcz' ifTrue: [name]];
+			at: #allVersionNames
+			withValue: #('foo' 'baz');
 		patch: project inboxRepository
-			at: #versionNamed:
-			with: [:this :name | name = 'bar.mcz' ifTrue: [name]].
+			at: #allVersionNames
+			withValue: #('bar').
 	
 	self assert: #merged equals: (project getStateOf: 'foo').
 	self assert: #pending equals: (project getStateOf: 'bar')

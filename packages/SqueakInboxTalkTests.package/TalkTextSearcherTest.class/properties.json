@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkTests-Filters",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"searcher" ],
+	"name" : "TalkTextSearcherTest",
+	"pools" : [
+		 ],
+	"super" : "TalkTestCase",
+	"type" : "normal" }

@@ -1,4 +1,8 @@
 *SqueakInboxTalk-UI-browsing
 browse
 
-	^ self version open
+	(Project current uiManager chooseFromLabeledValues: (OrderedDictionary new
+		at: 'View changes' put: [self browseChanges];
+		at: 'Inspect version' put: [self browseVersion];
+		at: 'Inspect contribution' put: [self inspect];
+		yourself)) value

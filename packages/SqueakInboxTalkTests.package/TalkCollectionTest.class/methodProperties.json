@@ -3,5 +3,9 @@
 		 },
 	"instance" : {
 		"setUp" : "ct 6/9/2021 18:34",
+		"testAsGenerator" : "ct 7/7/2021 19:04",
+		"testGroupByAsOf" : "ct 7/7/2021 19:11",
+		"testGroupSequentiallyByThenGather" : "ct 7/7/2021 19:16",
 		"testInsertionSort" : "ct 6/9/2021 18:28",
-		"testInsertionSorted" : "ct 6/9/2021 18:35" } }
+		"testInsertionSorted" : "ct 6/9/2021 18:35",
+		"testSortedByHeavy" : "ct 7/7/2021 19:23" } }

@@ -1,4 +1,4 @@
-accessing - state
+accessing - toolbuilder
 selectedConversationIndex
 
-	^ self conversations indexOf: self selectedConversation
+	^ self conversations indexOf: selectedConversation
