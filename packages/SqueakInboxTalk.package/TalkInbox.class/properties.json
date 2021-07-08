@@ -3,13 +3,14 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"SendHtmlMessages" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"mailingList",
 		"conversationsPerContributions",
 		"downloadRange",
-		"messagesPerContributions" ],
+		"messagesPerContributions",
+		"lastRefreshed" ],
 	"name" : "TalkInbox",
 	"pools" : [
 		 ],

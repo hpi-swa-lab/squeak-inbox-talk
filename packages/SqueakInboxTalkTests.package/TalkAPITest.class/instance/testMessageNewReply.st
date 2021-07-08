@@ -1,7 +1,7 @@
 tests
 testMessageNewReply
 
-	| mail message reply |
+	| mail message reply inbox |
 	self wrapTest: [:block | self resetTalkCachesDuring: block].
 	
 	mail := self mailingList1 allMails detect: [:ea | ea messageId = -3].
@@ -9,10 +9,12 @@ testMessageNewReply
 		patch: mail at: #newReply with: [MailMessage new];
 		patch: mail at: #ccReceivers withValue: #('carbon@co.py').
 	message := self messageClass on: mail.
+	inbox := TalkInbox new.
+	self patch: inbox at: #mailAddress withValue: '1@mails.com'; patch: inbox class at: #sendHtmlMessages withValue: false.
 	self
 		patch: message
 		at: #inbox
-		withValue: (self patch: Object new at: #mailAddress withValue: '1@mails.com').
+		withValue: inbox.
 	self patch: MailSender at: #userEmail withValue: 'sen@d.er'.
 	reply := message newReply.
 	

@@ -2,6 +2,8 @@
 	"class" : {
 		"clearAllCaches" : "ct 5/25/2021 18:46",
 		"on:" : "ct 5/19/2021 20:54",
+		"sendHtmlMessages" : "ct 7/8/2021 18:03",
+		"sendHtmlMessages:" : "ct 7/8/2021 14:07",
 		"squeakDev" : "ct 5/20/2021 18:58" },
 	"instance" : {
 		"allPackageNames" : "ct 7/7/2021 22:19",
@@ -16,6 +18,7 @@
 		"downloadRange:" : "ct 5/25/2021 18:32",
 		"findProjectNamed:" : "ct 5/20/2021 18:54",
 		"initialize" : "ct 5/25/2021 18:32",
+		"lastRefreshed" : "ct 7/8/2021 13:11",
 		"mailAddress" : "ct 5/26/2021 16:43",
 		"mailingList" : "ct 5/7/2021 15:05",
 		"mailingList:" : "ct 5/7/2021 15:05",
@@ -25,9 +28,11 @@
 		"mostRecentConversations" : "ct 5/20/2021 20:41",
 		"nabbleNodeId" : "ct 6/15/2021 19:10",
 		"name" : "ct 5/7/2021 15:22",
+		"newMessage" : "ct 7/8/2021 14:02",
+		"newMessageBodyFor:" : "ct 7/8/2021 15:47",
 		"parseContributionsFrom:" : "ct 5/7/2021 19:46",
 		"parseSqueakSourceContributionFrom:ifFound:" : "ct 5/20/2021 18:54",
 		"printOn:" : "ct 5/7/2021 15:23",
 		"projects" : "ct 6/16/2021 13:09",
-		"refreshMessages" : "ct 6/30/2021 00:43",
+		"refreshMessages" : "ct 7/8/2021 13:11",
 		"squeakSourceMailers" : "ct 5/7/2021 18:44" } }
