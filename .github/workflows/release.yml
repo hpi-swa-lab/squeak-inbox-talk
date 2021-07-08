@@ -8,10 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: benjlevesque/short-sha@v1.2
-        id: short-sha
+      - id: smalltalkci
+        uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-image: Squeak64-Trunk
       - run: ./scripts/create_image.sh
       - run: mv {Squeak*,SqueakInboxTalk-${{ steps.short-sha.outputs.sha }}}.zip
+      - uses: benjlevesque/short-sha@v1.2
+        id: short-sha
       - if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: softprops/action-gh-release@v1
         with:
