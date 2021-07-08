@@ -15,8 +15,7 @@ cd allInOne || exit 1
 sed -i '$s/$/ "$@"/' squeak.sh
 
 # Prepare image (install repository)
-# TODO: do we need to run VM headless?
-./squeak.sh "$script_dir/prepareImage.st"
+./squeak.sh -headless "$script_dir/prepareImage.st"
 
 # Clean up caches
 shopt -s globstar
