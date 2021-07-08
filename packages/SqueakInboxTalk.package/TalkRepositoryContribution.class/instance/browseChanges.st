@@ -13,7 +13,7 @@ browseChanges
 			[1] -> [versionInfo ancestors anyOne]}
 		otherwise: [ | index |
 			index := Project uiManager chooseFromLabeledValues: (versionInfo ancestors collect: [:ancestry | ancestry name -> ancestry] as: OrderedDictionary) title: 'View changes from...'.
-			index = 0 ifTrue: [^ self].
+			(#(0 nil) includes: index) ifTrue: [^ self].
 			index].
 	historyBrowser
 		selection: 1;
