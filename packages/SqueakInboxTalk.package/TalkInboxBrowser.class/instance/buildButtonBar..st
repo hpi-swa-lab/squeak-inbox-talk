@@ -5,6 +5,12 @@ buildButtonBar: aBuilder
 		model: self;
 		layout: #horizontal;
 		children: (OrderedCollection new
+			add: (aBuilder pluggableButtonSpec new
+				model: self;
+				label: 'Contribute';
+				action: #offerContributeMenu;
+				style: #menuButton;
+				yourself);
 			add: (aBuilder pluggableActionButtonSpec new
 				model: self;
 				label: 'Refresh';

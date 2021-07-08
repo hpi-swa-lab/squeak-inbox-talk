@@ -1,4 +1,4 @@
-replying
+sending messages
 newReply
 
 	| receivers ccReceivers bodyString |
@@ -11,5 +11,5 @@ newReply
 		to: (receivers joinSeparatedBy: ', ');
 		cc: (ccReceivers joinSeparatedBy: ', ');
 		subject: self replySubject;
-		body: (MIMEDocument contentType: MIMEDocument contentTypePlainText content: bodyString);
+		body: (self inbox newMessageBodyFor: bodyString);
 		yourself

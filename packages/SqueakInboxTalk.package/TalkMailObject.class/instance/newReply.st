@@ -1,4 +1,4 @@
-replying
+sending messages
 newReply
 
 	^ MailMessage empty
