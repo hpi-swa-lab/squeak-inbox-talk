@@ -30,4 +30,4 @@ shopt -s globstar
 rm -rf ./**/{{package,github}-cache/,\#tmp\#*}
 
 # Write changes back to zip
-zip -ur "$buildAio" .
+zip -u -r "../$buildAio" .
