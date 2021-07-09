@@ -33,7 +33,9 @@
 
 	"Prepare world"
 	(Smalltalk classNamed: #BaselineOfSqueakInboxTalk) new openWelcomeContentsSync.
-	Project current world doOneCycle. "fill caches"
+	"Fill caches"
+	TalkInbox squeakDev contributions do: #state.
+	Project current world doOneCycle.
 
 	"Cleanup, see also post-save step below."
 	oldArchivePath := TalkMailingList aggregatorClass archivePath.
