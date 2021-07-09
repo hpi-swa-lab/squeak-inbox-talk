@@ -4,7 +4,8 @@
 	TranscriptStream redirectToStdOut: true.
 	thisContext insertSender: (Context contextEnsure: [TranscriptStream redirectToStdOut: false]).
 	thisContext insertSender: (Context contextOn: UnhandledError, ProvideAnswerNotification do: [:ex |
-		Transcript showln: (String streamContents: [:stream | ex signalerContext errorReportOn: stream])]).
+		Transcript showln: (String streamContents: [:stream | ex signalerContext errorReportOn: stream]).
+		Smalltalk snapshot: true andQuitWithExitCode: 1]).
 	thisContext
 		insertSender: (Context contextOn: ProgressInitiationException do: [:ex |
 			ex sendNotificationsTo: [:min :max :curr | Transcript showln: ('[Progress] [{1}/{2}:{3}] {4}' format: {curr. min. max. ex messageText})]]);
@@ -32,10 +33,10 @@
 
 	oldArchivePath := TalkMailingList aggregatorClass archivePath.
 	TalkMailingList aggregatorClass archivePath: nil. "maybe not applicable on target host system"
-	TalkMailingList aggregatorClass closeAllStreams.
+	TalkMailingList wrapperClass closeAllStreams.
 ] value.
 
-Smalltalk snapshot: true andQuit: true.
+Smalltalk snapshot: true andQuitWithExitCode: 0.
 
 "Recompute filenames for Squeak History"
 BaselineOfSqueakInboxTalk new initializeSqhPreferences.
