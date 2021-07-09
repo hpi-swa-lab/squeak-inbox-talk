@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"appName" : "ct 5/20/2021 19:04",
-		"appVersionLabel" : "ct 6/11/2021 00:27",
+		"appVersionLabel" : "ct 7/9/2021 02:36",
 		"authorMailAddress" : "ct 5/26/2021 23:54",
 		"defaultFeedbackText" : "ct 5/26/2021 23:59",
 		"defaultInbox" : "ct 5/26/2021 23:41",
@@ -60,7 +60,7 @@
 		"debuggableTextForError:" : "ct 6/30/2021 20:49",
 		"defaultNumberOfConversations" : "ct 5/19/2021 21:11",
 		"dependentAspectsOn:" : "ct 7/2/2021 22:20",
-		"doSelfUpdate" : "ct 5/26/2021 21:11",
+		"doSelfUpdate" : "ct 7/9/2021 02:36",
 		"emptyContents" : "ct 7/7/2021 23:00",
 		"filterLabel" : "ct 7/8/2021 13:18",
 		"filterMenu:" : "ct 7/2/2021 16:08",

@@ -1,4 +1,4 @@
 constants
 appVersionLabel
 
-	^ 'Alpha version'
+	^ 'Beta version'
