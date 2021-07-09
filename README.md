@@ -10,6 +10,8 @@
 A project conducted in the course of the Live Programming Seminar 2021 @ HPI.
 Many thanks to [Marcel Taeumel](https://github.com/marceltaeumel) for his diligent mentoring and advice!
 
+![Squeak Inbox Talk](./assets/SqueakInboxTalk.png)
+
 ## Installation
 
 1. Install the latest Trunk updates for [Squeak](https://squeak.org).
