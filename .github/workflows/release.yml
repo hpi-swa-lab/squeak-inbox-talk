@@ -1,0 +1,39 @@
+name: Release
+
+on: [push, workflow_dispatch]
+
+jobs:
+  create-image:
+    if: github.event.pull_request.draft != true  # #GreenIT
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: smalltalkci
+        uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-image: Squeak64-Trunk
+      - run: ./scripts/create_image.sh
+      - uses: actions/upload-artifact@master
+        with:
+          name: image
+          path: Squeak*.zip
+  release-image:
+    needs: create-image
+    if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - id: date
+        run: echo "::set-output name=date::$(date +'%Y%m%d-%H%M%S')"
+      - uses: actions/download-artifact@master
+        with:
+          name: image
+      - run: mv Squeak*.zip SqueakInboxTalk-${{ steps.date.outputs.date }}.zip
+      - uses: softprops/action-gh-release@v1
+        with:
+          tag_name: untagged-${{ steps.date.outputs.date }}
+          body: ${{ github.event.head_commit.message }}
+          files: SqueakInboxTalk-*.zip
+          fail_on_unmatched_files: true
+          prerelease: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

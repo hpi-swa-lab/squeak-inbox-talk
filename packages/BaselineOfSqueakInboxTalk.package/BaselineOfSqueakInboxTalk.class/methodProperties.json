@@ -3,9 +3,11 @@
 		 },
 	"instance" : {
 		"baseline:" : "ct 5/26/2021 15:41",
+		"initializeSqhPreferences" : "ct 7/8/2021 21:00",
 		"isCI" : "ct 5/26/2021 15:39",
+		"openWelcomeContentsSync" : "ct 7/8/2021 21:00",
 		"postLoad" : "ct 5/26/2021 15:42",
-		"postLoadMailingLists" : "ct 5/26/2021 15:42",
+		"postLoadMailingLists" : "ct 7/8/2021 21:00",
 		"preLoad" : "ct 5/26/2021 13:47",
 		"preLoadCore" : "ct 5/20/2021 18:58",
 		"projectClass" : "ct 5/26/2021 15:29" } }
