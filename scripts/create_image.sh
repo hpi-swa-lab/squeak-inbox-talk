@@ -21,7 +21,7 @@ sed -i '$s/$/ "$@"/' squeak.sh
 if [[ "$CI" == true ]]; then
 	# Add -headless flag to the VM configuration
 	# shellcheck disable=SC2016
-	sed -ie 's/\(exec "${VM}"\)\( "${IMAGE}"\)/\1 -headless\2/' squeak.sh
+	sed -i 's/\(exec "${VM}"\)\( "${IMAGE}"\)/\1 -headless\2/' squeak.sh
 fi
 
 # Prepare image (install repository)
