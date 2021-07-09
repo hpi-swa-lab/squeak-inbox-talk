@@ -2,11 +2,13 @@
 set -e
 
 # Download and extract latest Trunk release
-wget http://files.squeak.org/trunk/
-build="$(grep -P -o '(?<=a href=")Squeak[^<>]*?-64bit(?=\/")' index.html | tail -1)"
+files_server="http://files.squeak.org/trunk"
+files_index="files.html"
+wget -O "$files_index" "$files_server"
+build="$(grep -P -o '(?<=a href=")Squeak[^<>]*?-64bit(?=\/")' "$files_index" | tail -1)"
 buildAio="$build-All-in-One.zip"
-wget "http://files.squeak.org/trunk/$build/$buildAio"
-unzip -d allInOne/ "$buildAio" -x '*.mo'  # skip superfluous local files
+wget "$files_server/$build/$buildAio"
+unzip -d allInOne/ "$buildAio" -x '*.mo'  # skip superfluous local files (optimization)
 
 # Prepare VM execution
 export script_dir

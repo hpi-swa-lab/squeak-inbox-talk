@@ -1,5 +1,6 @@
 | workspacePath oldArchivePath |
 [
+	"Debugging convenience & fail-safety"
 	FileStream startUp: true. "Reload stdio file handles"
 	TranscriptStream redirectToStdOut: true.
 	thisContext insertSender: (Context contextEnsure: [TranscriptStream redirectToStdOut: false]).
@@ -8,7 +9,8 @@
 		Smalltalk snapshot: true andQuitWithExitCode: 1]).
 	thisContext
 		insertSender: (Context contextOn: ProgressInitiationException do: [:ex |
-			ex sendNotificationsTo: [:min :max :curr | Transcript showln: ('[Progress] [{1}/{2}:{3}] {4}' format: {curr. min. max. ex messageText})]]);
+			ex sendNotificationsTo: [:min :max :curr |
+			Transcript showln: ('[Progress] [{1}/{2}:{3}] {4}' format: {curr. min. max. ex messageText})]]);
 		insertSender: (Context contextOn: ProgressNotification do: [:ex |
 			Transcript showln: ('[Progress] {1}' format: {({ex messageText. ex extraParam}) joinSeparatedBy: $|}).
 			ex resume]).
@@ -17,6 +19,7 @@
 	(World submorphOfClass: PreferenceWizardMorph) ifNotNil: #delete.
 	TheWorldMainDockingBar instance closeAllWindows.
 
+	"Install SIT"
 	workspacePath := [| dir |
 		dir := FileDirectory default directoryEntry.
 		[(dir / '.project') exists] whileFalse: [dir := dir containingDirectory].
@@ -28,9 +31,11 @@
 		load.
 	Transcript showln: 'SqueakInboxTalk was installed'.
 
+	"Prepare world"
 	(Smalltalk classNamed: #BaselineOfSqueakInboxTalk) new openWelcomeContentsSync.
 	Project current world doOneCycle. "fill caches"
 
+	"Cleanup, see also post-save step below."
 	oldArchivePath := TalkMailingList aggregatorClass archivePath.
 	TalkMailingList aggregatorClass archivePath: nil. "maybe not applicable on target host system"
 	TalkMailingList wrapperClass closeAllStreams.
