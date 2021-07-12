@@ -6,7 +6,7 @@
     + Guide the user through the Monticello toolset, in the form of an (interactive) tutorial.
     + Wrap the Monticello toolset with another interface that provides a more accurate mapping of the user's workflow.
 
-- [x] As an occasional/one-time contributor (John/Lea), I would like to survey all my pending contributions in SIT, in order to them some contributions forward to eventually being integrated into the trunk.
+- [x] As an occasional/one-time contributor (John/Lea), I would like to survey all my pending contributions in SIT, in order to take some contributions forward to eventually being integrated into the trunk.
   * **Problem:** Currently, you can either check your contributions manually, or you have to subscribe to the global squeak-dev mailing list.
     + The former approach requires manual effort and is prone to human errors.
 	+ The latter approach will confront you with hosts of messages sent every week checking all of which can be a very time-consuming task.
