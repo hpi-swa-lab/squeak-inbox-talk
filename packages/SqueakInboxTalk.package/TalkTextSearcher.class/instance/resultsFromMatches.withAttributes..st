@@ -2,7 +2,9 @@ searching
 resultsFromMatches: originalMatches withAttributes: matchAttributes
 
 	| matches |
-	matches := originalMatches collect: [:match | match withSurroundingLines: self numberOfSurroundingLines].
+	matches := originalMatches sorted: #start ascending.
+	
+	matches := matches collect: [:match | match withSurroundingLines: self numberOfSurroundingLines].
 	
 	matches := matches
 		talkGroupBy: [:match | {match object. match key}]
