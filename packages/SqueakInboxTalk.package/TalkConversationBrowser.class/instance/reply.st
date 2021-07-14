@@ -2,5 +2,5 @@ actions
 reply
 
 	| replyMessage |
-	replyMessage := (self selectedMessage ifNil: [^ self]) newReply.
-	MailComposition openOn: replyMessage
+	replyMessage := (self selectedMessage ifNil: [^ self]) newDecoratedReply.
+	^ (TalkInboxBrowser on: self inbox) editDecoratedMailMessage: replyMessage

@@ -8,7 +8,9 @@ appMenu: menu
 		balloonTextForLastItem: ('enter some basic information about yourself so {1} can help you to find conversations in which you are involved' format: {self appName}).
 	menu
 		add: 'set download range...' action: #setDownloadRange;
-		balloonTextForLastItem: 'specify how many messages to show'.
+		balloonTextForLastItem: 'specify how many messages to show';
+		add: 'edit message signature...' action: #editMessageSignature;
+		balloonTextForLastItem: 'adjust the default signature that will be appended to every message created by you. You can edit or remove the signature before sending a message.'.
 	menu add: 'clear all caches' action: #clearAllCaches.
 	
 	menu addLine.
