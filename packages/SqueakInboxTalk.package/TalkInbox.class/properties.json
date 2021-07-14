@@ -3,6 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"MessageSignature",
 		"SendHtmlMessages" ],
 	"commentStamp" : "",
 	"instvars" : [

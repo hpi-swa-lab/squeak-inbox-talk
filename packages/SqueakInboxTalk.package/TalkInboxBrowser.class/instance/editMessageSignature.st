@@ -1,0 +1,4 @@
+actions
+editMessageSignature
+
+	TalkInbox editMessageSignature.

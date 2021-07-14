@@ -1,4 +1,4 @@
 actions
 newConversation
 
-	MailComposition openOn: self inbox newMessage.
+	self editMailMessage: self inbox newMessage
