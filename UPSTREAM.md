@@ -18,3 +18,4 @@ Besides the achievements in this repository, the work on this project also inclu
 - [hpi-swa/squeak-history#10](https://github.com/hpi-swa/squeak-history/pull/10) (filters for `SqhMailmanAggregator`)
 - [hpi-swa/squeak-history#12](https://github.com/hpi-swa/squeak-history/pull/12) (baseline: make `#loadData` optional by moving it into a separate package)
 - [hpi-swa/squeak-history#13](https://github.com/hpi-swa/squeak-history/pull/13) (fix UTF8 decoding of mails)
+- [hpi-swa/squeak-history#14](https://github.com/hpi-swa/squeak-history/pull/14) (improve archive path dialog)
