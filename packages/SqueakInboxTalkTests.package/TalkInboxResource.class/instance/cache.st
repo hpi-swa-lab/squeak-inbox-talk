@@ -1,4 +1,4 @@
 accessing
 cache
 
-	^ cache copy
+	^ cache collect: #copy
