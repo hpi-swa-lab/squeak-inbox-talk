@@ -47,7 +47,10 @@ Press the <b>{20} button</b> to download the latest messages. You can also fetch
 		'Refresh' asText addAttribute: (PluggableTextAttribute evalBlock: [self refreshMessages]).
 		'window menu {1}' asText
 			addAttribute: (PluggableTextAttribute evalBlock: [self containingWindow offerWindowMenu]);
-			format: {(self containingWindow ifNotNil: #class ifNil: [SystemWindow]) menuBoxImage talkAsText}.
+			format: {
+				Smalltalk isMorphic
+					ifTrue: [(self containingWindow ifNotNil: #class ifNil: [SystemWindow]) menuBoxImage talkAsText]
+					ifFalse: ['']}.
 		'filters' asText addAttribute: (PluggableTextAttribute evalBlock: [self offerFilterMenu]).
 		'Reset filters?' asText addAttribute: (PluggableTextAttribute evalBlock: [self resetAllFilters]).
 		nil.
