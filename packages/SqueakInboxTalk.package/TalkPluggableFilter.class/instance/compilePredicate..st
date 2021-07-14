@@ -4,7 +4,7 @@ compilePredicate: aString
 	| compiledMethod |
 	compiledMethod := Compiler new
 		compiledMethodFor: aString
-		in: (self makeFilterContextFor: TalkConversation basicNew)
+		in: self makeFilterContext
 		to: nil
 		notifying: nil
 		ifFail: [^ false].
