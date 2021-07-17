@@ -2,7 +2,7 @@ initialize-release
 initializeInteractively
 
 	self
-		requestLines: 'What e-mail adresses do you use on the inbox?\Enter one per line.' withCRs
+		requestLines: 'What e-mail addresses do you use on the inbox?\Enter one per line.' withCRs
 		initialAnswer: self mailAddresses
 		ifAccepted: [:newAddresses | self mailAddresses: (OrderedCollection withAll: newAddresses)].
 	
