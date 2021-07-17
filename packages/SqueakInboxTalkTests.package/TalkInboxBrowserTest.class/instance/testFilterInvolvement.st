@@ -3,7 +3,7 @@ testFilterInvolvement
 
 	| person |
 	self wrapTest: [:block | | previousPerson |
-		previousPerson := TalkPerson current.
+		previousPerson := TalkPerson currentOrNil.
 		block ensure: [TalkPerson current: previousPerson]].
 	TalkPerson current: nil.
 	
