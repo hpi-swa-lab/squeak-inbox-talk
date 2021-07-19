@@ -19,46 +19,28 @@ emptyContents
 	
 	^ '<b>{1}</b>
 
-In the last {14}, the {2} community has produced <b>{10} messages</b> and <b>{11} contributions</b> that make up <b>{12} conversations</b> in total.
-Press the <b>{20} button</b> to download the latest messages. You can also fetch older messages by setting the download range from the {21}.
+{2}
 
-<b>This is an early version under ongoing development!</b> Press the {30} button to {31} or {32}. Your support will be highly appreciated!' withCRs talkAsTextFromHtml format: {
+<b>This is an early version under ongoing development!</b> Press the {3} button to {4} or {5}. Your support will be highly appreciated!' talkAsTextFromHtml format: {
 		'Welcome to {1}!' asText
 			addAttribute: (TextKern kern: 0.5);
 			format: {self appName}.
-		self inbox name.
-		nil.
-		nil.
-		nil.
-		nil.
-		nil.
-		nil.
-		nil.
-		self inbox messages size.
-		self inbox contributions size.
-		self inbox conversations size.
-		self conversations size.
-		'{1} days' format: {self inbox downloadRange days}.
-		nil.
-		nil.
-		nil.
-		nil.
-		nil.
-		'Refresh' asText addAttribute: (PluggableTextAttribute evalBlock: [self refreshMessages]).
-		'window menu {1}' asText
-			addAttribute: (PluggableTextAttribute evalBlock: [self containingWindow offerWindowMenu]);
-			format: {
-				Smalltalk isMorphic
-					ifTrue: [(self containingWindow ifNotNil: #class ifNil: [SystemWindow]) menuBoxImage talkAsText]
-					ifFalse: ['']}.
-		'filters' asText addAttribute: (PluggableTextAttribute evalBlock: [self offerFilterMenu]).
-		'Reset filters?' asText addAttribute: (PluggableTextAttribute evalBlock: [self resetAllFilters]).
-		nil.
-		nil.
-		nil.
-		nil.
-		nil.
-		nil.
+		(self allConversations
+			ifEmpty: ['It looks empty here! You could start by pressing the <b>{6} button</b> to download the latest messages. You can also fetch older messages by setting the download range from the {7}.' asTextFromHtml]
+			ifNotEmpty: ['In the last {2}, the {1} community has produced <b>{3} messages</b> and <b>{4} contributions</b> that make up <b>{5} conversations</b> in total.
+Press the <b>{6} button</b> to download the latest messages. You can also fetch older messages by setting the download range from the {7}.' talkAsTextFromHtml]) format: {
+			self inbox name.
+			'{1} days' format: {self inbox downloadRange days}.
+			self inbox messages size.
+			self inbox contributions size.
+			self inbox conversations size.
+			'Refresh' asText addAttribute: (PluggableTextAttribute evalBlock: [self refreshMessages]).
+			'window menu {1}' asText
+				addAttribute: (PluggableTextAttribute evalBlock: [self containingWindow offerWindowMenu]);
+				format: {
+					Smalltalk isMorphic
+						ifTrue: [(self containingWindow ifNotNil: #class ifNil: [SystemWindow]) menuBoxImage talkAsText]
+						ifFalse: ['']}}.
 		self appVersionLabel asText addAttribute: (PluggableTextAttribute evalBlock: [self offerAppMenu]).
 		'install the latest updates' asText addAttribute: (PluggableTextAttribute evalBlock: [self doSelfUpdate]).
 		'leave some feedback' asText addAttribute: (PluggableTextAttribute evalBlock: [self sendFeedback])}
