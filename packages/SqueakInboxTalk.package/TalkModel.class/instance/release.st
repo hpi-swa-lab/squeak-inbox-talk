@@ -1,6 +1,6 @@
 initialize-release
 release
 
-	backgroundWorkers do: [:worker | worker ifNotNil: [worker terminate]].
+	self backgroundWorkers do: #terminate.
 	
 	^ super release
