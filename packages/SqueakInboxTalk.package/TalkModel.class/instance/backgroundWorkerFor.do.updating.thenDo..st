@@ -2,7 +2,7 @@ background workers
 backgroundWorkerFor: aSymbol do: workBlock updating: updateBlock thenDo: uiBlock
 	"Start a background process for aBlock that is associated to aSymbol. After the worker succeeded, run uiBlock in the UI process. If another background worker is running at the beginning, terminate it."
 
-	| lastUpdate updateInterval isUpdating startTime worker |
+	| lastUpdate updateInterval isUpdating startTime worker alive |
 	Smalltalk isMorphic ifFalse: [
 		workBlock cull: updateBlock.
 		uiBlock value.
@@ -15,6 +15,7 @@ backgroundWorkerFor: aSymbol do: workBlock updating: updateBlock thenDo: uiBlock
 	lastUpdate := 0.
 	isUpdating := false.
 	startTime := Time millisecondClockValue.
+	alive := true.
 	
 	worker := nil.
 	worker := backgroundWorkers at: aSymbol put: ([ | result |
@@ -23,10 +24,13 @@ backgroundWorkerFor: aSymbol do: workBlock updating: updateBlock thenDo: uiBlock
 				[
 					(isUpdating not and: [(Time millisecondsSince: lastUpdate) >= updateInterval]) ifTrue: [
 						isUpdating := true.
-						backgroundWorkerUpdateMessages nextPut: [
-							updateBlock value.
+						backgroundWorkerUpdateMessages nextPut: worker -> [
+							alive ifTrue: [updateBlock value].
 							isUpdating := false].
-						lastUpdate := Time millisecondClockValue]]])] ensure: [self stopSteppingForBackgroundWorker: worker].
+						lastUpdate := Time millisecondClockValue]]])] ensure: [
+			alive := false.
+			backgroundWorkerUpdateMessages flushAllSuchThat: [:message | message key == worker].
+			self stopSteppingForBackgroundWorker: worker].
 		Project current addDeferredUIMessage: [
 			updateBlock value.
 			uiBlock cull: result]] newProcess priority: (self backgroundWorkerPriorityFor: aSymbol)).
