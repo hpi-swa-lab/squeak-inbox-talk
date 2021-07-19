@@ -1,4 +1,4 @@
 running
 resetTalkCachesDuring: aBlock
 
-	^ self patchAll: TalkDataView withAllSubclasses at: #cache withValue: Dictionary new during: aBlock
+	^ self patchClass: TalkDataView class at: #cache withValue: Dictionary new during: aBlock

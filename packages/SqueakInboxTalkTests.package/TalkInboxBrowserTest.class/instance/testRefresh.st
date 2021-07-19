@@ -9,4 +9,6 @@ testRefresh
 	
 	self shouldntFail: [browser refreshMessages].
 	self waitWhileBusy.
+	
+	self deny: browser conversations isEmpty.
 	self assert: (browser refreshMessagesHelp asString includesSubstring: (String streamContents: [:stream | DateAndTime now printYMDOn: stream]))
