@@ -3,7 +3,8 @@
 		"ffi" : "ct 7/19/2021 13:09",
 		"findHttpRepository:" : "ct 5/8/2021 16:09",
 		"initialize" : "ct 7/19/2021 17:57",
-		"trunk" : "ct 7/19/2021 13:09" },
+		"trunk" : "ct 7/19/2021 13:09",
+		"vmMaker" : "ct 7/19/2021 13:09" },
 	"instance" : {
 		"allRepositoryNames" : "ct 7/14/2021 21:25",
 		"allVersionNamesFor:" : "ct 6/16/2021 17:35",
