@@ -4,7 +4,7 @@ setDownloadRange
 	| answer range |
 	range := self inbox downloadRange.
 	answer := Project uiManager
-		request: 'When downloading messages, browse as far back as how many days?'
+		request: 'Download messages as far back as how many days...?'
 		initialAnswer: (range ifNotNil: [range days asString] ifNil: [#infinite printString]).
 	answer isEmptyOrNil ifTrue: [^ false].
 	
