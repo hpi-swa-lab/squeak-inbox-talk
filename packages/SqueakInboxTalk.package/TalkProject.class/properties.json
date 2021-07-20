@@ -3,17 +3,16 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"Projects" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"name",
-		"inboxRepository",
-		"trunkRepository",
-		"treatedRepository",
+		"repositories",
+		"repositoryLabels",
 		"repositoryGroup",
 		"allVersionNames" ],
 	"name" : "TalkProject",
 	"pools" : [
-		"TalkProjects" ],
+		 ],
 	"super" : "TalkDataView",
 	"type" : "normal" }

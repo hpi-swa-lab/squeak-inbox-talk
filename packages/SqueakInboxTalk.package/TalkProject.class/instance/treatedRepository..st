@@ -1,4 +1,4 @@
 accessing
-treatedRepository: aRepository
+treatedRepository: anMCRepository
 
-	treatedRepository := aRepository
+	self repositoryNamed: #treated put: anMCRepository

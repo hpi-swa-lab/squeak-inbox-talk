@@ -1,4 +1,4 @@
 accessing
-trunkRepository: aRepository
+trunkRepository: anMCRepository
 
-	trunkRepository := aRepository
+	self repositoryNamed: #trunk put: anMCRepository

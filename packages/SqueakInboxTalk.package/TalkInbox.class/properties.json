@@ -8,8 +8,10 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"mailingList",
-		"conversationsPerContributions",
+		"projects",
+		"nabbleNodeId",
 		"downloadRange",
+		"conversationsPerContributions",
 		"messagesPerContributions",
 		"lastRefreshed" ],
 	"name" : "TalkInbox",

@@ -2,6 +2,7 @@ support
 storeInboxSnapshotAt: index into: selector
 	"
 	self do: [:test | test storeInboxSnapshotAt: 2 into: #expectedInboxProperties2].
+	self do: [:test | test storeInboxSnapshotAt: 3 into: #expectedInboxProperties3].
 	"
 
 	| inbox input |

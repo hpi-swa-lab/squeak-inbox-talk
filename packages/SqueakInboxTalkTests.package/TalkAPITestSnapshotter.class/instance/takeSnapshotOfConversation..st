@@ -3,4 +3,4 @@ takeSnapshotOfConversation: aConversation
 
 	^ self
 		takeSnapshotOfObject: aConversation
-		properties: #(#contributions #hasContributions #inbox #initialMessage #latestDate #messages #nabbleUrl #pipermailUrl #simpleSubject #subject #text)
+		properties: #(#contributions #contributionState #hasContributions #inbox #initialMessage #latestDate #messages #nabbleUrl #pipermailUrl #simpleSubject #subject #text)

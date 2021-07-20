@@ -1,9 +1,10 @@
 accessing
 ffi
 
-	^ TalkProjects at: #ffi ifAbsentPut: [
+	^ Projects at: #ffi ifAbsentPut: [
 		self new
 			name: 'FFI';
 			trunkRepository: (self findHttpRepository: 'http://source.squeak.org/FFI');
-			inboxRepository: (self findHttpRepository: 'http://source.squeak.org/FFIinbox');
+			inboxRepository: (self findHttpRepository: 'http://source.squeak.org/FFIinbox')
+				label: 'FFI Inbox';
 			yourself]

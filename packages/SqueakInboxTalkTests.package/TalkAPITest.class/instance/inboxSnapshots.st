@@ -5,18 +5,21 @@ inboxSnapshots
 		at: (Dictionary new
 				at: #mailingList put: self mailingList1;
 				at: #now put: (DateAndTime fromString: '2020-06-10T00:16+02:00');
+				at: #nabbleNodeId put: 123;
 				yourself)
 			put: (TalkAPITestSnapshotter deserialize: self expectedInboxProperties1);
 		at: (Dictionary new
 				at: #mailingList put: self mailingList1;
 				at: #now put: (DateAndTime fromString: '2020-06-10T00:16+02:00');
 				at: #downloadRange put: 2 weeks;
+				at: #nabbleNodeId put: 456;
 				yourself)
 			put: (TalkAPITestSnapshotter deserialize: self expectedInboxProperties2);
 		at: (Dictionary new
 				at: #mailingList put: self mailingList1;
 				at: #now put: (DateAndTime fromString: '2020-06-10T00:16+02:00');
 				at: #downloadRange put: 180 days;
+				at: #nabbleNodeId put: 789;
 				at: #projects put: (Dictionary new
 					at: #trunkRepository put: #();
 					at: #inboxRepository put: {

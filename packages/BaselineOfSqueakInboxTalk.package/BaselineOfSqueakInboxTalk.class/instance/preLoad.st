@@ -1,4 +1,0 @@
-scripts
-preLoad
-
-	self preLoadCore.
