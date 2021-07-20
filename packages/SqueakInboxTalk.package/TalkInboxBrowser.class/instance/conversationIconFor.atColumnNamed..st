@@ -8,4 +8,4 @@ conversationIconFor: aConversation atColumnNamed: column
 			[#involvementState] -> [TalkPerson hasCurrent ifTrue: [self iconForInvolvementState: aConversation involvementState]]}
 		otherwise: [^ nil].
 	
-	^ (icon scaledToHeight: 12) scaleIconToDisplay
+	^ ((icon ifNil: [^ nil]) scaledIntoFormOfSize: 12) scaleIconToDisplay
