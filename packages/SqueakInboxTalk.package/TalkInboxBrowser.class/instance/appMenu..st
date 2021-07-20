@@ -4,7 +4,7 @@ appMenu: menu
 	menu defaultTarget: self.
 	
 	menu
-		add: 'set user information...' action: #setUserInformation;
+		add: 'edit user information...' action: #editUserInformation;
 		balloonTextForLastItem: ('enter some basic information about yourself so {1} can help you to find conversations in which you are involved' format: {self appName}).
 	menu
 		add: 'set download range...' action: #setDownloadRange;
