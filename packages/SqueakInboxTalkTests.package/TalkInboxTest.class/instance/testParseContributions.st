@@ -14,8 +14,10 @@ testParseContributions
 				yourself)
 			put: {
 				TalkRepositoryContribution
+					inbox: nil
 					project: TalkProject trunk
-					versionName: 'Package-author.mcz' asMCVersionName};
+					versionName: 'Package-author' asMCVersionName};
 		yourself) keysAndValuesDo: [:message :contributions | | inbox |
-		inbox := self classUnderTest new.
+		inbox := self classUnderTest new projects: {
+			TalkProject trunk}.
 		self assert: contributions equals: (inbox parseContributionsFrom: message)]

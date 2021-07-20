@@ -1,4 +1,4 @@
 accessing
 trunkRepository
 
-	^ trunkRepository
+	^ self repositoryNamed: #trunk

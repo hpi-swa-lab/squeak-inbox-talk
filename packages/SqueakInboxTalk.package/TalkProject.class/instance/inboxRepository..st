@@ -1,4 +1,4 @@
 accessing
-inboxRepository: aRepository
+inboxRepository: anMCRepository
 
-	inboxRepository := aRepository
+	self repositoryNamed: #inbox put: anMCRepository

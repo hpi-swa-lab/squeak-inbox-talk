@@ -1,11 +1,12 @@
 contribution parsing
 parseFor: anInbox fromSubject: aString
 
-	| matcher project version |
+	| matcher projectLabel versionName |
 	matcher := RxParser preferredMatcherClass for: self subjectPattern.
 	(matcher matches: aString) ifFalse: [^ nil].
-	project := matcher subexpression: 2.
-	version := matcher subexpression: 3.
+	projectLabel := matcher subexpression: 2.
+	versionName := matcher subexpression: 3.
 	^ self
-		project: (anInbox findProjectNamed: project)
-		versionName: version asMCVersionName
+		inbox: anInbox
+		project: (anInbox projects detect: [:project | project includesLabel: projectLabel])
+		versionName: versionName asMCVersionName

@@ -11,6 +11,7 @@ takeSnapshotOfRepositoryContribution: aContribution
 		#messageText.
 		#package.
 		#project.
+		#repositoryName.
 		#shortSummary.
 		#state.
 		#summary.

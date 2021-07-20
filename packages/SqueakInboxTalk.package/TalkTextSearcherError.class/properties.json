@@ -9,6 +9,6 @@
 		"position" ],
 	"name" : "TalkTextSearcherError",
 	"pools" : [
-		"TalkProjects" ],
+		 ],
 	"super" : "Error",
 	"type" : "normal" }

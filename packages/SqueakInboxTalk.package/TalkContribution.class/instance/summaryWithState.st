@@ -1,4 +1,6 @@
 *SqueakInboxTalk-UI-accessing
 summaryWithState
 
-	^ 'State: {1}\\{2}' withCRs asText format: {self state. self summary}
+	| state |
+	state := self state ifNil: [^ self summary].
+	^ 'State: {1}\\{2}' withCRs asText format: {state. self summary}

@@ -4,7 +4,5 @@ refreshMessages
 	self mailingList updateMessagesFor: self downloadRange.
 	self projects do: #refreshVersions.
 	
-	"Reset caches"
-	conversationsPerContributions := nil.
-	messagesPerContributions := nil.
-	lastRefreshed := DateAndTime now.
+	self resetCaches.
+	lastRefreshed := DateAndTime now

@@ -1,4 +1,4 @@
 accessing
 treatedRepository
 
-	^ treatedRepository
+	^ self repositoryNamed: #treated

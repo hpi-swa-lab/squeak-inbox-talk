@@ -5,4 +5,5 @@ iconForContributionState: aSymbol
 		[nil] -> [ToolIcons blank].
 		[#pending] -> [ToolIcons testOrange].
 		[#merged] -> [ToolIcons testGreen].
-		[#treated] -> [ToolIcons testRed]}
+		[#treated] -> [ToolIcons testRed].
+		[#trunk] -> [ToolIcons testGray]}

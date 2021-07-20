@@ -5,9 +5,12 @@ parseSqueakSourceContributionFrom: aMessage ifFound: contributionBlock
 	(self squeakSourceMailers includes: aMessage author) ifFalse: [^ nil].
 	aMessage subject = 'Daily Commit Log' ifTrue: [^ nil].
 	
-	contribution :=  TalkRepositoryContribution parseFor: self fromSubject: aMessage subject.
+	contribution := TalkRepositoryContribution
+		parseFor: self
+		fromSubject: aMessage subject.
 	contribution ifNil: [
 		"self notify: 'Unknown SqueakSource mail format!'."
-		self flag: #todo. "Support old format where version name is in body"
+		self flag: #todo.
+		"Support old format where version name is in body"
 		^ nil].
 	^ contributionBlock value: contribution
