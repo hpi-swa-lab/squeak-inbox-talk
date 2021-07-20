@@ -6,4 +6,6 @@
 		"levenshteinDistanceTo:" : "ct 6/11/2021 23:53",
 		"matches:ofNGrams:threshold:" : "ct 6/17/2021 17:28",
 		"matchesLevenshtein:maxDistance:" : "ct 6/17/2021 17:26",
-		"talkAsTextFromHtml" : "ct 7/7/2021 18:36" } }
+		"talkAsTextFromHtml" : "ct 7/7/2021 18:36",
+		"talkBeginsWith:caseSensitive:" : "ct 7/20/2021 18:54",
+		"talkWithoutLeading:caseSensitive:" : "ct 7/20/2021 18:54" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkTests-CoreExtensions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TalkStringTest",
+	"pools" : [
+		 ],
+	"super" : "TalkTestCase",
+	"type" : "normal" }
