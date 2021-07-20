@@ -2,7 +2,7 @@
 	"class" : {
 		"christoph" : "ct 7/3/2021 01:11",
 		"cleanUp" : "ct 7/3/2021 02:16",
-		"current" : "ct 7/3/2021 01:31",
+		"current" : "ct 7/20/2021 23:28",
 		"current:" : "ct 7/17/2021 13:01",
 		"currentOrNil" : "ct 7/3/2021 01:46",
 		"hasCurrent" : "ct 7/3/2021 01:50",
@@ -12,10 +12,10 @@
 		"allAuthorInitials:" : "ct 7/3/2021 01:11",
 		"hasMailAddress:" : "ct 7/7/2021 23:29",
 		"initialize" : "ct 7/3/2021 01:45",
-		"initializeInteractively" : "ct 7/17/2021 12:56",
+		"initializeInteractively" : "ct 7/20/2021 23:29",
 		"mailAddresses" : "ct 6/15/2021 14:44",
 		"mailAddresses:" : "ct 6/15/2021 14:44",
 		"names" : "ct 6/15/2021 14:44",
 		"names:" : "ct 6/15/2021 14:45",
 		"primaryAuthorInitials" : "ct 7/3/2021 01:13",
-		"requestLines:initialAnswer:ifAccepted:" : "ct 7/3/2021 01:49" } }
+		"requestLines:initialAnswer:ifAccepted:ifCanceled:" : "ct 7/20/2021 23:28" } }

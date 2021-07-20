@@ -1,4 +1,5 @@
 initialize-release
 assurePerson
 
-	TalkPerson current
+	TalkPerson current.
+	^ self person
