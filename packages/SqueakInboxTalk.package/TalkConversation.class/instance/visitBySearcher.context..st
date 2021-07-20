@@ -6,7 +6,7 @@ visitBySearcher: aTextSearcher context: anObject
 	visitedMessages := OrderedCollection new.
 	self contributions do: [:contribution |
 		children add: contribution.
-		visitedMessages add: contribution message].
+		visitedMessages addAll: contribution messages].
 	(self messages copyWithoutAll: visitedMessages) do: [:message | children add: message].
 	
 	children do: [:ea | aTextSearcher visit: ea context: anObject]
