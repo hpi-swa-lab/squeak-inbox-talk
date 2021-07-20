@@ -3,7 +3,9 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"SelfUpdateWorkingCopy" ],
+		"Icons",
+		"SelfUpdateWorkingCopy",
+		"UseSimpleIcons" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"inbox",
