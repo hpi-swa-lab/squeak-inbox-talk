@@ -16,6 +16,10 @@ appMenu: menu
 	
 	menu addLine.
 	
+	menu add: 'show credits' action: #showCredits.
+	
+	menu addLine.
+	
 	menu
 		add: 'self-update' action: #doSelfUpdate;
 		balloonTextForLastItem: ('download and install the latest updates for {1}' format: {self appName}).
