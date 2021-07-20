@@ -15,6 +15,6 @@
 		"regex" ],
 	"name" : "TalkTextSearcher",
 	"pools" : [
-		"TalkProjects" ],
+		 ],
 	"super" : "TalkFilter",
 	"type" : "normal" }
