@@ -10,8 +10,13 @@ appMenu: menu
 		add: 'set download range...' action: #setDownloadRange;
 		balloonTextForLastItem: 'specify how many messages to show';
 		add: 'edit message signature...' action: #editMessageSignature;
-		balloonTextForLastItem: 'adjust the default signature that will be appended to every message created by you. You can edit or remove the signature before sending a message.'.
+		balloonTextForLastItem: 'adjust the default signature that will be appended to every message created by you. You can edit or remove the signature before sending a message.';
+		add: 'edit preferences' action: #openPreferences.
 	menu add: 'clear all caches' action: #clearAllCaches.
+	
+	menu addLine.
+	
+	menu add: 'show credits' action: #showCredits.
 	
 	menu addLine.
 	

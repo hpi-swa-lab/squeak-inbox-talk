@@ -1,4 +1,4 @@
 sending messages
 textQuoted
 
-	^ self text copyWithRegex: '^' matchesReplacedWith: '> '
+	^ 'On {1}, {2} wrote:\\{3}' withCRs asText format: {self date. self author. self text copyWithRegex: '^' matchesReplacedWith: '> '}

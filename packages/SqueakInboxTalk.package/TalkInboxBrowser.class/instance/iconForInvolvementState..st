@@ -1,8 +1,8 @@
 accessing - toolbuilder
 iconForInvolvementState: aSymbol
 
-	^ (aSymbol caseOf: {
+	^ aSymbol caseOf: {
 		[nil] -> [ToolIcons blank].
-		[#mentioned] -> ['@' asTextMorph imageForm scaledToHeight: 12].
-		[#newReply] -> [MenuIcons smallUndoIcon scaledToHeight: 12].
-		[#lastWord] -> [MenuIcons smallRedoIcon scaledToHeight: 12]}) scaleIconToDisplay
+		[#mentioned] -> ['@' asTextMorph imageForm].
+		[#newReply] -> [MenuIcons smallUndoIcon].
+		[#lastWord] -> [MenuIcons smallRedoIcon]}

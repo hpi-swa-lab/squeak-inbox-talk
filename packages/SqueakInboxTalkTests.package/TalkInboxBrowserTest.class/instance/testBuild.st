@@ -10,16 +10,25 @@ testBuild
 		shouldntFail: [menu imageForm].
 	
 	"Menus"
-	self shouldntFail: [browser addModelItemsToWindowMenu: menu].
-	self shouldntFail: [browser conversationMenu: menu].
-	self patch: browser at: #offerMenu: with: [:this :someBlock | someBlock value: menu].
+	self
+		patch: browser
+		at: #offerMenu:
+		with: [:this :someBlock | self shouldntFail: [(someBlock value: menu copy) imageForm]].
 	self shouldntFail: [browser offerAppMenu].
-	self shouldntFail: [browser offerFilterMenu].
+	self shouldntFail: [browser addModelItemsToWindowMenu: menu].
+	self shouldntFail: [
+		browser offerFilterMenu
+		"without selection"].
+	browser selectConversation: browser conversations first.
+	self shouldntFail: [browser conversationMenu: menu].
+	self shouldntFail: [
+		browser offerFilterMenu
+		"with selection"].
 	
 	"Conversation list"
 	browser conversationColumns withIndexDo: [:column :columnIndex |
 		1 to: browser conversations size do: [:rowIndex |
-			columnIndex = 3 ifFalse: [ | element |
+			(#(#contributionState #involvementState) includes: (browser columnNameAt: columnIndex)) ifFalse: [ | element |
 				element := column at: rowIndex.
 				self assert: element isString.
 				self assert: element notEmpty].
