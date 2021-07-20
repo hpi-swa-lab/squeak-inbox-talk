@@ -7,8 +7,8 @@ newMessageBodyFor: aStringOrText
 		content: aStringOrText.
 	self class sendHtmlMessages ifFalse: [^ plainText].
 	^ MIMEDocument newMultipartAlternative
+		addPart: plainText;
 		addPart: (MIMEDocument
 			contentType: MIMEDocument contentTypeHtml
 			content: aStringOrText asText asStringToHtml);
-		addPart: plainText;
 		yourself
