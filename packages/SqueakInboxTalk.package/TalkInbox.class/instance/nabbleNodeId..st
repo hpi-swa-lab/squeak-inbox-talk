@@ -1,4 +1,4 @@
-accessing - urls
+accessing
 nabbleNodeId: anInteger
 
 	nabbleNodeId := anInteger
