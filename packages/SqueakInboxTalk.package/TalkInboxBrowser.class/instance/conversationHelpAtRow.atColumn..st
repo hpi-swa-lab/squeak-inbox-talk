@@ -5,7 +5,4 @@ conversationHelpAtRow: rowIndex atColumn: columnIndex
 	conversation := self conversations at: rowIndex ifAbsent: [^ nil].
 	conversation = #searching ifTrue: [^ nil].
 	
-	columnIndex = 3 ifTrue: [TalkPerson hasCurrent ifTrue: [^ self helpForInvolvementState: conversation]].
-	
-	Preferences balloonHelpInMessageLists ifFalse: [^ nil].
-	^ conversation messages first text truncateWithElipsisTo: 200
+	^ self conversationHelpFor: conversation atColumnNamed: (self columnNameAt: columnIndex)
