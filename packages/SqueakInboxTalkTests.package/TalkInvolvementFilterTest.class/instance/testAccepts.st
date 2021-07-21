@@ -17,10 +17,6 @@ testAccepts
 			patch: conversation at: #involvementStateFor: withValue: involvementState.
 		
 		filter := self classUnderTest new.
-		self
-			patch: TalkPerson at: #current withValue: TalkPerson basicNew;
-			patch: TalkPerson at: #currentOrNil with: [TalkPerson current].
-		
 		self assert: (filter accepts: conversation).
 		
 		filter
