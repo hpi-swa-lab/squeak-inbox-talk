@@ -3,10 +3,10 @@
 		 },
 	"instance" : {
 		"accepts:" : "ct 7/1/2021 17:23",
+		"enabledOptionsCount" : "ct 7/20/2021 23:59",
 		"filterMenu:for:" : "ct 7/2/2021 17:20",
 		"isActive" : "ct 7/1/2021 17:25",
 		"reset" : "ct 7/1/2021 17:24",
-		"singleFilterCount" : "ct 7/2/2021 22:29",
 		"withContributions" : "ct 7/1/2021 17:23",
 		"withContributions:" : "ct 7/2/2021 17:24",
 		"withContributions:withoutContributions:" : "ct 7/2/2021 17:25",

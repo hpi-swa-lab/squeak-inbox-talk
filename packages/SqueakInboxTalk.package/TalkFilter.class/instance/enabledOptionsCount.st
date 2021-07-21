@@ -1,4 +1,4 @@
 accessing
-singleFilterCount
+enabledOptionsCount
 
 	^ self isActive asBit
