@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"isAbstract" : "ct 7/21/2021 00:45" },
+	"instance" : {
+		"classUnderTest" : "ct 7/21/2021 00:48",
+		"testAccepts" : "ct 7/21/2021 01:00",
+		"testAccessing" : "ct 7/21/2021 00:25",
+		"testReset" : "ct 7/21/2021 00:27" } }

@@ -4,8 +4,8 @@ setUp
 	super setUp.
 	
 	project := self classUnderTest new
-		trunkRepository: (self patch: Object new at: #isValid withValue: true);
-		inboxRepository: (self patch: Object new at: #isValid withValue: true);
+		trunkRepository: (self patchNewAt: #isValid withValue: true);
+		inboxRepository: (self patchNewAt: #isValid withValue: true);
 		yourself.
 	"Avoid side effects to global repository group"
 	self

@@ -1,0 +1,17 @@
+{
+	"category" : "SqueakInboxTalkTests-Filters",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"filter",
+		"contributionFoo1",
+		"contributionBar",
+		"contributionFoo2" ],
+	"name" : "TalkDomainFilterTest",
+	"pools" : [
+		 ],
+	"super" : "TalkTestCase",
+	"type" : "normal" }

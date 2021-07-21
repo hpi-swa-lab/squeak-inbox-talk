@@ -18,6 +18,8 @@
 		"patchClass:at:with:during:" : "ct 5/20/2021 18:55",
 		"patchClass:at:withValue:" : "ct 7/19/2021 13:34",
 		"patchClass:at:withValue:during:" : "ct 7/18/2021 18:02",
+		"patchNewAt:with:" : "ct 7/21/2021 02:16",
+		"patchNewAt:withValue:" : "ct 7/21/2021 02:17",
 		"random" : "ct 6/10/2021 13:27",
 		"randomSeed" : "ct 6/9/2021 18:34",
 		"resetTalkCachesDuring:" : "ct 7/18/2021 18:01",

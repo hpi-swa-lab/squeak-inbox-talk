@@ -5,4 +5,7 @@
 		"classUnderTest" : "ct 6/18/2021 00:38",
 		"searcher" : "ct 6/18/2021 00:39",
 		"setUp" : "ct 6/18/2021 00:39",
-		"testMergeOverlappingMatches" : "ct 7/7/2021 18:34" } }
+		"testAccepts" : "ct 7/21/2021 16:12",
+		"testFilterAccessing" : "ct 7/21/2021 16:11",
+		"testMergeOverlappingMatches" : "ct 7/7/2021 18:34",
+		"testResetFilter" : "ct 7/21/2021 16:11" } }

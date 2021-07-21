@@ -1,5 +1,5 @@
 tests - patching
-testPatchNestedNew
+testPatchNestedAtNew
 
 	| object |
 	object := Object new.

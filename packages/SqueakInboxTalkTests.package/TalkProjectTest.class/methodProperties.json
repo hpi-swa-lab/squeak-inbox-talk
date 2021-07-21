@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"classUnderTest" : "ct 5/20/2021 18:59",
-		"setUp" : "ct 5/20/2021 19:02",
+		"setUp" : "ct 7/21/2021 01:01",
 		"testPrintString" : "ct 5/20/2021 16:15",
 		"testRefreshVersions" : "ct 7/20/2021 23:45",
 		"testRepositoryAccessors" : "ct 7/20/2021 23:47",
