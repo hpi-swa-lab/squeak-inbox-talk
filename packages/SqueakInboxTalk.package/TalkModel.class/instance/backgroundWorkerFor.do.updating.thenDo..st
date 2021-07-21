@@ -29,12 +29,11 @@ backgroundWorkerFor: aSymbol do: workBlock updating: updateBlock thenDo: uiBlock
 							isUpdating := false].
 						lastUpdate := Time millisecondClockValue]]]).
 			Project current addDeferredUIMessage: [
-				alive ifTrue: [
-				updateBlock value.
-				uiBlock cull: result]]] ensure: [
+				(worker environmentAt: #talkEnvironment ifAbsent: []) = true ifFalse: [
+					updateBlock value.
+					uiBlock cull: result]]] ensure: [
 			alive := false.
 			backgroundWorkerUpdateMessages flushAllSuchThat: [:message | message key == worker].
-			self stopSteppingForBackgroundWorker: worker].
-		] newProcess priority: (self backgroundWorkerPriorityFor: aSymbol)).
+			self stopSteppingForBackgroundWorker: worker]] newProcess priority: (self backgroundWorkerPriorityFor: aSymbol)).
 	updateBlock ifNotNil: [self assureSteppingForBackgroundWorker: worker].
 	worker resume
