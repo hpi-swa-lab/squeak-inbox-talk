@@ -1,5 +1,5 @@
 running - timeout
 defaultTimeout
 
-	^ super defaultTimeout + 10
+	^ super defaultTimeout + 15
 	"See #setUp"
