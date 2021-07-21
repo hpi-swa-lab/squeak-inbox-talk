@@ -17,6 +17,10 @@ testAccepts
 			patch: conversation at: #involvementStateFor: withValue: involvementState.
 		
 		filter := self classUnderTest new.
+		self
+			patch: TalkPerson at: #current withValue: TalkPerson basicNew;
+			patch: TalkPerson at: #currentOrNil with: [TalkPerson current].
+		
 		self assert: (filter accepts: conversation).
 		
 		filter
@@ -43,7 +47,10 @@ testAccepts
 		filter
 			reset;
 			setInvolvement: #mentioned to: true.
-		self assert: wasMentioned equals: (filter accepts: conversation) description: '#(#mentioned)'.
+		self
+			assert: (hasParticipated not and: [wasMentioned])
+			equals: (filter accepts: conversation)
+			description: '#(#mentioned)'.
 		
 		filter
 			reset;
@@ -74,7 +81,7 @@ testAccepts
 		
 		filter
 			reset;
-			setInvolvement: #paticipated to: true;
+			setInvolvement: #participated to: true;
 			setInvolvement: #newReplies to: true.
 		self
 			assert: (hasParticipated and: [involvementState = #newReply])
@@ -83,20 +90,20 @@ testAccepts
 		
 		filter
 			reset;
-			setInvolvement: #paticipated to: true;
+			setInvolvement: #participated to: true;
 			setInvolvement: #mentioned to: true.
 		self
-			assert: wasMentioned
+			assert: ((isAuthor not and: [hasParticipated]) or: [wasMentioned])
 			equals: (filter accepts: conversation)
 			description: '#(#participated #mentioned)'.
 		
 		filter
 			reset;
-			setInvolvement: #paticipated to: true;
+			setInvolvement: #participated to: true;
 			setInvolvement: #newReplies to: true;
 			setInvolvement: #mentioned to: true.
 		self
-			assert: ((hasParticipated and: [involvementState = #newReply]) or: [wasMentioned])
+			assert: (involvementState = #newReply or: [hasParticipated not and: [wasMentioned]])
 			equals: (filter accepts: conversation)
 			description: '#(#participated #newReplies #mentioned)'.
 		
@@ -105,6 +112,6 @@ testAccepts
 			setInvolvement: #newReplies to: true;
 			setInvolvement: #mentioned to: true.
 		self
-			assert: (involvementState = #newReply or: [wasMentioned])
+			assert: (involvementState = #newReply or: [hasParticipated not and: [wasMentioned]])
 			equals: (filter accepts: conversation)
 			description: '#(#newReplies #mentioned)']

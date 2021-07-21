@@ -9,11 +9,13 @@ accepts: aConversation
 	
 	((self hasInvolvement: #mentioned)
 		and: [aConversation includesMentionOf: self person]
-		and: [(self hasInvolvement: #participated) ==> [aConversation includesParticipationOf: self person]]) ifTrue: [^ true].
+		and: [((self hasInvolvement: #participated) or: [self hasInvolvement: #author]) not ==> [((aConversation includesAuthor: self person) or: [aConversation includesParticipationOf: self person]) not]]
+		and: [((aConversation includesAuthor: self person) or: [aConversation includesParticipationOf: self person]) ==> [(self hasInvolvement: #newReplies) ==> [(aConversation involvementStateFor: self person) = #newReply]]]) ifTrue: [^ true].
 	
 	((self hasInvolvement: #participated)
 		and: [aConversation includesParticipationOf: self person]
-		and: [(self hasInvolvement: #author) not ==> [(aConversation includesAuthor: self person) not]]) ifTrue: [^ true].
+		and: [(self hasInvolvement: #author) not ==> [(aConversation includesAuthor: self person) not]]
+		and: [(self hasInvolvement: #newReplies) ==> [(aConversation involvementStateFor: self person) = #newReply]]) ifTrue: [^ true].
 	
 	((self hasInvolvement: #newReplies)
 		and: [(aConversation involvementStateFor: self person) = #newReply]
