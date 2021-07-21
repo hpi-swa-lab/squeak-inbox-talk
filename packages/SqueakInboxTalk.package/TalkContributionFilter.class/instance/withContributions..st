@@ -1,4 +1,4 @@
 accessing
 withContributions: aBoolean
 
-	^ self withContributions: aBoolean withoutContributions: aBoolean ==> [self withoutContributions]
+	^ self withContributions: aBoolean withoutContributions: self withoutContributions
