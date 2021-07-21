@@ -1,4 +1,4 @@
-tests
+tests - filtering
 testResetFilter
 
 	| filter |
