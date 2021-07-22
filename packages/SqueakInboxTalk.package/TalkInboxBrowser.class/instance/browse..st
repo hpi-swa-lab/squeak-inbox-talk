@@ -1,4 +1,4 @@
 private
-withSearcherBrowse: talkObject
+browse: talkObject
 
 	^ talkObject browseForSearcher: searchModel copySearcher

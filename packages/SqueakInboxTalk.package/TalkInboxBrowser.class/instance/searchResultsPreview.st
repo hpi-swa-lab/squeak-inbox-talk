@@ -13,7 +13,7 @@ searchResultsPreview
 			assoc value.
 			'read on' asText addAttribute: (PluggableTextAttribute evalBlock: [
 				"text"
-				self withSearcherBrowse: assoc key object
+				self browse: assoc key object
 				"match"])}].
 	
 	"Join results (#joinSeparatedBy: ignores styling)"

@@ -1,4 +1,4 @@
 actions
 openConversation
 
-	(self selectedConversation ifNil: [^ self]) open
+	self browse: (self selectedConversation ifNil: [^ self])
