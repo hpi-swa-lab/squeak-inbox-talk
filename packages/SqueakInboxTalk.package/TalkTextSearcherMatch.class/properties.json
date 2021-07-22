@@ -7,11 +7,11 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"object",
+		"key",
 		"label",
 		"contents",
 		"interval",
-		"originalMatches",
-		"key" ],
+		"originalMatches" ],
 	"name" : "TalkTextSearcherMatch",
 	"pools" : [
 		 ],
