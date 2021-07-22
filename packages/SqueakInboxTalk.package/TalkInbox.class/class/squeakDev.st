@@ -2,6 +2,6 @@ accessing
 squeakDev
 
 	^ (self on: TalkMailingList squeakDev)
-		projects: {TalkProject trunk. TalkProject ffi};
+		projects: {TalkProject trunk. TalkProject ffi}, TalkProject squeakVersions reversed;
 		nabbleNodeId: 45488;
 		yourself
