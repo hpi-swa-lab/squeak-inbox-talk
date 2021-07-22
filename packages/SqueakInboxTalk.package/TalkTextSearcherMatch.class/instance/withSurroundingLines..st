@@ -16,7 +16,8 @@ withSurroundingLines: numberOfLines
 				nextStop = 0]
 			ifNone: [].
 	
-	"Trim whitespace-only lines from the string excerpt"
+	"Trim surrounding whitespace-only lines from the string excerpt"
+	self flag: #magic.
 	whitespaceMatcher := '\s*(^[^\r\n]*\S[^\r\n]*$(.*^[^\r\n]*\S[^\r\n]*$)*)\s*' asRegex.
 	self assert: (whitespaceMatcher matches: (self contents copyFrom: wideStart to: wideStop)).
 	

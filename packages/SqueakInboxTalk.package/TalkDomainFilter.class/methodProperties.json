@@ -2,12 +2,13 @@
 	"class" : {
 		"newFilterSet" : "ct 7/2/2021 22:45" },
 	"instance" : {
-		"accepts:" : "ct 7/1/2021 14:30",
+		"accepts:" : "ct 7/21/2021 00:35",
 		"acceptsContribution:" : "ct 7/1/2021 16:57",
 		"allItems" : "ct 7/1/2021 16:47",
 		"chooseItemsOrCancel:" : "ct 7/1/2021 17:14",
 		"chooseLabel" : "ct 7/1/2021 16:54",
 		"chooseNewItems" : "ct 7/1/2021 16:53",
+		"enabledOptionsCount" : "ct 7/20/2021 23:59",
 		"filterMenu:for:" : "ct 7/2/2021 17:25",
 		"getItemFor:" : "ct 7/1/2021 16:49",
 		"inbox" : "ct 7/1/2021 14:53",
@@ -18,5 +19,4 @@
 		"items:" : "ct 7/1/2021 16:47",
 		"labelForItem:" : "ct 7/1/2021 17:11",
 		"menuLabel" : "ct 7/1/2021 16:52",
-		"reset" : "ct 7/1/2021 16:47",
-		"singleFilterCount" : "ct 7/2/2021 22:30" } }
+		"reset" : "ct 7/1/2021 16:47" } }

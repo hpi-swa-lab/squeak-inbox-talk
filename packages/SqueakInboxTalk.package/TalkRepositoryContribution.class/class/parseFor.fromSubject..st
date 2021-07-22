@@ -8,5 +8,7 @@ parseFor: anInbox fromSubject: aString
 	versionName := matcher subexpression: 3.
 	^ self
 		inbox: anInbox
-		project: (anInbox projects detect: [:project | project includesLabel: projectLabel])
+		project: (anInbox projects detect: [:project | project includesLabel: projectLabel] ifNone: [
+			self notify: ('Unrecognized contribution project: {1}' format: {projectLabel}).
+			^ nil])
 		versionName: versionName asMCVersionName

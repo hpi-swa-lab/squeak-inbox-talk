@@ -1,4 +1,4 @@
-tests
+tests - private
 testMergeOverlappingMatches
 
 	| contents matches mergedMatches patcher |

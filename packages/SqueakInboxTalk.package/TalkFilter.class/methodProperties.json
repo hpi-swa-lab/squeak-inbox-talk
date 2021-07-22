@@ -3,12 +3,12 @@
 		 },
 	"instance" : {
 		"accepts:" : "ct 7/1/2021 13:29",
+		"enabledOptionsCount" : "ct 7/20/2021 23:59",
 		"filter:" : "ct 7/1/2021 22:33",
 		"filterMenu:for:" : "ct 7/1/2021 13:30",
 		"inbox:" : "ct 7/1/2021 22:11",
 		"initialize" : "ct 7/1/2021 13:33",
 		"isActive" : "ct 7/1/2021 13:29",
 		"reset" : "ct 7/1/2021 13:29",
-		"singleFilterCount" : "ct 7/2/2021 22:31",
 		"worstCaseCost" : "ct 7/7/2021 23:19",
 		"worstCaseCostFor:" : "ct 7/1/2021 23:21" } }

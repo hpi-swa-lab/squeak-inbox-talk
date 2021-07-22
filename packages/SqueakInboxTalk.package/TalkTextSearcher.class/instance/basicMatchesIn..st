@@ -15,12 +15,12 @@ basicMatchesIn: aString
 	self matchStrategy ifNil: [^ self matchesForExact: term in: aString].
 	
 	currentString := aString.
-	currentTerm := self term.
 	self matchesCase ifFalse: [currentString := aString asLowercase].
+	
+	self matchStrategy = #bitap ifTrue: [^ self matchesForBitap: self term in: currentString].
+	
+	currentTerm := self term.
 	self matchesWholeWord ifTrue: [currentTerm := ' {1} ' format: {currentTerm}].
-	
-	self matchStrategy = #bitap ifTrue: [^ self matchesForBitap: currentTerm in: currentString].
-	
 	^ self tokensFor: currentTerm in: currentString select: [:token |
 		self matchStrategy caseOf: {
 			[#levenshtein] -> [self matchesLevenshtein: currentTerm in: token].

@@ -3,6 +3,11 @@ testBuild
 	"Mostly a smoke test."
 
 	| menu window |
+	self wrapTest: [:block | | previousPerson |
+		previousPerson := TalkPerson currentOrNil.
+		block ensure: [TalkPerson current: previousPerson]].
+	TalkPerson current: TalkPerson christoph.
+	
 	window := self shouldntFail: [ToolBuilder build: browser].
 	menu := window buildWindowMenu.
 	self
@@ -16,6 +21,7 @@ testBuild
 		with: [:this :someBlock | self shouldntFail: [(someBlock value: menu copy) imageForm]].
 	self shouldntFail: [browser offerAppMenu].
 	self shouldntFail: [browser addModelItemsToWindowMenu: menu].
+	self shouldntFail: [browser offerContributeMenu].
 	self shouldntFail: [
 		browser offerFilterMenu
 		"without selection"].

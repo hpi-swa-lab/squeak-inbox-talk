@@ -3,8 +3,6 @@ testDeserializeAndSnapshot
 
 	| snapshotter snapshot deserialized newSnapshot |
 	snapshotter := TalkTestSnapshotter new.
-	self patch: snapshotter at: #objectDictionaryClass withValue: OrderedDictionary.
-	"guaranteed order for comparison"
 	self
 		patchClass: Point
 		at: #talkTestTestTakeSnapshotFor:

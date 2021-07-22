@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"classUnderTest" : "ct 7/21/2021 01:48",
+		"testAcceptsBlock" : "ct 7/21/2021 01:55",
+		"testAcceptsString" : "ct 7/21/2021 16:06",
+		"testAccessing" : "ct 7/21/2021 01:53",
+		"testReset" : "ct 7/21/2021 01:54" } }
