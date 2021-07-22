@@ -1,4 +1,4 @@
 accessing - toolbuilder
 accept: aString
 
-	self changed: #selectFirstResult
+	self changed: #selectResult
