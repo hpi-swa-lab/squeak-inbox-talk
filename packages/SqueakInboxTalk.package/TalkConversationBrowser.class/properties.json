@@ -7,8 +7,11 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"conversation",
+		"searchModel",
 		"selectedMessage",
-		"searchModel" ],
+		"selectedMatch",
+		"selectedTextInterval",
+		"selectedHeaderTextInterval" ],
 	"name" : "TalkConversationBrowser",
 	"pools" : [
 		 ],
