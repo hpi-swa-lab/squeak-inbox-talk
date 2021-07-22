@@ -1,5 +1,5 @@
 matching - private
-regexMatchesIn: aString
+regexIntervalsIn: aString
 
 	^ Generator on: [:stream |
 		regex matchesIn: aString do: [:match |

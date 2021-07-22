@@ -1,5 +1,5 @@
 matching - private
-matchesForExact: term in: aString
+intervalsForExact: term in: aString
 
 	^ Generator on: [:gen | | index |
 		index := 0.

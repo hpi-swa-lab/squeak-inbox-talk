@@ -1,4 +1,7 @@
 matching
-matchesIn: aStringOrText
+matchesIn: talkObject
+	"Yield a match instance for every occurence in the depths of talkObject."
 
-	^ self partSearchers talkAsGenerator gather: [:searcher | searcher basicMatchesIn: aStringOrText from: nil label: nil isLabelSearchable: false]
+	self hasComplexTerm ifTrue: [^ self partSearchers talkAsGenerator gather: [:searcher | searcher matchesIn: talkObject]].
+	
+	^ Generator on: [:gen | talkObject visitBySearcher: self context: gen]

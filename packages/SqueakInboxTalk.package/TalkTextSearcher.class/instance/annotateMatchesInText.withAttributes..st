@@ -1,11 +1,11 @@
 searching
-annotateMatchesIn: aStringOrText withAttributes: matchAttributes
+annotateMatchesInText: aStringOrText withAttributes: matchAttributes
 
 	| text matches |
 	self isActive ifFalse: [^ aStringOrText].
 	
 	text := aStringOrText asText copy.
-	matches := self matchesIn: text.
+	matches := self matchesInText: text.
 	
 	matches do: [:match | match annotateText: text withAttributes: matchAttributes].
 	

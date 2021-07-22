@@ -12,4 +12,4 @@ testMatchRegex
 		searcher newTerm: 'w[a-z]+'.
 		self
 			assert: (matchPositions collect: [:pair | pair first to: pair first + pair second - 1])
-			equals: ((searcher matchesIn: text) collect: [:match | match interval]) contents]
+			equals: ((searcher matchesInText: text) collect: [:match | match interval]) contents]
