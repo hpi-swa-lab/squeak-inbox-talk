@@ -6,7 +6,7 @@
 		"openOnMessage:" : "ct 6/30/2021 02:09" },
 	"instance" : {
 		"aspectDependencies" : "ct 7/2/2021 17:08",
-		"buildMessageList:" : "ct 5/7/2021 17:57",
+		"buildMessageList:" : "ct 7/22/2021 18:13",
 		"buildReplyButton:" : "ct 5/26/2021 16:09",
 		"buildTextPane:" : "ct 6/30/2021 02:34",
 		"buildWith:" : "ct 5/26/2021 16:09",
@@ -17,6 +17,7 @@
 		"initialize" : "ct 6/30/2021 02:32",
 		"labelString" : "ct 5/8/2021 18:47",
 		"messageColumns" : "ct 5/7/2021 18:22",
+		"messageMenu:" : "ct 7/22/2021 18:14",
 		"messages" : "ct 5/7/2021 18:27",
 		"reply" : "ct 7/14/2021 18:34",
 		"searcher:" : "ct 6/30/2021 02:33",
