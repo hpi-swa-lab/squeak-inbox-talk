@@ -3,6 +3,5 @@ hoverRow: viewIndex
 
 	hoverRow = viewIndex ifTrue: [^ self].
 	hoverRow = 0 ifTrue: [self hoverColumn: 0].
-	listMorphs do: [:listMorph |
-		listMorph rowChanged: hoverRow with: viewIndex].
-	super hoverRow: viewIndex.
+	listMorphs do: [:columnListMorph | columnListMorph rowChanged: columnListMorph with: viewIndex].
+	super hoverRow: viewIndex
