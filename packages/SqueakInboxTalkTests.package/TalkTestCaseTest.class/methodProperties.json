@@ -24,5 +24,6 @@
 		"testRandom" : "ct 6/10/2021 13:40",
 		"testShouldNotChangeDuring" : "ct 6/10/2021 13:26",
 		"testSnapshotAndDeserialize" : "ct 6/10/2021 20:52",
+		"testUnpatchClass" : "ct 7/23/2021 20:51",
 		"testWrapTest" : "ct 6/10/2021 13:30",
 		"withNewCaseDo:" : "ct 7/22/2021 23:27" } }
