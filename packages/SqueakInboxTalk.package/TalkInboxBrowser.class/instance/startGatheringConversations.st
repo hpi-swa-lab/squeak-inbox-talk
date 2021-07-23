@@ -2,6 +2,8 @@ conversation gathering
 startGatheringConversations
 
 	| newConversations |
+	self containingWindow ifNil: [^ self].
+	
 	conversations := newConversations := OrderedCollection with: #searching.
 	self
 		backgroundWorkerFor: #conversations
