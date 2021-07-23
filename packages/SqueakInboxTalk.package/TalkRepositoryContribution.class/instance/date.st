@@ -1,4 +1,4 @@
 accessing
 date
 
-	^ self message date
+	^ self initialMessage date
