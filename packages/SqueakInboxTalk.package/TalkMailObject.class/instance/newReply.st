@@ -5,7 +5,7 @@ newReply
 		to: self replyReceiver;
 		setField: 'in-reply-to' toString: self messageId;
 		setField: 'references' toString: self mailMessage references;
-		flag: #upstream;
+		flag: #moveUpstream;
 		yourself
 	"#references already compiles the new field string"
 	"Maybe we should rename it into sth like #newReferences?"
