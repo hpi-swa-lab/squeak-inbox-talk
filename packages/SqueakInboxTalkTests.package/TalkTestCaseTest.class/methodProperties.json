@@ -17,6 +17,8 @@
 		"testPatchNestedInstances" : "ct 6/10/2021 23:04",
 		"testPatchNew" : "ct 7/21/2021 00:59",
 		"testPatchStably" : "ct 6/10/2021 23:04",
+		"testPatchWithAll" : "ct 7/22/2021 23:24",
+		"testPatchWithAllValues" : "ct 7/22/2021 23:28",
 		"testPatchWithValue" : "ct 6/10/2021 23:04",
 		"testRandom" : "ct 6/10/2021 13:40",
 		"testShouldNotChangeDuring" : "ct 6/10/2021 13:26",
