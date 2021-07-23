@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"mockMenu" : "ct 7/22/2021 21:22",
+		"resetMailingCachesDuring:" : "ct 7/23/2021 19:59",
+		"should:open:" : "ct 7/23/2021 17:19",
+		"shouldntFail:" : "ct 7/22/2021 21:04",
+		"testMenu:" : "ct 7/22/2021 21:27",
+		"testMenus:" : "ct 7/22/2021 21:19",
+		"testTableColumns:elementWithIndicesDo:" : "ct 7/22/2021 21:36",
+		"testWindowFor:" : "ct 7/23/2021 17:32",
+		"waitWhileBusy" : "ct 7/23/2021 19:17" } }

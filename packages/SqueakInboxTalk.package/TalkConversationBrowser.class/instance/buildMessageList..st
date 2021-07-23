@@ -6,4 +6,5 @@ buildMessageList: aBuilder
 		list: #messageColumns;
 		getIndex: #selectedMessageIndex;
 		setIndex: #selectedMessageIndex:;
+		menu: #messageMenu:;
 		yourself

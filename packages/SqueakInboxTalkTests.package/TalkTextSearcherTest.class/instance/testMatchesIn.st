@@ -6,7 +6,7 @@ testMatchesIn
 	object := Object new.
 	
 	matches := (searcher
-		matchesIn: 'CARPE SQUEAK! Squeak is fun!'
+		matchesInText: 'CARPE SQUEAK! Squeak is fun!'
 		from: object
 		label: 'lbl'
 		isLabelSearchable: false) contents.

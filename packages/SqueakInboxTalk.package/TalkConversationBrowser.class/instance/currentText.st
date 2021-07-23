@@ -1,4 +1,6 @@
 accessing - state
 currentText
 
-	^ searchModel annotateMatchesIn: (self text ifNil: [^ nil])
+	searchModel hasSearchError ifTrue: [^ searchModel debuggableErrorText].
+	
+	^ self annotateMatchesIn: (self text ifNil: [^ nil])

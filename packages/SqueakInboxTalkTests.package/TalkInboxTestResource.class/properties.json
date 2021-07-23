@@ -1,0 +1,16 @@
+{
+	"category" : "SqueakInboxTalkTests-Acceptance",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"cache",
+		"inbox",
+		"squeakHistoryCaches" ],
+	"name" : "TalkInboxTestResource",
+	"pools" : [
+		 ],
+	"super" : "TestResource",
+	"type" : "normal" }

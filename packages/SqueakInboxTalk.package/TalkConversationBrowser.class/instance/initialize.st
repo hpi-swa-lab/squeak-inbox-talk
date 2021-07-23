@@ -3,5 +3,5 @@ initialize
 
 	super initialize.
 	
-	searchModel := TalkTextSearchModel new.
+	searchModel := self newSearchModel.
 	searchModel addDependent: self

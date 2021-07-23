@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"classUnderTest" : "ct 7/22/2021 20:56",
+		"mockConversation" : "ct 7/23/2021 17:51",
+		"mockInbox" : "ct 7/23/2021 17:17",
+		"mockMailObject3" : "ct 7/23/2021 16:41",
+		"mockMailSender" : "ct 7/23/2021 20:55",
+		"mockMessage1" : "ct 7/23/2021 16:34",
+		"mockMessage2" : "ct 7/23/2021 16:34",
+		"mockMessage3" : "ct 7/23/2021 16:38",
+		"resources" : "ct 7/22/2021 21:41",
+		"setUp" : "ct 7/23/2021 19:57",
+		"tearDown" : "ct 7/22/2021 21:40",
+		"testBuild" : "ct 7/22/2021 21:39",
+		"testBuildFor:" : "ct 7/23/2021 16:08",
+		"testBuildSqueakDev" : "ct 7/23/2021 19:56",
+		"testNavigate:through:" : "ct 7/23/2021 14:39",
+		"testReply" : "ct 7/23/2021 20:55",
+		"testSearch" : "ct 7/22/2021 23:48",
+		"testSearchAndNavigate" : "ct 7/23/2021 16:19",
+		"testSearchError" : "ct 7/23/2021 16:00" } }

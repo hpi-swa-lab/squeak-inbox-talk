@@ -9,7 +9,10 @@ run: aSymbol with: arguments in: receiver
 						method run: aSymbol with: arguments in: receiver
 						"nested wrappers still require the selector"]
 					ifFalse: [method valueWithReceiver: receiver arguments: arguments]]
-			ifFalse: [receiver perform: aSymbol withArguments: arguments inSuperclass: receiver class superclass]].
+			ifFalse: [
+				(self methodClass superclass lookupSelector: aSymbol)
+					ifNotNil: [:class | receiver perform: aSymbol withArguments: arguments inSuperclass: class methodClass]
+					ifNil: [receiver doesNotUnderstand: (Message selector: aSymbol arguments: arguments)]]].
 	
 	^ block isSymbol
 		ifTrue: [block cull: receiver]

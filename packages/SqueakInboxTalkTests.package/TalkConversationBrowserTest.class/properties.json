@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkTests-Acceptance",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mockInbox" ],
+	"name" : "TalkConversationBrowserTest",
+	"pools" : [
+		 ],
+	"super" : "TalkAcceptanceTestCase",
+	"type" : "normal" }

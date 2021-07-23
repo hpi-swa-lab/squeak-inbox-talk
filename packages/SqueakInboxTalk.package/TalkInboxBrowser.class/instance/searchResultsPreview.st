@@ -4,7 +4,7 @@ searchResultsPreview
 	| matches results |
 	self hasConversationSelected ifFalse: [^ self simpleContents].
 	
-	matches := (searchModel safeMatchesInConversation: self selectedConversation) take: 50.
+	matches := (searchModel safeMatchesIn: self selectedConversation) take: 50.
 	matches := matches copyWithFirst: self selectedConversation previewMatch.
 	
 	results := searchModel annotatedResultsFromMatches: matches.
@@ -13,7 +13,7 @@ searchResultsPreview
 			assoc value.
 			'read on' asText addAttribute: (PluggableTextAttribute evalBlock: [
 				"text"
-				assoc key object browseForSearcher: searchModel copySearcher
+				self browse: assoc key object
 				"match"])}].
 	
 	"Join results (#joinSeparatedBy: ignores styling)"
