@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"bitapSearch:hammingDistance:matchesDo:" : "ct 7/7/2021 19:30",
+		"escapeRegex" : "ct 6/11/2021 12:34",
 		"levenshteinDistanceTo:" : "ct 6/11/2021 23:53",
 		"matches:ofNGrams:threshold:" : "ct 7/21/2021 22:43",
 		"matchesLevenshtein:maxDistance:" : "ct 6/17/2021 17:26",
