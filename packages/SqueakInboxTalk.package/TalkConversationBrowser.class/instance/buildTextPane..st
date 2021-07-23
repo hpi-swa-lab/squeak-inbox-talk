@@ -10,7 +10,7 @@ buildTextPane: aBuilder
 					bottomOffset: self headerHeight;
 					yourself);
 				getText: #headerText;
-				selection: #selectedHeaderTextInterval;
+				selection: #headerSelection;
 				yourself.
 			aBuilder pluggableTextSpec new
 				model: self;
@@ -20,6 +20,6 @@ buildTextPane: aBuilder
 					bottomFraction: 1;
 					yourself);
 				getText: #currentText;
-				selection: #selectedTextInterval;
+				selection: #textSelection;
 				yourself};
 		yourself

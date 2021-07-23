@@ -10,8 +10,8 @@
 		"searchModel",
 		"selectedMessage",
 		"selectedMatch",
-		"selectedTextInterval",
-		"selectedHeaderTextInterval" ],
+		"textSelection",
+		"headerSelection" ],
 	"name" : "TalkConversationBrowser",
 	"pools" : [
 		 ],

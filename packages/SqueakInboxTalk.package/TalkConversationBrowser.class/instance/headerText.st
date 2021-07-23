@@ -1,4 +1,4 @@
-accessing - state
+accessing
 headerText
 
 	| args message |
@@ -13,11 +13,13 @@ headerText
 	
 	^ Text streamContents: [:stream |
 		args associations
-			do: [:keyAndValue |
+			do: [:keyAndValue | | value |
 				stream withAttribute: TextEmphasis bold do: [
 					stream
 						nextPutAll: keyAndValue key;
 						nextPut: $:].
 				stream space.
-				stream nextPutAll: (self annotateMatchesIn: keyAndValue value asStringOrText)]
+				value := keyAndValue value asStringOrText.
+				searchModel hasSearchError ifFalse: [value := self annotateMatchesIn: value].
+				stream nextPutAll: value]
 			separatedBy: [stream cr]]
