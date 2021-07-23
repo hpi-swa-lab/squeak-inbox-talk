@@ -1,4 +1,4 @@
 accessing - toolbuilder
 accept: aString
 
-	self changed: #selectResult
+	self changed: #selectResult with: self currentEventShiftPressed not
