@@ -1,0 +1,4 @@
+accessing
+squeakHistoryCaches
+
+	^ squeakHistoryCaches

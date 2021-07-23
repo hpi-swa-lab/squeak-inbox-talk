@@ -2,8 +2,6 @@ tests
 testClearAllCaches
 
 	| downloadRange informed |
-	self wrapTest: [:block | self isolateCachesDuring: block].
-	
 	self deny: browser conversations isEmpty.
 	downloadRange := browser inbox downloadRange.
 	

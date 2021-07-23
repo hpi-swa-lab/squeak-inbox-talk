@@ -1,14 +1,14 @@
 running
-isolateCachesDuring: aBlock
+resetMailingCachesDuring: aBlock
 
 	| aggregatorClass |
-	(self isClassPatched: browser inbox class theMetaClass at: #cache) ifFalse: [^ self fail: 'Cache is not patched, aborting test to protect image data'].
+	(self isClassPatched: TalkDataView class at: #cache) ifFalse: [^ self fail: 'Cache is not patched, aborting test to protect image data'].
 	
 	aggregatorClass := TalkMailingList aggregatorClass.
 	#(#CachedConversations #CachedMessages #RulesForAuthorKeyNormalizationDerived) do: [:key |
 		thisContext home talkWrap: [:block | | previousValue |
 			previousValue := aggregatorClass classPool at: key.
-			aggregatorClass classPool at: key put: previousValue copy.
+			aggregatorClass classPool at: key put: Dictionary new.
 			block ensure: [aggregatorClass classPool at: key put: previousValue]]].
 	
 	^ self

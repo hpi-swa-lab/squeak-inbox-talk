@@ -3,6 +3,6 @@ setUp
 
 	super setUp.
 	
-	browser := self classUnderTest on: TalkInboxResource current inbox.
-	self patchClass: TalkDataView class at: #cache withValue: TalkInboxResource current cache.
+	browser := self classUnderTest on: TalkInboxTestResource current inbox.
+	TalkInboxTestResource current importCachesFor: self.
 	self waitWhileBusy

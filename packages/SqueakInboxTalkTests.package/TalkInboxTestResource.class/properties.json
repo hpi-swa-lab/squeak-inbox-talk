@@ -7,8 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"cache",
-		"inbox" ],
-	"name" : "TalkInboxResource",
+		"inbox",
+		"squeakHistoryCaches" ],
+	"name" : "TalkInboxTestResource",
 	"pools" : [
 		 ],
 	"super" : "TestResource",

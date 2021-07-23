@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "TalkInboxBrowserTest",
+		"browser" ],
+	"name" : "TalkAcceptanceTestCase",
 	"pools" : [
 		 ],
-	"super" : "TalkAcceptanceTestCase",
+	"super" : "TalkTestCase",
 	"type" : "normal" }
