@@ -2,6 +2,8 @@ tests
 testReply
 
 	| message editor |
+	self mockMailSender.
+	
 	message := browser messages last.
 	browser selectMessage: message.
 	editor := self should: [browser reply] open: MailComposition.
