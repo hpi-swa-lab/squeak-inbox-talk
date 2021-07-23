@@ -20,7 +20,7 @@ buildWith: aBuilder
 			add: ((self buildToggle: aBuilder)
 				label: #matchStrategyAbbreviation;
 				help: #matchStrategyHelp;
-				flag: #upstream;
+				flag: #moveUpstream;
 				action: #offerMatchStrategyMenu;
 				yourself);
 			yourself);

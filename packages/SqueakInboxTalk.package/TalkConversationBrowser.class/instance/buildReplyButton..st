@@ -5,4 +5,5 @@ buildReplyButton: aBuilder
 		model: self;
 		label: 'Reply';
 		action: #reply;
+		enabled: #hasMessageSelected;
 		yourself

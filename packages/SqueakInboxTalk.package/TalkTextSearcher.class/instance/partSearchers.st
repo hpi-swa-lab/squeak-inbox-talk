@@ -1,8 +1,8 @@
 private
 partSearchers
 
-	^ self partTerms collect: [:term |
+	^ self partTerms collect: [:partTerm |
 		self copy
 			hasComplexTerm: false;
-			newTerm: term;
+			newTerm: partTerm;
 			yourself]

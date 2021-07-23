@@ -6,8 +6,7 @@ takeSnapshotOfRepositoryContribution: aContribution
 		#date.
 		#diffText.
 		#latestConversation.
-		#inbox.
-		#message.
+		 #initialMessage. #inbox.
 		#messageText.
 		#package.
 		#project.

@@ -2,7 +2,7 @@ sending messages
 newReply
 
 	| receivers ccReceivers bodyString |
-	receivers := ({self inbox mailAddress. self mail replyReceiver}, self mail receivers) withoutDuplicates.
+	receivers := {self inbox mailAddress. self mail replyReceiver} withoutDuplicates.
 	ccReceivers := self mail ccReceivers.
 	bodyString := '\\{1}' withCRs format: {self textQuoted}.
 	

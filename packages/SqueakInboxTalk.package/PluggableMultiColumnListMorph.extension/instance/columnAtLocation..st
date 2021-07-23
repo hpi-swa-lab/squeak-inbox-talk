@@ -5,5 +5,4 @@ columnAtLocation: aPoint
 	| pointInListMorphCoords |
 	pointInListMorphCoords := (self scroller transformFrom: self) transform: aPoint.
 	
-	^ listMorphs findFirst: [:listMorph |
-		pointInListMorphCoords x between: listMorph left and: listMorph right]
+	^ listMorphs findFirst: [:columnListMorph | pointInListMorphCoords x between: columnListMorph left and: columnListMorph right]

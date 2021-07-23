@@ -20,7 +20,7 @@ testMessageNewReply
 	
 	self
 		assert: 'sen@d.er' equals: reply from;
-		assert: '1@mails.com, pepito.perez@hotmail.com, si-squeak@polan.id' equals: reply to;
+		assert: '1@mails.com, pepito.perez@hotmail.com' equals: reply to;
 		assert: 'carbon@co.py' equals: reply cc;
 		assert: 'Re: What is your favorite language?' equals: reply subject;
 		assert: (reply bodyText endsWith: '> > Is there any simpler programming language than Smalltalk in the world?\> \> How dare you??? It isn''t ... Smalltalk is simple, and simply perfect!!' withCRs)
