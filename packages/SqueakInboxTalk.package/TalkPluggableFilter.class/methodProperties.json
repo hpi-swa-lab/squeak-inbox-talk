@@ -4,7 +4,8 @@
 	"instance" : {
 		"accepts:" : "ct 7/21/2021 01:56",
 		"argumentNameForConversation" : "ct 7/24/2021 00:29",
-		"compilePredicate:" : "ct 7/24/2021 00:22",
+		"compilePredicate:" : "ct 7/24/2021 03:25",
+		"compilerClass" : "ct 7/24/2021 03:25",
 		"defaultPredicate" : "ct 7/24/2021 00:18",
 		"defaultPredicateString" : "ct 7/13/2021 02:00",
 		"editPredicate" : "ct 7/24/2021 00:27",
