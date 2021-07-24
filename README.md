@@ -28,6 +28,8 @@ Many thanks to [Marcel Taeumel](https://github.com/marceltaeumel) for his dilige
 
 Alternatively, you can download the one-click image from the [latest release](https://github.com/hpi-swa-lab/squeak-inbox-talk/releases) and run it with zero installation effort.
 
+For detailed information on how to use the tool - in case this should not be straightforward -, see the [usage documentation](./USAGE.md).
+
 ## Why?
 
 Many Squeakers have experienced the following troubles in the past:
