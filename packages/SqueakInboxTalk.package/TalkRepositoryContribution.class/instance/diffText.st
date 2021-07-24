@@ -1,4 +1,4 @@
-accessing
+accessing - messages
 diffText
 
 	self conversations ifNotEmpty: [ | text diffEnd summaryStart |
