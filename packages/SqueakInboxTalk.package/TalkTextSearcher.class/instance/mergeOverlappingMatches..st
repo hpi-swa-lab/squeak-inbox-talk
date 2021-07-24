@@ -1,5 +1,6 @@
 private
 mergeOverlappingMatches: matches
+	"Merge all overlapping matches from the argument that are in close enough proximity of each other to be displayed in a common result excerpt. Still maintaining the lazy nature of generator streams."
 
 	^ Generator on: [:gen | | mergedMatch |
 		mergedMatch := nil.

@@ -1,0 +1,1 @@
+I represent an online mailing list of the Squeak Foundation. I am a wrapper around the Squeak History project. I overcome the primitive obsession of Squeak History's object design by representing the mailing list data as TalkMailingList, TalkMailConversation, and TalkMailObject instances.

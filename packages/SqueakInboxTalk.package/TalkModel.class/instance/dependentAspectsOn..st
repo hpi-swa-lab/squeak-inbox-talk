@@ -1,6 +1,8 @@
 updating
 dependentAspectsOn: aspect
 
+	self flag: #todo.
+	"Detect cyclic dependencies!"
 	^ self aspectDependencies associations
 		select: [:assoc |
 			assoc value isString ifTrue: [

@@ -1,6 +1,6 @@
 matching
 matchesInText: aStringOrText from: anObject label: label isLabelSearchable: aBoolean
-	"Yield a match instance for every occurence in aStringOrText, decorated with the additional arguments."
+	"Yield a match instance for every occurence in aStringOrText, decorated with the additional arguments. Answer a generator stream that can be iterated in a lazy fashion to retrieve just as match matches as needed."
 
 	| text |
 	self hasComplexTerm ifTrue: [^ self partSearchers talkAsGenerator gather: [:searcher | searcher matchesInText: aStringOrText from: anObject label: label isLabelSearchable: aBoolean]].

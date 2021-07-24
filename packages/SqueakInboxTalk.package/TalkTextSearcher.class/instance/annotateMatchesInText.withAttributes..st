@@ -1,4 +1,4 @@
-searching
+search results
 annotateMatchesInText: aStringOrText withAttributes: matchAttributes
 
 	| text matches |

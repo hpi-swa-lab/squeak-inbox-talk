@@ -1,0 +1,1 @@
+I can filter conversations based on how the current TalkPerson is involved into them. See #allInvolvements.

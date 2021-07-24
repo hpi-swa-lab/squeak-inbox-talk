@@ -1,0 +1,1 @@
+I am a "object as method" wrapper that can be used for monkey-patching via TalkTestCase.

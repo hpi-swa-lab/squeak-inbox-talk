@@ -20,9 +20,7 @@ buildWith: aBuilder
 			add: ((self buildToggle: aBuilder)
 				label: #matchStrategyAbbreviation;
 				help: #matchStrategyHelp;
-				flag: #moveUpstream;
 				action: #offerMatchStrategyMenu;
 				yourself);
 			yourself);
 		yourself
-	"help selector will only be shown if Morphic-ct.1632 is loaded"

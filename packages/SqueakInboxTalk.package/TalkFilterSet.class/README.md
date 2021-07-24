@@ -1,0 +1,1 @@
+I am a composite for many TalkFilter instances. I only accept conversations that are accepted by each of my composed filters.

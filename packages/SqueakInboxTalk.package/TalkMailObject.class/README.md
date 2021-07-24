@@ -1,0 +1,1 @@
+I represent a single e-mail from a TalkMailingList.

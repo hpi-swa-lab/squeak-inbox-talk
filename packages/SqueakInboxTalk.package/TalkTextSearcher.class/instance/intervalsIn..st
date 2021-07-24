@@ -1,11 +1,6 @@
 matching - private
 intervalsIn: aString
-	"Yield an interval for every occurence of the current search term in aString."
-	"Comparative observations:
-	- BITAP - 7 sec, does not detect added/removed chars - 'proces-faitfhul debugging' not found
-	- LEVENSHTEIN - 54 sec
-	- NGRAMS - 51 sec
-	- SOUNDEX - 13 sec, way too imprecise - 'process' sounds like 'project', 'baloon' like 'boolean'"
+	"Yield an interval for every occurence of the current search term in aString. See #fuzzyStrategies for more information."
 
 	| currentString currentTerm |
 	self isActive ifFalse: [^ Generator on: [:gen | gen nextPut: (1 to: aString size)]].

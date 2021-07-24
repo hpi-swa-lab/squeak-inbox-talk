@@ -1,4 +1,4 @@
-instance creation
+instances
 on: aMailObject
 
 	^ self new

@@ -1,0 +1,1 @@
+I am an error that has occured while applying a search term for a TalkTextSearcher.

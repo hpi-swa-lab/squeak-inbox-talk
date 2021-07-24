@@ -1,4 +1,4 @@
-accessing
+accessing - configuration
 projects: aCollection
 
 	projects := aCollection

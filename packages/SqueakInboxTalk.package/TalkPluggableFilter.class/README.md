@@ -1,0 +1,1 @@
+I can filter conversations in an inbox based on a custom expression or evaluable that is passed via #predicate: or #compilePredicate:. So Smalltalkish!

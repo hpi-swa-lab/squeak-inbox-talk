@@ -1,0 +1,1 @@
+I represent a match generated from a TalkTextSearcher for a certain #object with some text #contents at a known #interval.

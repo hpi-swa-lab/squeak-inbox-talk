@@ -1,0 +1,1 @@
+I am an abstract filter that can be used to select a subset of conversations from a stream or collection.

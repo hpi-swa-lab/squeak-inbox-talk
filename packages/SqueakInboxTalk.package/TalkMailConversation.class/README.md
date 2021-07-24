@@ -1,0 +1,1 @@
+I represent a conversation from a TalkMailingList. I consist of at least one TalkMailObject.

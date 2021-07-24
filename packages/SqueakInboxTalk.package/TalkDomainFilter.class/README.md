@@ -1,0 +1,1 @@
+I am an abstract filter to select conversations based on the domain their contributions belong to for an inbox. The determination of domains (which is referred to as items) is implemented by my subclasses.

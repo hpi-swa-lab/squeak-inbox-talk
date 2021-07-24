@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"isAbstract" : "ct 7/24/2021 02:43" },
 	"instance" : {
 		"mockMenu" : "ct 7/22/2021 21:22",
 		"resetMailingCachesDuring:" : "ct 7/23/2021 19:59",

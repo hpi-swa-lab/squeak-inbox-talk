@@ -1,0 +1,1 @@
+I provide access to an initialized TalkInbox with environment. Thanks to the global object pool in TalkDataView, I can provide all pre-initialized artifacts of the inbox by passing this global object pool as a memento/token to client test cases. They just need to ask me #importCachesFor: to do so.

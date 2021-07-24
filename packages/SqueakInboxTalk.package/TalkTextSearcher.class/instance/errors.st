@@ -1,4 +1,4 @@
-accessing
+constants
 errors
 
 	^ self class errors

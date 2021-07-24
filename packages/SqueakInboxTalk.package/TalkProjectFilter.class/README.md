@@ -1,0 +1,1 @@
+I can filter conversations based on the TalkProject their contributions belong to.

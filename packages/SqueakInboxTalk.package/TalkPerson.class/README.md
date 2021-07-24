@@ -1,0 +1,1 @@
+I represent a person that can take part in inboxes and can be identified by names, e-mail addresses, or author initials. Currently, I will be only instantiated for the current user of a tool (see class side #current), but I might be useful for a contributor management system, too, in the future.

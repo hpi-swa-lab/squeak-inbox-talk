@@ -1,4 +1,4 @@
-accessing
+accessing - state
 involvementFor: aPerson
 
 	self contributions ifNotEmpty: [:contributions |

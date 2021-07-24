@@ -1,4 +1,5 @@
 accessing
 messageColumns
 
-	^ {"[:message | message date sitPrintString]. "#author} collect: [:columnBlock | self messages collect: columnBlock]
+	^ {#author} collect: [:columnBlock | "[:message | message date talkPrintString]. "
+	self messages collect: columnBlock]

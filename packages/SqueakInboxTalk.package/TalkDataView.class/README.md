@@ -1,0 +1,3 @@
+I represent a custom view on a partition of a domain object that is identified by my #dataKey. I am the abstract superclass for most domain object classes of SqueakInboxTalk.
+
+My internal object layout is bipartite: First I have some fields that together form my #dataKey. The rest of my state are usually caches only, thus any client that has remembered my instances' keys can discard these instances at any time. My instances have no identity but only equality based on their keys. To preserve the cached state amongst indidual instances, all my subinstances can be shared via a global pool via #cached.

@@ -1,0 +1,1 @@
+I define some special jobs that should be executed on CI.

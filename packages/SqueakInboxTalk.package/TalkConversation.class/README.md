@@ -1,0 +1,1 @@
+I am a conversation of a TalkInbox and consist of a number of TalkMessage instances. Internally, I map from a TalkMailConversation.
