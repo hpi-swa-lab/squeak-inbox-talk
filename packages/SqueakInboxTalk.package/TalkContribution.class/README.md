@@ -1,0 +1,1 @@
+I represent an abstract contribution of a TalkInbox. Subclasses can implement different concrete contribution artifacts.

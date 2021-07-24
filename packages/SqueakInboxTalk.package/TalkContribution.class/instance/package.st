@@ -1,4 +1,4 @@
-accessing
+accessing - contribution
 package
 
 	^ self subclassResponsibility

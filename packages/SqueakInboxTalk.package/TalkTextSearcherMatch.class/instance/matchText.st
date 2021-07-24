@@ -1,4 +1,4 @@
 accessing - text
 matchText
 
-	^ self decorateWithLabel: self basicMatchText
+	^ self withLabelDecorate: self basicMatchText

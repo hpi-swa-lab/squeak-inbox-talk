@@ -5,7 +5,7 @@
 	"classvars" : [
 		"MessageSignature",
 		"SendHtmlMessages" ],
-	"commentStamp" : "",
+	"commentStamp" : "ct 7/24/2021 02:52",
 	"instvars" : [
 		"mailingList",
 		"projects",

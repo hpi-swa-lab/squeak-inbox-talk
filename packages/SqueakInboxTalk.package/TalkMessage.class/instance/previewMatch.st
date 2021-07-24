@@ -1,4 +1,4 @@
-accessing
+searching
 previewMatch
 
 	^ TalkTextSearcher

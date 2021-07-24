@@ -1,0 +1,1 @@
+I display all messages that are contained in a TalkConversation. The user can also search in all messages and open a reply editor from there.

@@ -1,4 +1,4 @@
-accessing
+tests - instance creation
 testStream
 
 	| generator values |

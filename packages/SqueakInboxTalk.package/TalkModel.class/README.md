@@ -1,0 +1,1 @@
+I am the superclass for all Squeak Inbox Talk models. Currently, I have three main facilities: toolbuilder convenience, declarative dependency management (see #aspectDependencies), and asynchronous background workers (see #backgroundWorkerFor:do:updating:thenDo:). Coz no one reads long class comments, browse the relevant methods to learn more about each concept.

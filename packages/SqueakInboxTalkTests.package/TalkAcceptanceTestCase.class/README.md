@@ -1,0 +1,1 @@
+I provide common functionalities for subclasses to do UI and acceptance testing for Squeak Inbox Talk models.

@@ -1,4 +1,4 @@
-accessing
+accessing - contribution
 project
 
 	^ self subclassResponsibility

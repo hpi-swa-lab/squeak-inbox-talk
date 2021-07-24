@@ -1,0 +1,1 @@
+I am a message of a TalkInbox. Internally, I map from a TalkMailObject.

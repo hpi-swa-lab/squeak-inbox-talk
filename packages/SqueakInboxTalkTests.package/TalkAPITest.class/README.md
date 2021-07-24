@@ -1,0 +1,1 @@
+I make some general tests against the domain model of Squeak Inbox Talk. I also contain comprehensive snapshot tests for most Core objects.

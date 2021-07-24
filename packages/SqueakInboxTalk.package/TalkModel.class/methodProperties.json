@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aspectDependencies" : "ct 7/2/2021 17:08",
+		"aspectDependencies" : "ct 7/24/2021 02:07",
 		"assureSteppingForBackgroundWorker:" : "ct 7/13/2021 19:42",
 		"backgroundWorkerFor:do:thenDo:" : "ct 6/16/2021 20:36",
-		"backgroundWorkerFor:do:updating:thenDo:" : "ct 7/21/2021 21:01",
+		"backgroundWorkerFor:do:updating:thenDo:" : "ct 7/24/2021 01:52",
 		"backgroundWorkerFor:ifPresent:ifAbsent:" : "ct 6/30/2021 19:48",
 		"backgroundWorkerPriorityFor:" : "ct 7/2/2021 01:25",
 		"backgroundWorkers" : "ct 7/7/2021 18:09",
@@ -14,7 +14,7 @@
 		"changedAll:" : "ct 7/22/2021 19:15",
 		"changedDependent:" : "ct 7/7/2021 23:45",
 		"defaultWindowColor" : "ct 7/2/2021 16:19",
-		"dependentAspectsOn:" : "ct 7/23/2021 14:12",
+		"dependentAspectsOn:" : "ct 7/24/2021 01:45",
 		"hasBackgroundWorkerFor:" : "ct 6/18/2021 00:51",
 		"initialize" : "ct 7/1/2021 20:40",
 		"instVarNamed:put:ifAbsent:" : "ct 6/10/2021 23:29",

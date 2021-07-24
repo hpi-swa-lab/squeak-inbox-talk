@@ -1,5 +1,6 @@
-searching
+search results
 resultsFromMatches: originalMatches withAttributes: matchAttributes
+	"Answer a collection of contiguous text excerpts containing all of the passed originalMatches, with the matched strings in the text emphasized by the passed matchAttributes. The returned collection is an OrderedDictionary which's key are the original matches."
 
 	| matches |
 	matches := originalMatches sorted: #start ascending.

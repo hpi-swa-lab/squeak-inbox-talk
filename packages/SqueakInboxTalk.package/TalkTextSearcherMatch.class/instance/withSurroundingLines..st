@@ -1,5 +1,6 @@
 copying
 withSurroundingLines: numberOfLines
+	"Answer a new version of the receiver with an extended interval that also reveals some lines of the text contents surrounding the actually matched text."
 
 	| wideStart wideStop whitespaceMatcher |
 	wideStart := self start.

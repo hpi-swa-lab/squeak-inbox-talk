@@ -1,5 +1,5 @@
-updating
+private
 update
+	"Cache. Be aware that this might raise a syntax error."
 
-	"Cache."
 	regex := (self isActive and: [self usesRegex]) ifTrue: [self compileRegex]

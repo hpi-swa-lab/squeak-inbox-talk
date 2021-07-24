@@ -1,0 +1,7 @@
+I am an inbox, the central artifact that SqueakInboxTalk involves. I provide unified access to the different kinds of artifacts that are relevant of the inbox-based development workflow for Squeak projects, i.e., conversations and contributions. Conversations are retrieved from the MailingLists package as original mail artifacts and represented as TalkConversation and TalkMessage instances in this package. Contributions are currently retrieved from Monticello only and are represented as TalkContribution subinstances.
+
+Unlike intended by my superclass, my state is not only bipartite but tripartite, so between key fields and cache fields, I also include some configurational fields. This object design is probably not the optimally suited until all eternity and might be extracted into a separate configuratino class in future. My current trichotomy is also handled specially in my class side's #clearAllCaches method.
+
+My most important accessors are #projects, #messages, and #conversations. My mails can be updated via #refreshMessages. I also provide some additional functionalities such as creating reply e-mails to messages and generating URLs to look up my messages and conversations in online archives of my mailing list.
+
+Visit the GitHub project for further information: <https://github.com/hpi-swa-lab/squeak-inbox-talk>

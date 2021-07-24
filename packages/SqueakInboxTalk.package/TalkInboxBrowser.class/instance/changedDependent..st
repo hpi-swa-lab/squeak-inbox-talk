@@ -3,9 +3,4 @@ changedDependent: aspect
 
 	super changedDependent: aspect.
 	
-	aspect
-		caseOf: {
-			[#contents] -> [
-				(self simpleContents isNil and: [contents isNil]) ifTrue: [
-					self startComputingContents]]}
-		otherwise: []
+	aspect = #contents ifTrue: [self simpleContents ifNil: [self startComputingContents]]
