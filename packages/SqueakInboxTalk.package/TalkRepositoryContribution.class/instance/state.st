@@ -1,4 +1,4 @@
-accessing
+accessing - contribution
 state
 
 	self repositoryName = #inbox ifTrue: [^ #pending].
