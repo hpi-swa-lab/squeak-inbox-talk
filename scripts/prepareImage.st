@@ -6,9 +6,11 @@ TheWorldMainDockingBar instance closeAllWindows.
 "Install SIT"
 workspacePath := [| dir |
 	dir := FileDirectory default directoryEntry.
-	[(dir / '.project') exists] whileFalse: [dir := dir containingDirectory].
+	[(dir / '.project') exists] whileFalse: [
+		dir = (dir := dir containingDirectory) ifTrue: [
+			self error: 'repository not found']].
 	dir fullName] value.
-Transcript show: ('Installing SqueakInboxTalk from {1}... ' format: {workspacePath}).
+Transcript showln: ('Installing SqueakInboxTalk from {1}... ' format: {workspacePath}).
 Metacello new
 	baseline: 'SqueakInboxTalk';
 	repository: 'filetree://' , workspacePath , '/packages';
