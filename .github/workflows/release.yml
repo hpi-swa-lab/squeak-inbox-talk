@@ -8,14 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: LinqLover/create-image@bootstrapping
+      - uses: LinqLover/create-image@v1
+        id: create-image
         with:
           prepare-script: ./scripts/prepareImage.st
           postpare-script: ./scripts/postpareImage.st
       - uses: actions/upload-artifact@master
         with:
           name: image
-          path: Squeak*.zip
+          path: ${{ steps.create-image.outputs.bundle-path }}
   release-image:
     needs: create-image
     if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/main'
