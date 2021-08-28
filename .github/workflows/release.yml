@@ -8,11 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - id: smalltalkci
-        uses: hpi-swa/setup-smalltalkCI@v1
+      - uses: LinqLover/create-image
         with:
-          smalltalk-image: Squeak64-Trunk
-      - run: ./scripts/create_image.sh
+          prepare-script: ./scripts/prepareImage.st
+          postpare-script: ./scripts/postpareImage.st
       - uses: actions/upload-artifact@master
         with:
           name: image
