@@ -5,7 +5,7 @@ TheWorldMainDockingBar instance closeAllWindows.
 
 "Install SIT"
 workspacePath := [| dir |
-	dir := FileDirectory default directoryEntry.
+	dir := (Smalltalk globals at: #CIPrepareImageDirectory) directoryEntry.
 	[(dir / '.project') exists] whileFalse: [
 		dir = (dir := dir containingDirectory) ifTrue: [
 			self error: 'repository not found']].
