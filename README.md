@@ -48,7 +48,7 @@ Basically, Squeak Inbox Talk is implemented by reusing and assembling together t
 
 ## Implementational notes
 
-- This project uses [smalltalkCI](https://github.com/hpi-swa/smalltalkCI).
+- This project is proud to use [smalltalkCI](https://github.com/hpi-swa/smalltalkCI) and the [create-image GitHub action](https://github.com/marketplace/actions/create-image).
 - [`UPSTREAM.md`](./UPSTREAM.md) contains a list of contributions that were made to upstream dependencies of this repository in the context of this project.
 
 ## Further reading
