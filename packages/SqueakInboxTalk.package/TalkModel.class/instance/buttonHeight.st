@@ -1,4 +1,5 @@
 toolbuilder
 buttonHeight
 
-	^ Preferences standardButtonFont height * 2.5
+	"Don't answer #buttonRowHeight to simplify layout for all rows"
+	^ ToolBuilder default inputFieldHeight
