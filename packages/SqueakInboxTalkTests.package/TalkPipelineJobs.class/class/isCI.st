@@ -1,4 +1,4 @@
-testing
+accessing
 isCI
 
 	^ (self environment classNamed: #SmalltalkCI)

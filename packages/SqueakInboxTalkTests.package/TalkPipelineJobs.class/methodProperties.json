@@ -1,6 +1,8 @@
 {
 	"class" : {
-		 },
+		"allTestSelectors" : "ct 10/15/2022 21:24",
+		"isCI" : "ct 10/15/2022 21:23",
+		"testSelectors" : "ct 10/15/2022 21:24" },
 	"instance" : {
 		"badgeGistId" : "ct 5/18/2021 17:58",
 		"gistToken" : "ct 5/18/2021 18:26",
