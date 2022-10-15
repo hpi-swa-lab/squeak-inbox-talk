@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: date
-        run: echo "::set-output name=date::$(date +'%Y%m%d-%H%M%S')"
+        run: echo "date=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
       - uses: actions/download-artifact@master
         with:
           name: image
