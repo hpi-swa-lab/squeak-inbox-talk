@@ -21,7 +21,7 @@ emptyContents
 
 {2}
 
-Press the {3} button to {4} or {5}.' talkAsTextFromHtml format: {
+Press the {3} button to customize this tool, {4} or {5}.' talkAsTextFromHtml format: {
 		'Welcome to {1}!' asText
 			addAttribute: (TextKern kern: 0.5);
 			format: {self appName}.
@@ -35,12 +35,9 @@ Press the <b>{6} button</b> to download the latest messages. You can also fetch 
 			self inbox contributions size.
 			self inbox conversations size.
 			'Refresh' asText addAttribute: (PluggableTextAttribute evalBlock: [self refreshMessages]).
-			'window menu {1}' asText
-				addAttribute: (PluggableTextAttribute evalBlock: [self containingWindow offerWindowMenu]);
-				format: {
-					Smalltalk isMorphic
-						ifTrue: [(self containingWindow ifNotNil: #class ifNil: [SystemWindow]) menuBoxImage talkAsText]
-						ifFalse: ['']}}.
+			'settings menu' asText
+				addAttribute: (PluggableTextAttribute evalBlock: [self offerAppMenu]);
+				yourself}.
 		self appButtonLabel asText addAttribute: (PluggableTextAttribute evalBlock: [self offerAppMenu]).
 		'install the latest updates' asText addAttribute: (PluggableTextAttribute evalBlock: [self doSelfUpdate]).
 		'leave some feedback' asText addAttribute: (PluggableTextAttribute evalBlock: [self sendFeedback])}
