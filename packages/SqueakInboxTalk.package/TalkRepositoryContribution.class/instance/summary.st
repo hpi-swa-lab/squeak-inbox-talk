@@ -1,10 +1,11 @@
 accessing - contribution
 summary
 
-	self conversations ifNotEmpty: [ | matcher |
-		matcher := '^.*={20} Summary ={20}\s+(.*$)' asRegex.
-		matcher
-			matchesIn: self latestConversation initialMessage text
-			do: [:match | ^ matcher subexpression: 2]].
+	self conversations ifNotEmpty: [ | text search index |
+		text := self latestConversation initialMessage text.
+		search := '==================== Summary ===================='.
+		index := (text take: 1000) findString: search.
+		index > 0 ifTrue: [
+			^ (text allButFirst: index + search size) withoutLeadingBlanks]].
 	
 	^ self versionInfo summary
