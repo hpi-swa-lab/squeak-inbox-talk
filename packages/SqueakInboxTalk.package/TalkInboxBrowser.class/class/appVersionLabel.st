@@ -1,4 +1,0 @@
-constants
-appVersionLabel
-
-	^ 'Beta version'

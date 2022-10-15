@@ -40,11 +40,10 @@ buildButtonBar: aBuilder
 			add: aBuilder pluggableSpacerSpec new;
 			add: (aBuilder pluggableActionButtonSpec new
 				model: self;
-				label: self appVersionLabel;
+				label: self appButtonLabel;
 				action: #offerAppMenu;
-				color: #appVersionColor;
 				style: #menuButton;
-				help: 'Hello World!';
+				help: 'Carpe Squeak!';
 				yourself);
 			yourself);
 		yourself

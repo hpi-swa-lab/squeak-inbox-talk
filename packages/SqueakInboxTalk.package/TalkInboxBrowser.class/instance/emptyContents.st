@@ -21,7 +21,7 @@ emptyContents
 
 {2}
 
-<b>This is an early version under ongoing development!</b> Press the {3} button to {4} or {5}. Your support will be highly appreciated!' talkAsTextFromHtml format: {
+Press the {3} button to {4} or {5}.' talkAsTextFromHtml format: {
 		'Welcome to {1}!' asText
 			addAttribute: (TextKern kern: 0.5);
 			format: {self appName}.
@@ -41,6 +41,6 @@ Press the <b>{6} button</b> to download the latest messages. You can also fetch 
 					Smalltalk isMorphic
 						ifTrue: [(self containingWindow ifNotNil: #class ifNil: [SystemWindow]) menuBoxImage talkAsText]
 						ifFalse: ['']}}.
-		self appVersionLabel asText addAttribute: (PluggableTextAttribute evalBlock: [self offerAppMenu]).
+		self appButtonLabel asText addAttribute: (PluggableTextAttribute evalBlock: [self offerAppMenu]).
 		'install the latest updates' asText addAttribute: (PluggableTextAttribute evalBlock: [self doSelfUpdate]).
 		'leave some feedback' asText addAttribute: (PluggableTextAttribute evalBlock: [self sendFeedback])}
