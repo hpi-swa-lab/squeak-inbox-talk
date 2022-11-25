@@ -1,4 +1,4 @@
 caching
 clearAllCaches
 
-	Projects := nil
+	Projects := Dictionary new
