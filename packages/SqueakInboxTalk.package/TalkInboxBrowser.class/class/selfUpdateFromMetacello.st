@@ -1,7 +1,7 @@
 self-updating
 selfUpdateFromMetacello
 
-	(self environment classNamed: #Metacello) new
+	Metacello new
 		baseline: self packageInfo name;
 		repository: self selfUpdateGitHubPath;
 		get;
