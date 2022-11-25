@@ -1,6 +1,7 @@
 initialize-release
 cleanUp: aggressive
 
-	aggressive ifTrue: [Icons := nil].
-	SelfUpdateWorkingCopy := nil.
-	UseSimpleIcons := nil
+	aggressive ifTrue: [
+		SelfUpdateWorkingCopy := nil.
+		UseSimpleIcons := nil].
+	Icons := Dictionary new

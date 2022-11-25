@@ -8,6 +8,7 @@ clearAllCaches
 	allConversations := conversations := #().
 	"Invalidate lists in case clearing gets curtailed."
 	self inbox class clearAllCaches.
+	TalkProject clearAllCaches.
 	
 	allConversations := conversations := #().
 	self changed: #allConversations.
