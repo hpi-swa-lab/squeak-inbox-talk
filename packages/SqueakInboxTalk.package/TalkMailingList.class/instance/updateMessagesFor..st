@@ -25,7 +25,8 @@ updateMessagesFor: downloadRange
 	[
 		aggregator
 			deriveRulesForAuthorKeyNormalization;
-			resetCacheForMailMessages]
+			resetCacheForMailMessages;
+			flag: #optimize "normalization is currently run twice"]
 		on: Warning
 		do: [:ex |
 			(ex messageText includesSubstring: 'author-key normalization is limited')
