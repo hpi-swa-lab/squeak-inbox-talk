@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkTests-MailingLists",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TalkMailObjectTest",
+	"pools" : [
+		 ],
+	"super" : "TalkTestCase",
+	"type" : "normal" }
