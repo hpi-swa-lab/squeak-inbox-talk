@@ -4,3 +4,4 @@ SystemOrganization addCategory: #'SqueakInboxTalkTests-Base'!
 SystemOrganization addCategory: #'SqueakInboxTalkTests-Core'!
 SystemOrganization addCategory: #'SqueakInboxTalkTests-CoreExtensions'!
 SystemOrganization addCategory: #'SqueakInboxTalkTests-Filters'!
+SystemOrganization addCategory: #'SqueakInboxTalkTests-MailingLists'!
