@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 	
-	self downloadRange: self defaultDownloadRange
+	self downloadRange: self defaultDownloadRange.
+	self projects: OrderedCollection new
