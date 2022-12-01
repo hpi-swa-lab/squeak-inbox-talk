@@ -3,6 +3,13 @@ appMenu: menu
 
 	menu defaultTarget: self.
 	
+	(TalkInbox wellKnownInboxes "copyWithout: self inbox")
+		do: [:inbox |
+			menu
+				add: ('browse "{1}"' format: {inbox name})
+				action: [inbox browse]];
+		ifNotEmpty: [menu addLine].
+	
 	menu
 		add: 'edit user information...' action: #editUserInformation;
 		balloonTextForLastItem: ('enter some basic information about yourself so {1} can help you to find conversations in which you are involved' format: {self appName}).

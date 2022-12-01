@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"beginners" : "ct 12/2/2022 00:20",
 		"cleanUp:" : "ct 11/25/2022 20:55",
 		"clearAllCaches" : "ct 7/23/2021 21:21",
 		"decorateMessage:" : "ct 7/9/2021 19:49",
@@ -10,8 +11,10 @@
 		"on:" : "ct 5/19/2021 20:54",
 		"sendHtmlMessages" : "ct 7/8/2021 18:03",
 		"sendHtmlMessages:" : "ct 7/8/2021 14:07",
-		"squeakDev" : "ct 7/22/2021 02:18",
-		"vmDev" : "ct 7/14/2021 21:20" },
+		"squeakDev" : "ct 12/2/2022 00:20",
+		"vmBeginners" : "ct 12/2/2022 00:21",
+		"vmDev" : "ct 12/2/2022 00:20",
+		"wellKnownInboxes" : "ct 12/2/2022 00:25" },
 	"instance" : {
 		"allPackageNames" : "ct 7/7/2021 22:19",
 		"browse" : "ct 5/20/2021 18:58",

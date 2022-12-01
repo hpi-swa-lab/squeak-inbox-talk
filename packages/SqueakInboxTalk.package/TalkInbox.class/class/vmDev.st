@@ -1,5 +1,6 @@
 accessing
 vmDev
+	<talkInbox: 2>
 
 	^ (self on: TalkMailingList vmDev)
 		projects: {TalkProject vmMaker};
