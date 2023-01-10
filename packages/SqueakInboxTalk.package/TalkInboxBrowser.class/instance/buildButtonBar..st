@@ -16,6 +16,7 @@ buildButtonBar: aBuilder
 				label: 'Refresh';
 				action: #refreshMessages;
 				help: #refreshMessagesHelp;
+				color: #refreshMessagesColor;
 				yourself);
 			add: (aBuilder pluggableButtonSpec new
 				model: self;

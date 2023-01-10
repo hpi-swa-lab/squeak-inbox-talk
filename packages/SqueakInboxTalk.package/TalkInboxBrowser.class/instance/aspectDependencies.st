@@ -8,5 +8,6 @@ aspectDependencies
 		at: #contents put: #(#hasSearchError #selectedConversation);
 		at: #filterLabel put: #(#filters);
 		at: #labelString put: #(#inbox);
+		at: #refreshMessagesColor put: #(#allConversations #step);
 		at: #revertChanges put: #(#contents);
 		yourself
