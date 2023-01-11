@@ -1,23 +1,17 @@
 toolbuilder
 buildWith: aBuilder
 
-	| y windowSpec |
-	y := 0.
+	| windowSpec |
 	windowSpec := self buildWindowWith: aBuilder specs: {
 		(LayoutFrame new
 			rightFraction: 1;
-			bottomOffset: (y := y + self buttonHeight);
+			bottomOffset: self buttonHeight;
 			yourself) -> [self buildButtonBar: aBuilder].
 		(LayoutFrame new
 			rightFraction: 1;
-			topOffset: (y := y + 2 px);
-			bottomOffset: (y := y + self buttonHeight);
-			yourself) -> [self buildFilterBar: aBuilder].
-		(LayoutFrame new
-			rightFraction: 1;
+			topOffset: self buttonHeight;
 			bottomFraction: 1 / 2;
-			topOffset: y;
-			yourself) -> [self buildConversationsList: aBuilder].
+			yourself) -> [self buildConversationsPanel: aBuilder].
 		(LayoutFrame new
 			topFraction: 1 / 2;
 			rightFraction: 1;
