@@ -1,1 +1,1 @@
-I represent a set of SqueakSource projects that consists of one or multiple Monticello repositories. A typical project is the Squeak , which consists of a main Trunk repository, an inbox repository, and a treated inbox repository. See my class side for further projects.
+I represent a set of SqueakSource projects that consists of one or multiple Monticello repositories. A typical project is the Squeak project, which consists of a main Trunk repository, an inbox repository, and a treated inbox repository. See my class side for further projects.
