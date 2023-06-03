@@ -3,28 +3,51 @@
 [![Tests](https://github.com/hpi-swa-lab/squeak-inbox-talk/actions/workflows/tests.yml/badge.svg)](https://github.com/hpi-swa-lab/squeak-inbox-talk/actions/workflows/tests.yml)
 [![Coverage Status](https://coveralls.io/repos/github/hpi-swa-lab/squeak-inbox-talk/badge.svg?branch=main)](https://coveralls.io/github/hpi-swa-lab/squeak-inbox-talk)
 [![Open flags](https://shields.io/endpoint?url=https://gist.githubusercontent.com/LinqLover/36dd3c4a155eed5aa7e874415cd60eea/raw/flags%2523refs%2523heads%2523main.json)](https://github.com/hpi-swa-lab/squeak-inbox-talk/search?type=code&l=Smalltalk&q=%22flag%3A+%22)
-[![Release](https://github.com/hpi-swa-lab/squeak-inbox-talk/actions/workflows/release.yml/badge.svg)](https://github.com/hpi-swa-lab/squeak-inbox-talk/actions/workflows/release.yml)
+[![Release](https://github.com/hpi-swa-lab/squeak-inbox-talk/actions/workflows/release.yml/badge.svg)](https://github.com/hpi-swa-lab/squeak-inbox-talk/releases)
 
 > Bringing squeak-dev into your image
 
-A project conducted in the course of the Live Programming Seminar 2021 @ HPI.
+A project originally conducted in the course of the Live Programming Seminar 2021 @ HPI.
 Many thanks to [Marcel Taeumel](https://github.com/marceltaeumel) for his diligent mentoring and advice!
 
 ![Squeak Inbox Talk](./assets/SqueakInboxTalk.png)
 
 ## Installation
 
-1. Install the latest Trunk updates for [Squeak](https://squeak.org).
+Squeak Inbox Talk runs on Squeak 6.0 and newer versions.
+We follow the trunk-based development style of Squeak and strive to deliver full support for the latest Squeak Trunk.
+New features are only supported by the Trunk version of Squeak Inbox Talk.
+Older versions and releases of Squeak will only receive urgent fixes.
 
-2. Open a workspace and evaluate the following:
-   ```smalltalk
-   Metacello new
-   	baseline: 'SqueakInboxTalk';
-   	repository: 'github://hpi-swa-lab/squeak-inbox-talk:main';
-   	load.
-   ```
+### Automatic Installation (recommended)
 
-3. After the installation, choose "Squeak Inbox Talk" from the Apps menu in the main docking bar and click the Refresh button.
+To install and start Squeak Inbox Talk, go to the main docking bar and choose <kbd>Tools</kbd> > <kbd>Squeak Inbox Talk</kbd>.
+
+### Manual Installation
+
+1. Get a [Squeak](https://squeak.org) image (Squeak 6.0 or newer)
+
+2. Install the latest system updates.
+
+3. Open a workspace and evaluate the following:
+
+   - **Squeak Trunk:**
+
+     ```smalltalk
+     Metacello new
+     	baseline: 'SqueakInboxTalk';
+     	repository: 'github://hpi-swa-lab/squeak-inbox-talk:main';
+     	load.
+     ```
+
+   - **Squeak 6.0:**
+
+     ```smalltalk
+     Metacello new
+     	baseline: 'SqueakInboxTalk';
+     	repository: 'github://hpi-swa-lab/squeak-inbox-talk:squeak60';
+     	load.
+     ```
 
 Alternatively, you can download the one-click image from the [latest release](https://github.com/hpi-swa-lab/squeak-inbox-talk/releases) and run it with zero installation effort.
 
