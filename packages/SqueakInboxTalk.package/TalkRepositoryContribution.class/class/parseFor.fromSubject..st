@@ -9,6 +9,5 @@ parseFor: anInbox fromSubject: aString
 	^ self
 		inbox: anInbox
 		project: (anInbox projects detect: [:project | project includesLabel: projectLabel] ifNone: [
-			self notify: ('Unrecognized contribution project: {1}' format: {projectLabel}).
-			^ nil])
+			(TalkUnrecognizedProject signal: projectLabel) ifNil: [^ nil]])
 		versionName: versionName asMCVersionName

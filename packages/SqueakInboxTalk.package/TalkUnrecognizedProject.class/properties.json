@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalk-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"label" ],
+	"name" : "TalkUnrecognizedProject",
+	"pools" : [
+		 ],
+	"super" : "Warning",
+	"type" : "normal" }
