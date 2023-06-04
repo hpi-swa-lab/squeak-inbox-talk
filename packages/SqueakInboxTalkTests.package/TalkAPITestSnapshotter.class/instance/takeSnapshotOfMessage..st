@@ -1,6 +1,6 @@
 snapshotting
-takeSnapshotOfMessage: anInbox
+takeSnapshotOfMessage: aMessage
 
 	^ self
-		takeSnapshotOfObject: anInbox
-		properties: #(#author #contributions #conversation #date #inbox #nabbleUrl #pipermailUrl #replySubject #subject #text)
+		takeSnapshotOfObject: aMessage
+		properties: #(#attachmentNames #author #contributions #conversation #date #inbox #nabbleUrl #pipermailUrl #plainText #rawText #replySubject #richText #subject #text)

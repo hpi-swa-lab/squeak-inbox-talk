@@ -4,7 +4,7 @@ testMessageNewReply
 	| mail message reply inbox |
 	self wrapTest: [:block | self resetTalkCachesDuring: block].
 	
-	mail := self mailingList1 allMails detect: [:ea | ea messageId = -3].
+	mail := self mailingList1 allMails detect: [:ea | ea messageId = 'msg3@email'].
 	self
 		patch: mail at: #newReply with: [MailMessage new];
 		patch: mail at: #ccReceivers withValue: #('carbon@co.py').

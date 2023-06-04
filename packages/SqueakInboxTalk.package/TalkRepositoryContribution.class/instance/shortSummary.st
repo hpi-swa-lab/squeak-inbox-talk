@@ -1,4 +1,4 @@
 accessing - contribution
 shortSummary
 
-	^ self messageText truncateWithElipsisTo: 100
+	^ self messageText asString truncateWithElipsisTo: 100

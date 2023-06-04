@@ -1,32 +1,39 @@
 updating
-updateMessagesFor: downloadRange
+updateMessagesFor: aDurationOrNil
 
-	| minDownloadDate minDownloadMonth aggregator |
-	self wrapperClass closeAllStreams.
+	| timespans aggregator |
+	timespans := Array with:
+		((aDurationOrNil
+			ifNil: [DateAndTime new "zero"]
+			ifNotNil: [DateAndTime now - aDurationOrNil])
+				to: DateAndTime now).
 	
-	minDownloadDate := downloadRange
-		ifNil: [DateAndTime new "min"]
-		ifNotNil: [:duration | DateAndTime now - duration].
 	(self mails collect: #date) ifNotEmpty: [:dates |
-		minDownloadDate := dates min > minDownloadDate
-			ifTrue: [minDownloadDate]
-			ifFalse: [dates max]].
-	minDownloadMonth := minDownloadDate asUTC asMonth.
+		| fullTimespan minDate maxDate |
+		fullTimespan := timespans first.
+		timespans := OrderedCollection new.
+		minDate := dates min.
+		maxDate := (dates reject: [:date | date > DateAndTime now "invalid"]) max.
+		minDate > fullTimespan start ifTrue:
+			[timespans add: (fullTimespan start to: minDate)].
+		timespans add: (maxDate to: fullTimespan end)].
+	
+	self wrapperClass closeAllStreams.
 	
 	aggregator := (self aggregatorClass on: {self name})
 		showProgress: true;
-		dateFilter: [:date | date asMonth >= minDownloadMonth];
+		onlyTimespans: timespans;
 		yourself.
 	
 	aggregator class
 		downloadListNamed: self name
-		forMonthsThat: [:month | month >= minDownloadMonth].
+		forTimespans: timespans.
 	
 	[
 		aggregator
 			deriveRulesForAuthorKeyNormalization;
 			resetCacheForMailMessages;
-			flag: #optimize "normalization is currently run twice"]
+			flag: #performance "ct: We are reading the mbox files twice! Can we optimize this?"]
 		on: Warning
 		do: [:ex |
 			(ex messageText includesSubstring: 'author-key normalization is limited')

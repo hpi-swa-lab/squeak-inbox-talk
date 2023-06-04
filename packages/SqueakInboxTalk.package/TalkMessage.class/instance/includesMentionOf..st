@@ -9,4 +9,4 @@ includesMentionOf: aPerson
 	
 	self flag: #todo.
 	"Remove false positive for ancestor versions in mc announcements?"
-	^ aPerson allAuthorInitials anySatisfy: [:initials | self text includesSubstring: ('-{1}.' format: {initials}) caseSensitive: true]
+	^ aPerson allAuthorInitials anySatisfy: [:initials | self text asString includesSubstring: ('-{1}.' format: {initials}) caseSensitive: true]
