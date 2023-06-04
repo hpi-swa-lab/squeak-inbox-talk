@@ -8,6 +8,6 @@ hyperkittyUrlForMessageId: messageId thread: thread
 		id := id allButFirst allButLast].
 	id := id take: 255.
 	hash := (Base32MimeConverter mimeEncode:
-		(SecureHashAlgorithm new hashMessage: id) asByteArray readStream)
+		(SecureHashAlgorithm new hashMessage: id) talkAsByteArray readStream)
 			contents.
 	^ 'https://lists.squeakfoundation.org/archives/list/{1}@lists.squeakfoundation.org/{2}/{3}/' format: {self name. thread ifTrue: ['thread'] ifFalse: ['message']. hash}
