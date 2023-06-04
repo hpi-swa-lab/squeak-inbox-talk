@@ -2,4 +2,5 @@ private
 resetCaches
 
 	conversationsPerContributions := nil.
-	messagesPerContributions := nil
+	messagesPerContributions := nil.
+	lastRefreshed := nil.
