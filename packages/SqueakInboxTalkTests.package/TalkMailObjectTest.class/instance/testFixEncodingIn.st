@@ -15,6 +15,12 @@ testFixEncodingIn
 	self
 		assert: 'carpe squeak'
 		equals: (ctMail fixEncodingIn: 'carpe squeak').
+	self
+		assert: '�'
+		equals: (ctMail fixEncodingIn: '�').
+	self
+		assert: '} � '
+		equals: (ctMail fixEncodingIn: '} � ').
 	
 	xyzMail := self classUnderTest new.
 	self
