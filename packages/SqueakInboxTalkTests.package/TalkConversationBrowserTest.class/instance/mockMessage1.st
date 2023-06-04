@@ -8,4 +8,5 @@ mockMessage1
 		author: 'mock author 1';
 		date: (DateAndTime fromString: '2021-07-22T20:59');
 		text: 'Mock text 1';
+		plainText: 'Mock text 1';
 		yourself)
