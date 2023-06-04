@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 	
-	searcher := TalkTextSearcher new
+	self setSearcher: TalkTextSearcher new.

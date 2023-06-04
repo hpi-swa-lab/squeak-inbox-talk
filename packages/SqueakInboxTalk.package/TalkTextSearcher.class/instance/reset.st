@@ -1,4 +1,5 @@
 filtering
 reset
 
-	self newTerm: nil
+	self newTerm: nil.
+	self changed.
