@@ -10,7 +10,7 @@ jobs:
       - id: smalltalkci
         uses: hpi-swa/setup-smalltalkCI@v1
         with:
-          smalltalk-image: Squeak64-Trunk
+          smalltalk-image: Squeak64-6.0
       - run: smalltalkci -s ${{ steps.smalltalkci.outputs.smalltalk-image }}
         timeout-minutes: 15
         env:
