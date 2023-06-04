@@ -1,4 +1,4 @@
-tests
+tests - filtering
 testFilterContributions
 
 	self toggleFilter: 'conversations without contributions' to: false.

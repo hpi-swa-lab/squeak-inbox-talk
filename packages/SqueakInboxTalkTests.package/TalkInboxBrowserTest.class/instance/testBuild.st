@@ -1,4 +1,4 @@
-tests
+tests - smoke
 testBuild
 	"Mostly a smoke test."
 

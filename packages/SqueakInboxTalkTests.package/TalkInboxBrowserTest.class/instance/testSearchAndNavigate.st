@@ -1,4 +1,4 @@
-tests
+tests - filtering
 testSearchAndNavigate
 
 	browser searchModel searchTerm: 'hi'.

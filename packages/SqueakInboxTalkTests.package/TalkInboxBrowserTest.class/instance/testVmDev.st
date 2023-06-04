@@ -1,4 +1,4 @@
-tests
+tests - smoke
 testVmDev
 	"seconds"
 	<timeout: 30>

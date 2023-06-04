@@ -1,4 +1,4 @@
-tests
+tests - filtering
 testFilterPackage
 
 	[self toggleFilter: 'contributions to packages*' to: true] valueSupplyingAnswer: {'*packages*'. browser inbox allPackageNames select: [:package | package first asLowercase > $j]}.

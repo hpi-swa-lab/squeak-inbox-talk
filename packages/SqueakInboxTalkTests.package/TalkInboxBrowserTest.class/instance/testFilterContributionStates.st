@@ -1,4 +1,4 @@
-tests
+tests - filtering
 testFilterContributionStates
 
 	self toggleFilter: 'contributions with state merged' to: false.
