@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkTests-CoreExtensions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TalkTimeZoneTest",
+	"pools" : [
+		 ],
+	"super" : "TalkTestCase",
+	"type" : "normal" }

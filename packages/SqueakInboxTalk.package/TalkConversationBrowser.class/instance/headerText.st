@@ -7,8 +7,8 @@ headerText
 	args := OrderedDictionary new
 		at: 'Subject' put: message subject;
 		at: 'From' put: message author;
-		at: 'Date'
-			put: (message date talkPrintString asText addAttribute: (TextInspectIt on: message date));
+		at: 'Date' put: (message date talkPrettyPrintString asText addAttribute:
+			(PluggableTextAttribute evalBlock: [message explainTimezone]));
 		yourself.
 	
 	^ Text streamContents: [:stream |

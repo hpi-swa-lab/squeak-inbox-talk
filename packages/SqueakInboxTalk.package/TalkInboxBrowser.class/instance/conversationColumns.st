@@ -2,7 +2,7 @@ accessing - toolbuilder
 conversationColumns
 
 	^ {
-		[:conversation | conversation latestDate talkPrintString].
+		[:conversation | conversation latestDate talkPrettyPrintString].
 		[:conversation | "contribution state icon"
 		''].
 		[:conversation | self subjectFor: conversation].

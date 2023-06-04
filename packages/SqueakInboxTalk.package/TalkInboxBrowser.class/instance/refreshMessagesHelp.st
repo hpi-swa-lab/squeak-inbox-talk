@@ -1,4 +1,4 @@
 accessing - toolbuilder
 refreshMessagesHelp
 
-	^ 'Download and prepare the latest messages from the mail archive\<b>Last refreshed:</b> {1}' withCRs talkAsTextFromHtml format: {inbox lastRefreshed ifNil: ['never'] ifNotNil: #talkPrintString}
+	^ 'Download and prepare the latest messages from the mail archive<br><b>Last refreshed:</b> {1}' asTextFromHtml format: {inbox lastRefreshed ifNil: ['never'] ifNotNil: #talkPrettyPrintString}
