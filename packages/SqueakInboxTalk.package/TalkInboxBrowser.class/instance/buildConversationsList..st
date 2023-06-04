@@ -10,6 +10,7 @@ buildConversationsList: aBuilder
 		helpItem: #conversationHelpAtRow:atColumn:;
 		menu: #conversationMenu:;
 		doubleClick: #openConversation;
+		keyPress: #conversationsListKey:;
 		columnResizings: #(#shrinkWrap #shrinkWrap #spaceFill #shrinkWrap);
 		itemAlignments: #(#left #left #left #right);
 		itemPaddings: {3 @ 0 extent: 7 @ 0. 0 @ 0. 3 @ 0. 3 @ 0};

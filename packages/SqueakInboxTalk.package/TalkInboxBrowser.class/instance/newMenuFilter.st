@@ -8,7 +8,7 @@ newMenuFilter
 			TalkInvolvementFilter new.
 			TalkDomainFilter newFilterSet.
 			TalkPluggableFilter new};
-		resetLabel: 'reset all filters';
+		resetLabel: 'reset all filters (l)';
 		separateFilters: true;
 		addDependent: self;
 		yourself

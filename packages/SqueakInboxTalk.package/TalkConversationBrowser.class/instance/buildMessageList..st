@@ -7,4 +7,5 @@ buildMessageList: aBuilder
 		getIndex: #selectedMessageIndex;
 		setIndex: #selectedMessageIndex:;
 		menu: #messageMenu:;
+		keyPress: #messageListKey:;
 		yourself
