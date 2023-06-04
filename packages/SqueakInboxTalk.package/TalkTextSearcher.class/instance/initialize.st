@@ -4,6 +4,7 @@ initialize
 	super initialize.
 	
 	self
+		messageTextSelector: self defaultMessageTextSelector;
 		matchStrategy: self defaultMatchStrategy;
 		matchesWholeWord: false;
 		matchesCase: false;

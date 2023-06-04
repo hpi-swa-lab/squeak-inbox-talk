@@ -7,7 +7,7 @@ menu: menu add: label getState: getter setState: setter
 	(setter respondsTo: #receiver) ifFalse: [^ self menu: menu add: label getState: getter setState: [:boolean | setter cull: target cull: boolean]].
 	
 	^ menu addMorphBack: (UpdatingMenuItemMorph new
-		target: [setter value: getter value not];
+		target: [setter cull: getter value not];
 		selector: #value;
 		wordingProvider: ['<{1}>{2}' format: {getter value ifTrue: [#on] ifFalse: [#off]. label value}]
 			wordingSelector: #value;

@@ -1,4 +1,4 @@
-tests
+tests - searching
 testSearchError
 
 	| debugAttribute debugPosition |
@@ -16,4 +16,4 @@ testSearchError
 	browser searchModel searchTerm: '"text 2"'.
 	
 	self deny: browser searchModel hasSearchError.
-	self assert: browser selectedMessage text asString equals: browser currentText asString
+	self assert: browser selectedMessage richText asString equals: browser currentText asString

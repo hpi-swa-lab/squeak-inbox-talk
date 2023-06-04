@@ -1,0 +1,4 @@
+private
+messageTextSelectorForFormat: aSymbol
+
+	^ aSymbol

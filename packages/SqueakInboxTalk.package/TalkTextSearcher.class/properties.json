@@ -7,6 +7,7 @@
 	"commentStamp" : "ct 7/24/2021 00:46",
 	"instvars" : [
 		"term",
+		"messageTextSelector",
 		"matchesCase",
 		"matchesWholeWord",
 		"matchStrategy",

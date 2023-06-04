@@ -5,4 +5,4 @@ visitBySearcher: aTextSearcher context: searchContext
 		propertyValue := (block value: self) asString.
 		aTextSearcher visit: self label: label contents: propertyValue context: searchContext].
 	
-	aTextSearcher visit: self contents: self text context: searchContext
+	aTextSearcher visit: self contents: (self perform: aTextSearcher messageTextSelector) context: searchContext

@@ -4,4 +4,6 @@ initialize
 	super initialize.
 	
 	searchModel := self newSearchModel.
-	searchModel addDependent: self
+	searchModel addDependent: self.
+	
+	self messageFormat: self defaultMessageFormat.

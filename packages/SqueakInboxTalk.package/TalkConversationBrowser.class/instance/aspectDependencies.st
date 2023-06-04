@@ -2,6 +2,8 @@ updating
 aspectDependencies
 
 	^ super aspectDependencies
+		at: #browseAttachmentsColor put: #(selectedMessage);
+		at: #browseAttachmentsLabel put: #(selectedMessage);
 		at: #currentText put: #(#text #hasSearchError);
 		at: #hasMessageSelected put: #(#selectedMessage);
 		at: #headerSelection put: #(#headerText #search);
@@ -9,9 +11,11 @@ aspectDependencies
 		at: #labelString put: #(#conversation);
 		at: #messages put: #(#conversation);
 		at: #messageColumns put: #(#messages);
+		at: #messageFormatColor put: #(#messageFormat selectedMessage);
+		at: #messageFormatLabel put: #(#messageFormat);
 		at: #revertChanges put: #(#currentText);
 		at: #selectedMessageIndex put: #(#selectedMessage);
 		at: #selectedMatch put: #(#search);
-		at: #text put: #(#selectedMessage #search);
+		at: #text put: #(#messageFormat #selectedMessage #search);
 		at: #textSelection put: #(#text);
 		yourself

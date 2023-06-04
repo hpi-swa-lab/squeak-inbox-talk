@@ -1,0 +1,4 @@
+testing
+shouldDecorateButtons
+
+	^ Preferences decorateBrowserButtons

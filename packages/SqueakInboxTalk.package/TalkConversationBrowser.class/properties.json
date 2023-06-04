@@ -3,11 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"DefaultMessageFormat" ],
 	"commentStamp" : "ct 7/24/2021 02:14",
 	"instvars" : [
 		"conversation",
 		"searchModel",
+		"messageFormat",
 		"selectedMessage",
 		"selectedMatch",
 		"textSelection",

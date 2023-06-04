@@ -6,4 +6,6 @@ setUp
 	self selector = #testBuildSqueakDev ifFalse: [self wrapTest: [:block | self resetTalkCachesDuring: block]].
 	
 	browser := self classUnderTest on: self mockConversation.
-	self waitWhileBusy
+	self waitWhileBusy.
+	
+	self wrapTest: [:block | browser class defaultMessageFormat: #richText during: block].

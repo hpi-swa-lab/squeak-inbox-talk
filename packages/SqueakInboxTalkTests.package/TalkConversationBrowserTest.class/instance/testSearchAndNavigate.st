@@ -1,4 +1,4 @@
-tests
+tests - searching
 testSearchAndNavigate
 
 	| navigationSpecs |

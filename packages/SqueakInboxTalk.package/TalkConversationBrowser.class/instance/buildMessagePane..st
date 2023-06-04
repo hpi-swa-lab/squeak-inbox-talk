@@ -1,5 +1,5 @@
 toolbuilder
-buildTextPane: aBuilder
+buildMessagePane: aBuilder
 
 	^ aBuilder pluggablePanelSpec new
 		children: {
