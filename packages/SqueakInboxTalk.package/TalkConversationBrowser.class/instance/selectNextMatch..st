@@ -3,7 +3,7 @@ selectNextMatch: forward
 	"Select the next match for the current search, or the previous one if the boolean forward is set to false"
 
 	| matches firstMatch previousMatch currentMatch |
-	matches := self messages talkAsGenerator gather: [:message | searchModel safeMatchesIn: message].
+	matches := self actualMessages talkAsGenerator gather: [:message | searchModel safeMatchesIn: message].
 	matches := matches
 		talkGroupBy: [:match | match object]
 		thenGather: [:group | group sorted: [:match | #('Subject' 'From' 'Date' nil) indexOf: match label] ascending].

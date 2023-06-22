@@ -1,6 +1,8 @@
 toolbuilder
 messageMenu: menu
 
+	self hasSpecialMessageSelected ifTrue: [^ menu].
+	
 	menu defaultTarget: (self selectedMessage ifNil: [self conversation]).
 	menu
 		add: 'inspect (i)' action: #inspect;

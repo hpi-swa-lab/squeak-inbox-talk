@@ -1,10 +1,10 @@
 tests
 testMessageFormat
 
-	browser selectMessage: browser messages first.
+	browser selectMessage: browser actualMessages first.
 	self assert: browser selectedMessage richText ~= browser selectedMessage plainText.
 	self assert: (browser text printHtmlString includesSubstring: browser selectedMessage richText printHtmlString).
-	self patch: browser messages first at: #attachmentNames withValue: #('attachment.html').
+	self patch: browser actualMessages first at: #attachmentNames withValue: #('attachment.html').
 	self assert: browser hasMessageSelectedWithRichText.
 	
 	browser messageFormat: #plainText.
@@ -14,6 +14,6 @@ testMessageFormat
 	browser messageFormat: #richText.
 	self assert: (browser text asString includesSubstring: browser selectedMessage richText).
 	
-	browser selectMessage: browser messages second.
+	browser selectMessage: browser actualMessages second.
 	self assert: (browser text asString includesSubstring: browser selectedMessage plainText).
 	self deny: browser hasMessageSelectedWithRichText.

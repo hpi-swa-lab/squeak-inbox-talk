@@ -2,6 +2,7 @@ toolbuilder
 messageListKey: aCharacter
 
 	| message |
+	self hasSpecialMessageSelected ifTrue: [^ false].
 	message := self selectedMessage ifNil: [self conversation].
 	aCharacter
 		caseOf:

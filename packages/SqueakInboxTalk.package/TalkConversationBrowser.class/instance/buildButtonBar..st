@@ -9,13 +9,13 @@ buildButtonBar: aBuilder
 				model: self;
 				label: 'Reply';
 				action: #reply;
-				enabled: #hasMessageSelected;
+				enabled: #hasActualMessageSelected;
 				yourself);
 			add: (aBuilder pluggableActionButtonSpec new
 				model: self;
 				label: #browseAttachmentsLabel;
 				action: #browseAttachments;
-				enabled: #hasMessageSelected;
+				enabled: #hasActualMessageSelected;
 				color: #browseAttachmentsColor;
 				yourself);
 			add: aBuilder pluggableSpacerSpec new;

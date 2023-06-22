@@ -9,3 +9,4 @@ setUp
 	self waitWhileBusy.
 	
 	self wrapTest: [:block | browser class defaultMessageFormat: #richText during: block].
+	self wrapTest: [:block | browser class shouldIncludeSmartSummary: false during: block].

@@ -3,7 +3,7 @@ messageFormatHelp
 
 	| help |
 	help := 'Preferred message format'.
-	self hasMessageSelected ifFalse: [^ help].
+	self hasActualMessageSelected ifFalse: [^ help].
 	
 	^ '{1}\\{2}' withCRs format: {help.
 		self hasMessageSelectedWithRichText

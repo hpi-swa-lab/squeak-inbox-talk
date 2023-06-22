@@ -9,13 +9,13 @@ testBuildFor: aConversation
 	"Menus"
 	self testMenu: #messageMenu:.
 	"without selection"
-	browser selectMessage: browser messages first.
+	browser selectMessage: browser actualMessages first.
 	self testMenu: #messageMenu:.
 	"with selection"
 	""
 	"Message list"
 	self testTableColumns: browser messageColumns elementWithIndicesDo: [:element :rowIndex :columnIndex |
-		self assert: element isString.
+		self assert: (element isString or: [element isText]).
 		self assert: element notEmpty].
 	
 	"Text panes"

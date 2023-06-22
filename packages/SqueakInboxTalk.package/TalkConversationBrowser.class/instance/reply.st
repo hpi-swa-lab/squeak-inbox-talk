@@ -2,5 +2,5 @@ actions
 reply
 
 	| replyMessage |
-	replyMessage := (self selectedMessage ifNil: [^ self]) newDecoratedReply.
+	replyMessage := (self selectedActualMessage ifNil: [^ self]) newDecoratedReply.
 	^ (TalkInboxBrowser on: self inbox) editDecoratedMailMessage: replyMessage

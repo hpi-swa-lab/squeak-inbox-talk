@@ -1,8 +1,9 @@
 actions
 browseAttachments
 
-	| attachmentNames uniqueLabels selectedIndex attachment |
-	attachmentNames := (self selectedMessage ifNil: [^ self changed: #flash]) attachmentNames.
+	| message attachmentNames uniqueLabels selectedIndex attachment |
+	message := self selectedActualMessage.
+	attachmentNames := (message ifNil: [^ self changed: #flash]) attachmentNames.
 	
 	attachmentNames ifEmpty: [^ self inform: 'This message has no attachments.'].
 	
@@ -18,5 +19,5 @@ browseAttachments
 	
 	selectedIndex := Project uiManager chooseFrom: uniqueLabels title: 'Attachments'.
 	selectedIndex = 0 ifTrue: [^ self].
-	attachment := self selectedMessage attachmentAt: selectedIndex.
+	attachment := message attachmentAt: selectedIndex.
 	^ attachment view
