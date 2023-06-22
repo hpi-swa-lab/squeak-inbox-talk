@@ -1,0 +1,5 @@
+private
+unwantedAuthorInitials
+	"deadnames"
+
+	^ #(bf)

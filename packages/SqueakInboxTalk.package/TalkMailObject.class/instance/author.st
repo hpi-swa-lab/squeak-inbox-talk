@@ -1,4 +1,4 @@
 accessing
 author
 
-	^ self wrapper mailAddress
+	^ self authorMailAddress
