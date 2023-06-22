@@ -77,4 +77,5 @@ Basically, Squeak Inbox Talk is implemented by reusing and assembling together t
 ## Further reading
 
 - [Official announcement thread on the squeak-dev mailing list](http://forum.world.st/ANN-Squeak-Inbox-Talk-bringing-squeak-dev-into-your-image-td5130575.html) ([mirror on lists.squeakfoundation.org](http://lists.squeakfoundation.org/pipermail/squeak-dev/2021-July/216008.html))
-- [Andrew Black, Stéphane Ducasse, Oscar Nierstrasz, Damien Pollet, Damien Cassou, Marcus Denker, Christoph Thiede, and Patrick Rein. *Squeak by Example. 5.3 Edition.* 2020.](https://github.com/hpi-swa-lab/SqueakByExample-english/releases/tag/5.3)
+- [Official announcement of HyperKitty release on squeak-dev](https://lists.squeakfoundation.org/archives/list/squeak-dev@lists.squeakfoundation.org/thread/KTIGYGMSC2IK45HIFMKY44WZVPE4BKEU/)
+- [Christoph Thiede, and Patrick Rein. *Squeak by Example. 5.3.1 Edition.* 2021.](https://wiki.squeak.org/squeak/6546)
