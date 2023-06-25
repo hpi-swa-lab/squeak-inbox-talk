@@ -2,7 +2,7 @@ sending messages
 newReply
 
 	^ MailMessage empty
-		to: self replyReceiver;
+		to: (self replyTo ifNil: ['']);
 		setField: 'in-reply-to' toString: self messageId;
 		setField: 'references' toString: self mailMessage references;
 		flag: #moveUpstream;

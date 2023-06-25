@@ -32,7 +32,7 @@ Usually here would be some more helpful information.' withCRs.
 					at: #messageId put: 'msg1@email';
 					at: #plainText put: '42' withCRs;
 					at: #receivers put: {list mailAddress. 'john.doe@gmx.net'};
-					at: #replyReceiver put: 'pepito.perez@hotmail.com';
+					at: #replyTo put: 'pepito.perez@hotmail.com';
 					at: #rawText put: 'Content: 42' withCRs;
 					at: #richText put: '*42*' withCRs;
 					at: #subject put: 'Re: Hello world';
@@ -48,7 +48,7 @@ Usually here would be some more helpful information.' withCRs.
 					at: #plainText put: 'Well spoken. Carpe Squeak!\\Best regards,\John' withCRs;
 					at: #rawText put: 'Content: Well spoken. Carpe Squeak!\\Best regards,\John' withCRs;
 					at: #receivers put: {list mailAddress};
-					at: #replyReceiver put: 'john.doe@gmx.net';
+					at: #replyTo put: nil;
 					at: #richText put: 'Well spoken. *Carpe Squeak!*\\Best regards,\John' withCRs;
 					at: #subject put: 'Re: What is your favorite language?';
 					at: #text put: 'Well spoken. Carpe Squeak!\\Best regards,\John' withCRs;
@@ -65,7 +65,7 @@ Usually here would be some more helpful information.' withCRs.
 					at: #rawText
 						put: 'Content: What is the answer to the ultimate question of life, the universe, and everything?\\Best regards,\John' withCRs;
 					at: #receivers put: {list mailAddress};
-					at: #replyReceiver put: 'john.doe@gmx.net';
+					at: #replyTo put: nil;
 					at: #richText
 						put: 'What is the answer to the ultimate question of life, the universe, and everything?\\Best regards,\John' withCRs;
 					at: #subject put: 'Hello world';
@@ -84,7 +84,7 @@ Usually here would be some more helpful information.' withCRs.
 					at: #rawText
 						put: '> Is there any simpler programming language than Smalltalk in the world?\\How dare you??? It isn''t ... Smalltalk is simple, and simply perfect!!' withCRs;
 					at: #receivers put: {list mailAddress. 'si-squeak@polan.id'};
-					at: #replyReceiver put: 'pepito.perez@hotmail.com';
+					at: #replyTo put: 'pepito.perez@hotmail.com';
 					at: #richText
 						put: '> Is there any simpler programming language than Smalltalk in the world?\\How dare you??? It isn''t ... Smalltalk is simple, and simply perfect!!' withCRs;
 					at: #subject put: 'Re: What is your favorite language?';
@@ -103,7 +103,7 @@ Usually here would be some more helpful information.' withCRs.
 					at: #rawText
 						put: 'Content: Is there any simpler programming language than Smalltalk in the world?' withCRs;
 					at: #receivers put: {list mailAddress};
-					at: #replyReceiver put: 'si-squeak@polan.id';
+					at: #replyTo put: nil;
 					at: #richText
 						put: 'Is there any simpler programming language than Smalltalk in the world?' withCRs;
 					at: #subject put: 'What is your favorite language?';
@@ -120,7 +120,7 @@ Usually here would be some more helpful information.' withCRs.
 					at: #plainText put: commitText;
 					at: #rawText put: 'Content: ' , commitText;
 					at: #receivers put: {list mailAddress};
-					at: #replyReceiver put: list mailAddress;
+					at: #replyTo put: list mailAddress;
 					at: #richText put: commitText;
 					at: #subject put: 'The Inbox: Squeakland-author.123.mcz';
 					at: #text put: commitText;

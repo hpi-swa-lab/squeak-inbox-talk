@@ -2,7 +2,9 @@ sending messages
 newReply: decorated
 
 	| receivers ccReceivers bodyString |
-	receivers := {self inbox mailAddress. self mail replyReceiver} withoutDuplicates.
+	receivers := {self inbox mailAddress}.
+	self mail replyTo ifNotNil: [:receiver |
+		receivers := (receivers copyWith: receiver) withoutDuplicates].
 	ccReceivers := self mail ccReceivers.
 	bodyString := '\\{1}' withCRs format: {self textQuoted}.
 	decorated ifTrue: [bodyString := (self inbox decorateMessage: '') asText, bodyString].
