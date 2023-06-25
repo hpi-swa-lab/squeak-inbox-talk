@@ -6,5 +6,5 @@ newMessage
 	message
 		from: MailSender userEmail;
 		to: self mailAddress;
-		body: (self newMessageBodyFor: message body content).
+		body: (self newMessageBodyFor: message body content withBlanksTrimmed).
 	^ message
