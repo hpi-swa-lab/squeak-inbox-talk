@@ -13,6 +13,11 @@ buildButtonBar: aBuilder
 				yourself);
 			add: (aBuilder pluggableActionButtonSpec new
 				model: self;
+				label: 'Browse contribution...';
+				action: #browseContributions;
+				yourself);
+			add: (aBuilder pluggableActionButtonSpec new
+				model: self;
 				label: #browseAttachmentsLabel;
 				action: #browseAttachments;
 				enabled: #hasActualMessageSelected;
