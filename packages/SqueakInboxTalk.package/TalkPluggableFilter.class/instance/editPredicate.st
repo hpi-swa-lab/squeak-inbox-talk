@@ -3,7 +3,7 @@ editPredicate
 
 	| newPredicateString |
 	newPredicateString := Project uiManager
-		request: ('Show {1} that <b>[:{2} | ...]</b>' asTextFromHtml format: {
+		multiLineRequest: ('Show {1} that <b>[:{2} | ...]</b>' asTextFromHtml format: {
 			'conversations' asText addAllAttributes: {
 				TextEmphasis underlined flag: #workaround.
 				PluggableTextAttribute evalBlock: ["See Morphic-ct.1681"
