@@ -3,7 +3,7 @@ showCredits
 
 	| credits |
 	credits := String streamContents: [:stream |
-		self class resources talkWithKeysSortedSafely associations do: [:assoc |
+		self class resources withKeysSortedSafely associations do: [:assoc |
 			stream
 				print: assoc key;
 				cr.
