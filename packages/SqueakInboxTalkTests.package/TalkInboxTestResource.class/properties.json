@@ -8,7 +8,8 @@
 	"instvars" : [
 		"cache",
 		"inbox",
-		"squeakHistoryCaches" ],
+		"squeakHistoryCaches",
+		"person" ],
 	"name" : "TalkInboxTestResource",
 	"pools" : [
 		 ],
