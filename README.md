@@ -67,7 +67,7 @@ These filters should make it easier to survey certain domains, gain a better und
 
 ## How does it work?
 
-Basically, Squeak Inbox Talk is implemented by reusing and assembling together the following existing solutions: [Squeak History](https://github.com/hpi-swa/squeak-history), a project originally developed by Marcel (mt) that scrapes and processes all mailing list conversations from the [pipermail archives](http://lists.squeakfoundation.org/pipermail/squeak-dev/); the `SMTPClient` in Squeak for sending messages; and the Monticello infrastructure, which remains the heart of our development workflow. Optionally, further components such as [`IMAPClient`](https://github.com/hpi-swa-teaching/IMAPClient) might follow later. On top of this, Squeak Inbox Talk adds a convenient layer for exploring and filtering conversations and contributions.
+Basically, Squeak Inbox Talk is implemented by reusing and assembling together the following existing solutions: [Squeak History](https://github.com/hpi-swa/squeak-history), a project originally developed by Marcel (mt) that scrapes and processes all mailing list conversations from the [mailman archives](https://lists.squeakfoundation.org/archives/); the `SMTPClient` in Squeak for sending messages; and the Monticello infrastructure, which remains the heart of our development workflow. Optionally, further components such as [`IMAPClient`](https://github.com/hpi-swa-teaching/IMAPClient) might follow later. On top of this, Squeak Inbox Talk adds a convenient layer for exploring and filtering conversations and contributions.
 
 ## Implementational notes
 
