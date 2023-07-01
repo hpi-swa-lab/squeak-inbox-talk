@@ -12,6 +12,6 @@ testFilterInvolvement
 		{'*mail addresses*inbox*'. person mailAddresses joinSeparatedBy: Character cr}.
 		{'*author initials*inbox*'. person allAuthorInitials joinSeparatedBy: Character cr}.
 		{'*names*inbox*'. person names joinSeparatedBy: Character cr}}.
-	self waitWhileConversationsBusy.
+	self waitWhileBusy.
 	
 	self shouldBeFiltered: [:conversation | conversation includesAuthor: person]
