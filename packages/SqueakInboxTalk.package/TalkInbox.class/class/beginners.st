@@ -4,4 +4,5 @@ beginners
 
 	^ (self on: TalkMailingList beginners)
 		nabbleNodeId: 107673;
+		subjectPrefix: '[Newbies] ';
 		yourself

@@ -10,6 +10,7 @@
 		"mailingList",
 		"projects",
 		"nabbleNodeId",
+		"subjectPrefix",
 		"downloadRange",
 		"conversationsPerContributions",
 		"messagesPerContributions",

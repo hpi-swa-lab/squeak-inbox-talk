@@ -68,7 +68,7 @@ Usually here would be some more helpful information.' withCRs.
 					at: #replyTo put: nil;
 					at: #richText
 						put: 'What is the answer to the ultimate question of life, the universe, and everything?\\Best regards,\John' withCRs;
-					at: #subject put: 'Hello world';
+					at: #subject put: '[mail-1] Hello world';
 					at: #text
 						put: 'What is the answer to the ultimate question of life, the universe, and everything?\\Best regards,\John' withCRs;
 					yourself.

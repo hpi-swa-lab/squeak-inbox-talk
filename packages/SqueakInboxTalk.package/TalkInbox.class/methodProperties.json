@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"beginners" : "ct 12/2/2022 00:20",
+		"beginners" : "ct 7/1/2023 14:52",
 		"cleanUp:" : "ct 11/25/2022 20:55",
 		"clearAllCaches" : "ct 7/23/2021 21:21",
 		"decorateMessage:" : "ct 7/9/2021 19:49",
@@ -56,4 +56,6 @@
 		"projects:" : "ct 7/14/2021 21:13",
 		"refreshMessages" : "ct 7/18/2021 17:28",
 		"resetCaches" : "ct 5/9/2023 15:05",
-		"squeakSourceMailers" : "ct 5/7/2021 18:44" } }
+		"squeakSourceMailers" : "ct 5/7/2021 18:44",
+		"subjectPrefix" : "ct 7/1/2023 14:47",
+		"subjectPrefix:" : "ct 7/1/2023 14:47" } }
