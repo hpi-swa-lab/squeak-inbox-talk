@@ -6,5 +6,5 @@ shouldIncludeSmartSummary: aBoolean
 	aBoolean ifTrue: [
 		(Smalltalk hasClassNamed: #ChatGPT) ifFalse: [
 			(self confirm: 'Install ChatGPT?') ifTrue: [
-				TalkInboxBrowser metacello installChatGPT.
+				TalkInboxBrowser metacelloBaseline installChatGPT.
 				self inform: 'Please set an OpenAI key in the preferences!']]].
