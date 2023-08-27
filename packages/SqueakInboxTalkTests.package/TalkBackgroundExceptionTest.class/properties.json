@@ -1,0 +1,17 @@
+{
+	"category" : "SqueakInboxTalkTests-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"result",
+		"process",
+		"backgroundException",
+		"semaphore" ],
+	"name" : "TalkBackgroundExceptionTest",
+	"pools" : [
+		 ],
+	"super" : "TalkTestCase",
+	"type" : "normal" }
