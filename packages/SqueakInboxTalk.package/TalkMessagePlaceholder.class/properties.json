@@ -1,0 +1,15 @@
+{
+	"category" : "SqueakInboxTalk-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 8/20/2023 21:30",
+	"instvars" : [
+		"inbox",
+		"messageId" ],
+	"name" : "TalkMessagePlaceholder",
+	"pools" : [
+		 ],
+	"super" : "TalkDataView",
+	"type" : "normal" }

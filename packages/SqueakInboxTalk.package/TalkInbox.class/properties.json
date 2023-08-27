@@ -12,8 +12,10 @@
 		"nabbleNodeId",
 		"subjectPrefix",
 		"downloadRange",
+		"messagePlaceholders",
 		"conversationsPerContributions",
 		"messagesPerContributions",
+		"messagesPerIds",
 		"lastRefreshed" ],
 	"name" : "TalkInbox",
 	"pools" : [

@@ -3,6 +3,7 @@ refreshMessages
 
 	self mailingList updateMessagesFor: self downloadRange.
 	self projects do: #refreshVersions.
+	lastRefreshed := DateAndTime now.
 	
 	self resetCaches.
-	lastRefreshed := DateAndTime now
+	self refreshMessagePlaceholders.
