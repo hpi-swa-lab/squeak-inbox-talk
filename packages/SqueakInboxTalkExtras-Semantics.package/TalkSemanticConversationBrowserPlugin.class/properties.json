@@ -11,7 +11,8 @@
 		"browsers",
 		"smartSummary",
 		"smartSummaryConversation",
-		"similarConversations" ],
+		"similarConversations",
+		"backgroundProcesses" ],
 	"name" : "TalkSemanticConversationBrowserPlugin",
 	"pools" : [
 		 ],
