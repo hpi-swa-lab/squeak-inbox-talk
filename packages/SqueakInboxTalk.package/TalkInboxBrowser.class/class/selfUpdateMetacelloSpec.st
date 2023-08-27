@@ -4,5 +4,5 @@ selfUpdateMetacelloSpec
 		category: #'Squeak Inbox Talk'
 		description: 'The Metacello used for installing updates for Squeak Inbox Talk from the GitHub repository.'
 		type: #String>
-	
-	^ (SelfUpdateMetacelloSpec ifNil: [#default]) storeString
+
+	^ self basicSelfUpdateMetacelloSpec storeString

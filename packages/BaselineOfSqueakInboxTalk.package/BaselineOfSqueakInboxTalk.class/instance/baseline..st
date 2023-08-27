@@ -5,7 +5,7 @@ baseline: spec
 	spec for: #common do: [
 		"dependencies"
 		spec baseline: 'SemanticText' with: [
-			spec repository: 'github://LinqLover/squeak-chatgpt/packages'].
+			spec repository: 'github://LinqLover/squeak-chatgpt:main/packages'].
 		spec baseline: 'SqueakHistory' with: [
 			spec
 				repository: 'github://LinqLover/squeak-history:stream-github--hpi-swa-lab--squeak-inbox-talk/packages';
@@ -16,7 +16,7 @@ baseline: spec
 			spec
 				requires: 'SqueakHistory';
 				postLoadDoIt: #postLoad].
-		spec package: 'SqueakInboxTalkExtras-Semantic' with: [
+		spec package: 'SqueakInboxTalkExtras-Semantics' with: [
 			spec requires: #('SqueakInboxTalk' 'SemanticText')].
 		"test packages"
 		spec package: 'SqueakInboxTalkTests' with: [spec requires: #(#app)].
@@ -26,4 +26,4 @@ baseline: spec
 			group: #app with: 'SqueakInboxTalk';
 			group: #default with: #(#app #tests);
 			group: #tests with: 'SqueakInboxTalkTests';
-			group: #withAllExtras with: #(app 'SqueakInboxTalkExtras-Semantic')]
+			group: #withAllExtras with: #(app 'SqueakInboxTalkExtras-Semantics')]
