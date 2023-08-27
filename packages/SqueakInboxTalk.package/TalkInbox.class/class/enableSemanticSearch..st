@@ -2,6 +2,6 @@ preferences
 enableSemanticSearch: aBoolean
 
 	aBoolean ifTrue: [
-		TalkInboxBrowser ensureSemanticTextOrCancel ifNil: [^ self]].
+		TalkInboxBrowser ensureSemanticsPackageOrCancel ifNil: [^ self]].
 	
 	EnableSemanticSearch := aBoolean.
