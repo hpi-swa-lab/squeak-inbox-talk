@@ -7,6 +7,7 @@ aspectDependencies
 		at: #browseAttachmentsLabel put: #(selectedMessage);
 		at: #currentText put: #(#text #hasSearchError);
 		at: #hasActualMessageSelected put: #(#actualSelectedMessage);
+		at: #hasContributions put: #(conversation);
 		at: #hasMessageSelected put: #(#selectedMessage);
 		at: #hasSpecialMessageSelected put: #(#selectedMessage);
 		at: #headerSelection put: #(#headerText #search);

@@ -15,6 +15,7 @@ buildButtonBar: aBuilder
 				model: self;
 				label: 'Browse contribution...';
 				action: #browseContributions;
+				enabled: #hasContributions;
 				yourself);
 			add: (aBuilder pluggableActionButtonSpec new
 				model: self;
