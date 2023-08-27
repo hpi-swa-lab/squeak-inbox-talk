@@ -9,9 +9,8 @@ installDependencies
 		load: 'SqueakHistory'.
 	
 	(Smalltalk hasClassNamed: #TalkSemanticConversationBrowserPlugin) ifTrue: [
-		self flag: #todo. "rename repo"
 		Metacello new
 			baseline: 'SemanticText';
-			repository: 'github://LinqLover/squeak-chatgpt:main';
+			repository: 'github://LinqLover/Squeak-SemanticText:main';
 			get;
 			load].
