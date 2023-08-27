@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"for:" : "ct 8/21/2023 02:15",
+		"cleanUp:" : "ct 8/27/2023 20:54",
+		"for:" : "ct 8/27/2023 20:50",
+		"instances" : "ct 8/27/2023 20:49",
 		"newFor:" : "ct 8/21/2023 02:15",
-		"plugins" : "ct 8/26/2023 00:09",
 		"semanticConversationConfig" : "ct 8/21/2023 02:27",
 		"shouldIncludeSimilarConversations" : "ct 8/21/2023 03:06",
 		"shouldIncludeSmartSummary" : "ct 8/26/2023 02:39",

@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		"ConversationConfig",
-		"Plugins",
+		"Instances",
 		"ShouldIncludeSmartSummary" ],
 	"commentStamp" : "ct 8/26/2023 01:11",
 	"instvars" : [
