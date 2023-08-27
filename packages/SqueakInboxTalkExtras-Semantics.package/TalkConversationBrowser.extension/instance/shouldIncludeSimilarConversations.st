@@ -1,0 +1,4 @@
+*SqueakInboxTalkExtras-Semantics-UI-testing
+shouldIncludeSimilarConversations
+
+	^ TalkSemanticConversationBrowserPlugin shouldIncludeSimilarConversations

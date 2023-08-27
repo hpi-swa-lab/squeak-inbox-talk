@@ -1,0 +1,4 @@
+*SqueakInboxTalkExtras-Semantics-UI-testing
+shouldIncludeSmartSummary
+
+	^ TalkSemanticConversationBrowserPlugin shouldIncludeSmartSummary

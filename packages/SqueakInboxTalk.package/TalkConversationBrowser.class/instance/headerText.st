@@ -3,7 +3,7 @@ headerText
 
 	| args message |
 	message := self selectedMessage ifNil: [^ nil].
-	message = #smartSummary ifTrue: [^ self smartSummaryHeader].
+	message isArray ifTrue: [^ self perform: message third "headerSelector"].
 	
 	args := OrderedDictionary new
 		at: 'Subject' put: message subject;

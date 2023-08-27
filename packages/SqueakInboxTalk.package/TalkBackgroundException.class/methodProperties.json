@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"for:" : "ct 8/15/2023 16:48" },
+	"instance" : {
+		"debug" : "ct 8/21/2023 01:25",
+		"exception" : "ct 8/15/2023 16:47",
+		"exception:" : "ct 8/15/2023 16:47",
+		"isTalkBackgroundException" : "ct 8/15/2023 16:51",
+		"messageText" : "ct 8/20/2023 22:06",
+		"process" : "ct 8/15/2023 16:58",
+		"resolve" : "ct 8/15/2023 17:01",
+		"resolve:" : "ct 8/20/2023 21:44",
+		"textColorForError" : "ct 8/15/2023 16:55",
+		"waitForResolution" : "ct 8/20/2023 21:47" } }

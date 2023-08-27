@@ -5,4 +5,7 @@ refreshMessages
 	self projects do: #refreshVersions.
 	
 	self resetCaches.
-	lastRefreshed := DateAndTime now
+	self refreshMessagePlaceholders.
+	lastRefreshed := DateAndTime now.
+	
+	self triggerEvent: #refreshMessages.

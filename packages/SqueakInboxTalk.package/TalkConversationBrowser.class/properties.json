@@ -3,9 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"ChatGPTObject",
-		"DefaultMessageFormat",
-		"ShouldIncludeSmartSummary" ],
+		"DefaultMessageFormat" ],
 	"commentStamp" : "ct 7/24/2021 02:14",
 	"instvars" : [
 		"conversation",
@@ -14,8 +12,7 @@
 		"selectedMessage",
 		"selectedMatch",
 		"textSelection",
-		"headerSelection",
-		"smartSummary" ],
+		"headerSelection" ],
 	"name" : "TalkConversationBrowser",
 	"pools" : [
 		 ],

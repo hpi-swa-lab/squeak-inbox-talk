@@ -3,7 +3,7 @@ text
 
 	| message text |
 	message := self selectedMessage.
-	message = #smartSummary ifTrue: [^ self smartSummaryText].
+	message isArray ifTrue: [^ self perform: message second "textSelector"].
 	text := (message ifNil: [^ nil]) perform: self messageFormatSelector.
 	
 	message attachmentNames ifNotEmpty: [:names |

@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkExtras-Semantics-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TalkSemanticDocument",
+	"pools" : [
+		 ],
+	"super" : "SemanticFragmentDocument",
+	"type" : "normal" }

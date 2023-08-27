@@ -3,6 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"EnableSemanticSearch",
 		"MessageSignature",
 		"SendHtmlMessages" ],
 	"commentStamp" : "ct 7/24/2021 02:52",
@@ -12,8 +13,10 @@
 		"nabbleNodeId",
 		"subjectPrefix",
 		"downloadRange",
+		"messagePlaceholders",
 		"conversationsPerContributions",
 		"messagesPerContributions",
+		"messagesPerIds",
 		"lastRefreshed" ],
 	"name" : "TalkInbox",
 	"pools" : [

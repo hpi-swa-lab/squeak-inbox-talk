@@ -1,4 +1,4 @@
 accessing - state
 selectedActualMessage
 
-	^ selectedMessage isSymbol ifFalse: [selectedMessage]
+	^ selectedMessage isArray ifFalse: [selectedMessage]

@@ -5,4 +5,4 @@ selfUpdateFromMetacello
 	metacello := self metacello.
 	project := metacello get.
 	project configuration installDependencies.
-	metacello load.
+	metacello load: self basicSelfUpdateMetacelloSpec.

@@ -1,0 +1,16 @@
+{
+	"category" : "SqueakInboxTalk-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 8/20/2023 21:45",
+	"instvars" : [
+		"process",
+		"exception",
+		"resolution" ],
+	"name" : "TalkBackgroundException",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

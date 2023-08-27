@@ -1,0 +1,7 @@
+{
+	"class" : {
+		"message:start:stop:" : "ct 8/14/2023 16:04" },
+	"instance" : {
+		"message" : "ct 8/14/2023 16:03",
+		"readObjectFrom:for:" : "ct 8/17/2023 21:01",
+		"writeObjectOn:" : "ct 8/14/2023 16:01" } }

@@ -1,7 +1,8 @@
 toolbuilder
 messageMenu: menu
 
-	self hasSpecialMessageSelected ifTrue: [^ menu].
+	self hasSpecialMessageSelected ifTrue: [
+		^ self specialMessageMenu: menu].
 	
 	menu defaultTarget: (self selectedMessage ifNil: [self conversation]).
 	menu

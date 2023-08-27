@@ -1,0 +1,20 @@
+{
+	"category" : "SqueakInboxTalkExtras-Semantics-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ConversationConfig",
+		"Instances",
+		"ShouldIncludeSmartSummary" ],
+	"commentStamp" : "ct 8/26/2023 01:11",
+	"instvars" : [
+		"browsers",
+		"smartSummary",
+		"smartSummaryConversation",
+		"similarConversations",
+		"backgroundProcesses" ],
+	"name" : "TalkSemanticConversationBrowserPlugin",
+	"pools" : [
+		 ],
+	"super" : "TalkModel",
+	"type" : "normal" }

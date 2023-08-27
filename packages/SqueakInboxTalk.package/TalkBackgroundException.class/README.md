@@ -1,0 +1,1 @@
+I hold an exception that was raised from a (background) process and interrupted that process. Similar to a debugger, I can display the exception and resolve it later.
