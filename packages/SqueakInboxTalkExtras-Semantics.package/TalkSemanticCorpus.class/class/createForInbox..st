@@ -1,4 +1,4 @@
-accessing
+instance creation
 createForInbox: anInbox
 
 	| corpus |
