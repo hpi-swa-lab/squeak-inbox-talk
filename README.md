@@ -69,6 +69,14 @@ These filters should make it easier to survey certain domains, gain a better und
 
 Basically, Squeak Inbox Talk is implemented by reusing and assembling together the following existing solutions: [Squeak History](https://github.com/hpi-swa/squeak-history), a project originally developed by Marcel (mt) that scrapes and processes all mailing list conversations from the [mailman archives](https://lists.squeakfoundation.org/archives/); the `SMTPClient` in Squeak for sending messages; and the Monticello infrastructure, which remains the heart of our development workflow. Optionally, further components such as [`IMAPClient`](https://github.com/hpi-swa-teaching/IMAPClient) might follow later. On top of this, Squeak Inbox Talk adds a convenient layer for exploring and filtering conversations and contributions.
 
+## Semantics Plugin (experimental)
+
+This repository includes an optional plugin that enhances the browsing experience by contributing features such as semantic search, similar conversations, and AI-generated summaries of conversations to Squeak Inbox Talk.
+The plugin uses the [SemanticText](https://github.com/LinqLover/squeak-chatgpt) package and OpenAI's APIs for text embedding and generation.
+You can enable the plugin by turning on the "Semantic search in Squeak Inbox Talk" option in the preferences.
+This feature is currently in a very early stage.
+Feedback and ideas welcome!
+
 ## Implementational notes
 
 - This project is proud to use [smalltalkCI](https://github.com/hpi-swa/smalltalkCI) and the [create-image GitHub action](https://github.com/marketplace/actions/create-image).
