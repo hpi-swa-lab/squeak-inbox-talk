@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakInboxTalkExtras-Semantics-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 8/20/2023 21:31",
+	"instvars" : [
+		"messages" ],
+	"name" : "TalkSemanticMessagesPlaceholder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

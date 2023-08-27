@@ -1,0 +1,4 @@
+preferences
+shouldIncludeSimilarConversations
+
+	^ TalkInbox enableSemanticSearch

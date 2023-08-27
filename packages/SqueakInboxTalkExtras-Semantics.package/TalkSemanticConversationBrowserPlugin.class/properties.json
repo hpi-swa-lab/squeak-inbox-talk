@@ -10,7 +10,8 @@
 	"instvars" : [
 		"browsers",
 		"smartSummary",
-		"smartSummaryConversation" ],
+		"smartSummaryConversation",
+		"similarConversations" ],
 	"name" : "TalkSemanticConversationBrowserPlugin",
 	"pools" : [
 		 ],

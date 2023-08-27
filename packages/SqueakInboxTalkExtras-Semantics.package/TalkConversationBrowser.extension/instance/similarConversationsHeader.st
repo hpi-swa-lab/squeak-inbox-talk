@@ -1,0 +1,4 @@
+*SqueakInboxTalkExtras-Semantics-UI-accessing
+similarConversationsHeader
+
+	^ self semanticPlugin similarConversationsHeader

@@ -1,0 +1,15 @@
+{
+	"category" : "SqueakInboxTalkExtras-Semantics-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Corpora" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"inbox",
+		"documentsPerMessage" ],
+	"name" : "TalkSemanticCorpus",
+	"pools" : [
+		 ],
+	"super" : "SemanticCorpus",
+	"type" : "normal" }

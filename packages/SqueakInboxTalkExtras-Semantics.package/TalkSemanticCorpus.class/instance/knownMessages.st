@@ -1,0 +1,4 @@
+accessing
+knownMessages
+
+	^ documentsPerMessage keys
