@@ -1,4 +1,4 @@
-accessing
+*SqueakInboxTalkExtras-Semantics-Core
 fullTextForSummary
 
 	^ String streamContents: [:stream |

@@ -12,6 +12,7 @@
 		"defaultSelfUpdateBranch" : "ct 6/3/2023 20:00",
 		"defaultWindowColor" : "ct 5/8/2021 20:13",
 		"durationFromString:" : "ct 1/10/2023 18:21",
+		"ensureSemanticTextOrCancel" : "ct 8/26/2023 03:07",
 		"githubNewIssueUrl" : "ct 5/26/2021 23:52",
 		"githubNewIssueUrlWithBody:" : "ct 5/26/2021 23:52",
 		"githubRepositoryParams" : "ct 5/26/2021 23:15",

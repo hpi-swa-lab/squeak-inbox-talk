@@ -9,4 +9,9 @@ setUp
 	self waitWhileBusy.
 	
 	self wrapTest: [:block | browser class defaultMessageFormat: #richText during: block].
-	self wrapTest: [:block | browser class shouldIncludeSmartSummary: false during: block].
+	self wrapTest: [:block | browser inbox class disableSemanticSearchDuring: block].
+	(Smalltalk classNamed: #TalkSemanticConversationBrowserPlugin) ifNotNil: [:plugin |
+		plugin shouldIncludeSmartSummary ifTrue: [
+			self wrapTest: [:block |
+				plugin shouldIncludeSmartSummary: false.
+				block ensure: [plugin shouldIncludeSmartSummary: true]]]].

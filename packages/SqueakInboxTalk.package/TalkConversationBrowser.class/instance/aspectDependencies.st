@@ -19,7 +19,6 @@ aspectDependencies
 		at: #revertChanges put: #(#currentText);
 		at: #selectedMessageIndex put: #(#selectedMessage);
 		at: #selectedMatch put: #(#search);
-		at: #smartSummaryText put: #(smartSummary);
-		at: #text put: #(#messageFormat #selectedMessage #search #smartSummaryText);
+		at: #text put: #(#messageFormat #selectedMessage #search);
 		at: #textSelection put: #(#text);
 		yourself

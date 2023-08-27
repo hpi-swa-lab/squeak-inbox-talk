@@ -1,8 +1,9 @@
-accessing
-fullTextForSummary
+*SqueakInboxTalkExtras-Semantics-Core
+fullTextForSummary: includeTitle
 
 	| text |
-	self flag: #prototype. "Likely too simple heuristic. This might remove too many references from quotes or not discover all quotations."
+	self flag: #prototype. "Too simple heuristic! This might remove too many references from quotes or not discover all quotations. For instance, all inline replies after 'on...wrote...' will be discarded, leaving many empty messages!"
+	self flag: #optimize. "regexes very slow..."
 	text := self text asString.
 	#('________________________________' '=============== Diff') do: [:sep |
 		(text findString: sep) in: [:index | index > 0 ifTrue:
@@ -14,10 +15,11 @@ fullTextForSummary
 		text := text copyWithRegex: quoteRegex matchesReplacedWith: ''].
 		
 	^ String streamContents: [:stream |
-		stream
-			nextPutAll: 'From: '; nextPutAll: self author asString;
-			cr;
-			nextPutAll: 'Date: '; print: self date;
-			cr; cr.
+		includeTitle ifTrue: [
+			stream
+				nextPutAll: 'From: '; nextPutAll: self author asString;
+				cr;
+				nextPutAll: 'Date: '; print: self date;
+				cr; cr].
 		
 		stream nextPutAll: text]

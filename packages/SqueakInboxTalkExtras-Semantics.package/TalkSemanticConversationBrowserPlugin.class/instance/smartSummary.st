@@ -1,10 +1,13 @@
-accessing - smart summary
+private
 smartSummary
 
 	| fullText |
 	fullText := self conversation fullTextForSummary.
 	
-	^ self class chatGPT newConversation
+	smartSummaryConversation := (Smalltalk classNamed: #SemanticConversation) new.
+	smartSummaryConversation config: self class semanticConversationConfig.
+	self changed: #smartSummaryHeader.
+	^ smartSummaryConversation
 		addSystemMessage: 'Briefly summarize this thread on the squeak-dev mailing list. If the thread is trivial and you can put it in a single sentence, perfect. Otherwise, use the following scheme:
 
 1. Problem statement
@@ -13,4 +16,4 @@ smartSummary
 
 For each section, provide 1-5 bullet points (less is better). Be very brief, short phrases are absolutely fine. Focus on technical stuff and arguments but less on people and not on boring communication flows. Stay high-level and do not dive into technical details if there are many. You may emphasize key phrases in bold.';
 		addUserMessage: fullText;
-		getAssistantReply
+		getAssistantMessage

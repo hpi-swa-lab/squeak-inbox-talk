@@ -7,3 +7,5 @@ refreshMessages
 	
 	self resetCaches.
 	self refreshMessagePlaceholders.
+	
+	self triggerEvent: #refreshMessages.

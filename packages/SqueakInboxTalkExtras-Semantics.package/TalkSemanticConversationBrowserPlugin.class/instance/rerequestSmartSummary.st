@@ -1,4 +1,4 @@
-accessing - smart summary
+actions
 rerequestSmartSummary
 
 	self requestSmartSummary.

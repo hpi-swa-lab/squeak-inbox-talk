@@ -5,6 +5,8 @@ messageColumns
 	messages := self messages.
 	^ {#authorTimestamp} collect: [:columnBlock |
 		messages collect: [:message |
-			message = #smartSummary
-				ifTrue: ['smart summary' asText addAttribute: TextEmphasis italic; yourself]
+			message isArray
+				ifTrue: [(message first "key" findFeatures joinSeparatedBy: String space) asText
+					addAttribute: TextEmphasis italic;
+					yourself]
 				ifFalse: [columnBlock value: message]]]

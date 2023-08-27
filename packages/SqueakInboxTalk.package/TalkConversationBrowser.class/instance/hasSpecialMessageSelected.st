@@ -1,4 +1,4 @@
 testing
 hasSpecialMessageSelected
 
-	^ self selectedMessage isSymbol
+	^ self selectedMessage isArray
