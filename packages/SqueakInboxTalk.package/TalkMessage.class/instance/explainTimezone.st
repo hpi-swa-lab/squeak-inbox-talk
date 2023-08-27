@@ -16,8 +16,10 @@ explainTimezone
 					ifEmpty: [{TextColor red}])
 			from: our size - 5 to: our size].
 	Project uiManager
-		inform: ('<b>In their timezone ({1})</b>: {2}<br><b>In our timezone ({3}):</b> {4}' asTextFromHtml format:
-			{((TimeZone talkAllForOffset: self date offset) collect: #abbreviation) joinSeparatedBy: '/'.
+		inform: ('<b>In their timezone{1}</b>: {2}<br><b>In our timezone ({3}):</b> {4}' asTextFromHtml format:
+			{((TimeZone allForOffset: self date offset) collect: #abbreviation)
+				ifNotEmpty: [:abbrevs | ' ({1})' format: {abbrevs joinSeparatedBy: '/'}]
+				ifEmpty: [''].
 			their.
 			TimeZone local abbreviation.
 			our})

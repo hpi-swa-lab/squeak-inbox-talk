@@ -6,7 +6,7 @@ testExplainTimezone
 	
 	self
 		patch: message at: #date withValue: (DateAndTime fromString: '2023-06-04T00:53:27-07:00');
-		patch: TimeZone at: #local with: [TimeZone timeZones detect: [:tz | tz abbreviation = 'EST']];
+		patch: TimeZone at: #local with: [TimeZone allTimeZones detect: [:tz | tz abbreviation = 'EST']];
 		patch: DateAndTime at: #localOffset withValue: -5 hours.
 	
 	text := [message explainTimezone]
