@@ -4,4 +4,4 @@ readHeaderFrom: aStream
 	| inboxName |
 	aStream ascii.
 	inboxName := aStream upTo: Character cr..
-	inbox := TalkInbox on: (TalkMailingList named: inboxName).
+	self initializeForInbox: (TalkInbox on: (TalkMailingList named: inboxName)).
