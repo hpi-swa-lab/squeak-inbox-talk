@@ -2,6 +2,7 @@ cost planning
 worstCaseCost
 
 	self matchesExact ifTrue: [^ 40].
+	self matchesWildcard ifTrue: [^ 49].
 	self usesRegex ifTrue: [^ 57].
 	^ self matchStrategy
 		caseOf: {

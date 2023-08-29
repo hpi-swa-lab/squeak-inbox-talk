@@ -6,5 +6,6 @@ aspectDependencies
 		at: #matchStrategyAbbreviation put: #(#searchStrategy);
 		at: #matchStrategyLabel put: #(#searchStrategy);
 		at: #search put: #(#matchesCase #matchesWholeWord #searchStrategy);
-		at: #searchStrategy put: #(#matchesExact #matchesFuzzy #matchesRegex);
+		at: #searchStrategy
+			put: #(#matchesExact #matchesWildcard #matchesFuzzy #matchesRegex);
 		yourself
