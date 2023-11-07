@@ -2,9 +2,15 @@ private
 smartSummary
 
 	| fullText |
+	SemanticText assureConversationAvailableOr: [:requirements |
+		TalkSemanticModelNotReady new
+			featureName: 'smart summaries';
+			requirements: requirements;
+			signal].
+	
 	fullText := self conversation fullTextForSummary.
 	
-	smartSummaryConversation := (Smalltalk classNamed: #SemanticConversation) new.
+	smartSummaryConversation := SemanticConversation new.
 	smartSummaryConversation config: self class semanticConversationConfig.
 	self changed: #smartSummaryHeader.
 	^ smartSummaryConversation
