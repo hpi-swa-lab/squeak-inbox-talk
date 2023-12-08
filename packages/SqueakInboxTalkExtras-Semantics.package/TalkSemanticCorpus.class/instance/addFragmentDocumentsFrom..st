@@ -5,5 +5,5 @@ addFragmentDocumentsFrom: aMessage
 	| fragmentDocuments |
 	fragmentDocuments := super addFragmentDocumentsFrom: aMessage.
 	"make sure to store the message for #knownDocuments even if it has zero documents"
-	^ (documentsPerMessage at: aMessage ifAbsentPut: [Set new])
+	^ (self documentsPerMessage at: aMessage ifAbsentPut: [Set new])
 		addAll: fragmentDocuments

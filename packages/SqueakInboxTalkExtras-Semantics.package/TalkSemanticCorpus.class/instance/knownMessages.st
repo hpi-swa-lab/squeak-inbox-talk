@@ -1,4 +1,4 @@
 accessing
 knownMessages
 
-	^ documentsPerMessage keys
+	^ self documentsPerMessage keys
