@@ -6,7 +6,7 @@ selectNextMatch: forward
 	searchModel hasSearchError ifTrue: [
 		^ self selectMessage: nil].
 	
-	matches := self actualMessages talkAsGenerator gather: [:message | searchModel safeMatchesIn: message].
+	matches := self actualMessages readStream gather: [:message | searchModel safeMatchesIn: message].
 	matches := matches
 		talkGroupBy: [:match | match object]
 		thenGather: [:group | group sorted: [:match | #('Subject' 'From' 'Date' nil) indexOf: match label] ascending].

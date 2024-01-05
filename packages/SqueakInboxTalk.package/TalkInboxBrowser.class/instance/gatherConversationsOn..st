@@ -2,7 +2,7 @@ conversation gathering
 gatherConversationsOn: aStream
 
 	| newConversations filteredConversations |
-	newConversations := Generator on: [:stream | stream nextPutAll: self allConversations].
+	newConversations := self allConversations readStream.
 	
 	filteredConversations := self totalFilter filter: newConversations.
 	

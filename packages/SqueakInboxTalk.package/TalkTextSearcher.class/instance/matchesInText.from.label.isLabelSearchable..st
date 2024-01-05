@@ -3,7 +3,7 @@ matchesInText: aStringOrText from: anObject label: label isLabelSearchable: aBoo
 	"Yield a match instance for every occurence in aStringOrText, decorated with the additional arguments. Answer a generator stream that can be iterated in a lazy fashion to retrieve just as match matches as needed."
 
 	| text |
-	self hasComplexTerm ifTrue: [^ self partSearchers talkAsGenerator gather: [:searcher | searcher matchesInText: aStringOrText from: anObject label: label isLabelSearchable: aBoolean]].
+	self hasComplexTerm ifTrue: [^ self partSearchers readStream gather: [:searcher | searcher matchesInText: aStringOrText from: anObject label: label isLabelSearchable: aBoolean]].
 	
 	text := aStringOrText.
 	aBoolean ifTrue: [text := self class decorate: aStringOrText withLabel: label].
