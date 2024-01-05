@@ -11,6 +11,7 @@ jobs:
       - uses: LinqLover/create-image@latest
         id: create-image
         with:
+          squeak-version: 6.0
           prepare-script: ./scripts/prepareImage.st
           postpare-script: ./scripts/postpareImage.st
       - uses: actions/upload-artifact@master
