@@ -16,7 +16,7 @@ downloadEnoughFromInbox
 			"candidate must have started at least one conversation in the downloaded time range
 			(we express that so low-level here to avoid false positive tests)"
 			inbox messages anySatisfy: [:ea |
-				(ea subject beginsWith: 'Re:' caseSensitive: false) not and: [
+				(ea subject talkBeginsWith: 'Re:' caseSensitive: false) not and: [
 					candidate hasMailAddress: ea author]]]
 		ifFound: [:candidate |
 			person := candidate].
