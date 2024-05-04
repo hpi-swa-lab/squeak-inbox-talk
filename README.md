@@ -53,6 +53,11 @@ Alternatively, you can download the one-click image from the [latest release](ht
 
 For detailed information on how to use the tool - in case this should not be straightforward -, see the [usage documentation](./USAGE.md).
 
+If you want to learn more about how the Squeak development process looks like, how Squeak Inbox Talk integrates with the other tooling for trunk development in the Squeak, and how you can make your own contributions, you may also want to check out these resources:
+
+- **Squeak/Smalltalk - The Squeak Development Process:** <https://squeak.org/development_process>
+- **Contributing to Squeak:** In the image (Squeak 6.1Alpha and newer), open the help menu in the docking bar and click on "Contributing to Squeak".
+
 ## Why?
 
 Many Squeakers have experienced the following troubles in the past:
