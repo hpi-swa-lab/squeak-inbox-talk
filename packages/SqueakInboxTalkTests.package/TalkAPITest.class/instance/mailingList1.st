@@ -8,7 +8,7 @@ http://exanoke.com/inbox/Squeakland-author.123.mcz
 ==================== Summary ====================
 
 Name: Squeakland-author.123.mcz
-Author: author
+Author: author (unregistered author)
 Time: 7 May 2021, 12:34:56.7889 am
 UUID: 9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d
 Ancestors: Squeakland-author0.122.mcz
