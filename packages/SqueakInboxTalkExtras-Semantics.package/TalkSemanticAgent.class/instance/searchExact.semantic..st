@@ -38,7 +38,7 @@ searchExact: exactTerms semantic: semanticTerms
 	sum := Dictionary new.
 	semanticResults do: [:ea |
 		ea keysAndValuesDo: [:k :v | sum at: k put: (sum at: k ifAbsent: [0]) + v]].
-	sum := (sum withValuesSorted: #yourself descending) keys.
+	sum := (sum talkSemanticWithValuesSorted: #yourself descending) keys.
 	
 	results := (searchers gather: [:searcher | searcher filter: sum]) withoutDuplicates.
 	
