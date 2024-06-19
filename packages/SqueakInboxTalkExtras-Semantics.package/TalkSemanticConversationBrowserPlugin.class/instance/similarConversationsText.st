@@ -1,6 +1,7 @@
 accessing - text
 similarConversationsText
 
+	| texts text chatText |
 	similarConversations ifNil: [
 		self requestSimilarConversations.
 		^ self similarConversationsText].
@@ -14,7 +15,7 @@ similarConversationsText
 	similarConversations ifEmpty: [^ '(none found)'].
 	
 	self flag: #mid. "Use URLs to copyable message ids here once we support them"
-	^ ((similarConversations collect: [:conversation |
+	texts := similarConversations collect: [:conversation |
 		(conversation isTalkSemanticMessagesPlaceholder
 			ifTrue:
 				[conversation title asText
@@ -23,5 +24,12 @@ similarConversationsText
 			ifFalse:
 				[conversation subject asText])
 					addAttribute: (PluggableTextAttribute evalBlock: [conversation browse]);
-					yourself])
-		fold: [:a :b | a , String cr , b])
+					yourself].
+	text := (texts collect: [:ea | ('*' , Character nbsp) asText , ea])
+		fold: [:a :b | a , String cr , b].
+	
+	chatText := '[Chat]' asText
+		addAttribute: (PluggableTextAttribute evalBlock: [self chatWithSimilarConversations]);
+		yourself.
+	
+	^ text , String cr , String cr , chatText
