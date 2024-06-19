@@ -13,7 +13,7 @@ matchStrategyMenu: menu
 	menu addLine.
 	length := menu items size.
 	self menu: menu for: #specialMatchStrategyMenu.
-	menu items size > length  ifFalse:
-		[menu lastItem delete].
+	menu items size > length ifFalse:
+		[menu lastSubmorph delete].
 	
 	^ menu
