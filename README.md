@@ -51,7 +51,16 @@ To install and start Squeak Inbox Talk, go to the main docking bar and choose <k
 
 Alternatively, you can download the one-click image from the [latest release](https://github.com/hpi-swa-lab/squeak-inbox-talk/releases) and run it with zero installation effort.
 
+### Updating
+
+In the Squeak Inbox Talk browser, press the Settings button and choose self-update. Alternatively, do `TalkInboxBrowser selfUpdate`.
+
+---
+
+You can open Squeak Inbox Talk from the App menu in the world main docking bar. 
 For detailed information on how to use the tool - in case this should not be straightforward -, see the [usage documentation](./USAGE.md).
+Note that this document might not be 100% up to date.
+Please open an issue or use the "send feedback button" in the settings menu if you have any questions or issues!
 
 If you want to learn more about how the Squeak development process looks like, how Squeak Inbox Talk integrates with the other tooling for trunk development in the Squeak, and how you can make your own contributions, you may also want to check out these resources:
 
