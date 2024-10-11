@@ -100,4 +100,5 @@ Feedback and ideas welcome!
 
 - [Official announcement thread on the squeak-dev mailing list](http://forum.world.st/ANN-Squeak-Inbox-Talk-bringing-squeak-dev-into-your-image-td5130575.html) ([mirror on lists.squeakfoundation.org](http://lists.squeakfoundation.org/pipermail/squeak-dev/2021-July/216008.html))
 - [Official announcement of HyperKitty release on squeak-dev](https://lists.squeakfoundation.org/archives/list/squeak-dev@lists.squeakfoundation.org/thread/KTIGYGMSC2IK45HIFMKY44WZVPE4BKEU/)
+- [Talk Slides: Squeak Inbox Talk – Social Coding made easy (Meeting of German Squeakers Association, 2021)](https://linqlover.github.io/LinqLover/slides/SqueakEv21%20Squeak%20Inbox%20Talk.pdf)
 - [Christoph Thiede and Patrick Rein. *Squeak by Example. 6.0 Edition.* Lulu, 2023. ISBN 978-1-4476-2948-1.](https://www.lulu.com/shop/patrick-rein-and-christoph-thiede/squeak-by-example-60/paperback/product-8vr2j2.html)
