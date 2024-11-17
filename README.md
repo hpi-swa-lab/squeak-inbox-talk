@@ -5,7 +5,7 @@
 [![Open flags](https://shields.io/endpoint?url=https://gist.githubusercontent.com/LinqLover/36dd3c4a155eed5aa7e874415cd60eea/raw/flags%2523refs%2523heads%2523main.json)](https://github.com/hpi-swa-lab/squeak-inbox-talk/search?type=code&l=Smalltalk&q=%22flag%3A+%22)
 [![Release](https://github.com/hpi-swa-lab/squeak-inbox-talk/actions/workflows/release.yml/badge.svg)](https://github.com/hpi-swa-lab/squeak-inbox-talk/releases)
 
-> Bringing squeak-dev into your image. Now with AI support!
+> Bringing squeak-dev into your image. Now with AI support! ✨
 
 A project originally conducted in the course of the Live Programming Seminar 2021 @ HPI.
 Many thanks to [Marcel Taeumel](https://github.com/marceltaeumel) for his diligent mentoring and advice!
