@@ -5,7 +5,7 @@
 [![Open flags](https://shields.io/endpoint?url=https://gist.githubusercontent.com/LinqLover/36dd3c4a155eed5aa7e874415cd60eea/raw/flags%2523refs%2523heads%2523main.json)](https://github.com/hpi-swa-lab/squeak-inbox-talk/search?type=code&l=Smalltalk&q=%22flag%3A+%22)
 [![Release](https://github.com/hpi-swa-lab/squeak-inbox-talk/actions/workflows/release.yml/badge.svg)](https://github.com/hpi-swa-lab/squeak-inbox-talk/releases)
 
-> Bringing squeak-dev into your image
+> Bringing squeak-dev into your image. Now with AI support!
 
 A project originally conducted in the course of the Live Programming Seminar 2021 @ HPI.
 Many thanks to [Marcel Taeumel](https://github.com/marceltaeumel) for his diligent mentoring and advice!
@@ -19,7 +19,7 @@ We follow the trunk-based development style of Squeak and strive to deliver full
 New features are only supported by the Trunk version of Squeak Inbox Talk.
 Older versions and releases of Squeak will only receive urgent fixes.
 
-### Automatic Installation (recommended)
+### Automatic Installation (Recommended)
 
 To install and start Squeak Inbox Talk, go to the main docking bar and choose <kbd>Tools</kbd> > <kbd>Squeak Inbox Talk</kbd>.
 
@@ -79,24 +79,38 @@ Squeak Inbox Talk attempts to solve all these issues by merging all relevant art
 It comes with a free-text search and several powerful filters for aspects such as packages, review state of a contribution, and your personal involvement.
 These filters should make it easier to survey certain domains, gain a better understanding of the connection between inbox versions, or keep track of your own proposals.
 
-## How does it work?
+## How Does It Work?
 
-Basically, Squeak Inbox Talk is implemented by reusing and assembling together the following existing solutions: [Squeak History](https://github.com/hpi-swa/squeak-history), a project originally developed by Marcel (mt) that scrapes and processes all mailing list conversations from the [mailman archives](https://lists.squeakfoundation.org/archives/); the `SMTPClient` in Squeak for sending messages; and the Monticello infrastructure, which remains the heart of our development workflow. Optionally, further components such as [`IMAPClient`](https://github.com/hpi-swa-teaching/IMAPClient) might follow later. On top of this, Squeak Inbox Talk adds a convenient layer for exploring and filtering conversations and contributions.
+In a nutshell, Squeak Inbox Talk is implemented by reusing and assembling together the following existing solutions:
 
-## Semantics Plugin (experimental)
+- **[Squeak History](https://github.com/hpi-swa/squeak-history),** a project originally developed by Marcel (mt) that scrapes and processes all mailing list conversations from the [mailman archives](https://lists.squeakfoundation.org/archives/)
+- **Squeak's `SMTPClient`** for sending messages
+- **The Monticello infrastructure,** which remains the heart of our development workflow.
+
+Optionally, further components such as [`IMAPClient`](https://github.com/hpi-swa-teaching/IMAPClient) might follow later. On top of this, Squeak Inbox Talk adds a convenient layer for exploring and filtering conversations and contributions.
+
+## Semantics Plugin (Experimental)
 
 This repository includes an optional plugin that enhances the browsing experience by contributing features such as semantic search, similar conversations, and AI-generated summaries of conversations to Squeak Inbox Talk.
-The plugin uses the [SemanticText](https://github.com/LinqLover/squeak-chatgpt) package and OpenAI's APIs for text embedding and generation.
+The plugin uses the [SemanticText](https://github.com/hpi-swa-lab/Squeak-SemanticText) package and OpenAI's APIs for text embedding and generation.
 You can enable the plugin by turning on the "Semantic search in Squeak Inbox Talk" option in the preferences.
-This feature is currently in a very early stage.
+
+Available features:
+
+- **Summarize a conversation** by selecting <kbd>smart summary</kbd> on the left in a conversation browser.
+- **Find similar conversations** by selecting <kbd>similar conversations</kbd> on the left in a conversation browser
+- **Ask questions about a conversation** by pressing <kbd>[Chat]</kbd> in the smart summary or select <kbd>chat with agent</kbd> from the <kbd>...</kbd> menu at the top of the conversation browser.
+- **Search and ask questions about the mailing list** by selecting <kbd>chat with agent</kbd> from the <kbd>...</kbd> menu at the top of the main inbox browser. You can also ask the agent to summarize recent activity on the list.
+
+This feature is currently in beta.
 Feedback and ideas welcome!
 
-## Implementational notes
+## Implementational Notes
 
 - This project is proud to use [smalltalkCI](https://github.com/hpi-swa/smalltalkCI) and the [create-image GitHub action](https://github.com/marketplace/actions/create-image).
 - [`UPSTREAM.md`](./UPSTREAM.md) contains a list of contributions that were made to upstream dependencies of this repository in the context of this project.
 
-## Further reading
+## Further Reading
 
 - [Official announcement thread on the squeak-dev mailing list](http://forum.world.st/ANN-Squeak-Inbox-Talk-bringing-squeak-dev-into-your-image-td5130575.html) ([mirror on lists.squeakfoundation.org](http://lists.squeakfoundation.org/pipermail/squeak-dev/2021-July/216008.html))
 - [Official announcement of HyperKitty release on squeak-dev](https://lists.squeakfoundation.org/archives/list/squeak-dev@lists.squeakfoundation.org/thread/KTIGYGMSC2IK45HIFMKY44WZVPE4BKEU/)
