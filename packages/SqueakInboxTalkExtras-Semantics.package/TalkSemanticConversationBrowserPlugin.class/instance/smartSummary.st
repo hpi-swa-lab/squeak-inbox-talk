@@ -11,6 +11,10 @@ smartSummary
 	fullText := self conversation fullTextForSummary.
 	
 	smartSummaryConversation := SemanticConversation new.
+	smartSummaryConversation in: [:conversation |
+		SemanticText registeredConversationModels
+			detect: [:model | model name = OpenAIConversationModel cheapestName]
+			ifFound: [:model | conversation model: model]].
 	smartSummaryConversation config: self class semanticConversationConfig.
 	self changed: #smartSummaryHeader.
 	^ smartSummaryConversation
