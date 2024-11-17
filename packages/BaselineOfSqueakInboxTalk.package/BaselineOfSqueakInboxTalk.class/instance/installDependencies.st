@@ -4,13 +4,13 @@ installDependencies
 
 	Metacello new
 		baseline: 'SqueakHistory';
-		repository: 'github://LinqLover/squeak-history:stream-github--hpi-swa-lab--squeak-inbox-talk/packages';
+		repository: 'github://hpi-swa/squeak-history:master/packages';
 		get;
 		load: 'SqueakHistory'.
 	
 	(Smalltalk hasClassNamed: #TalkSemanticConversationBrowserPlugin) ifTrue: [
 		Metacello new
 			baseline: 'SemanticText';
-			repository: 'github://LinqLover/Squeak-SemanticText:main';
+			repository: 'github://hpi-swa-lab/Squeak-SemanticText:main';
 			get;
 			load].

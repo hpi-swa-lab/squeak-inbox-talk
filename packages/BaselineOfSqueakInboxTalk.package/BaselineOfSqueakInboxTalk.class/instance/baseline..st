@@ -5,10 +5,10 @@ baseline: spec
 	spec for: #common do: [
 		"dependencies"
 		spec baseline: 'SemanticText' with: [
-			spec repository: 'github://LinqLover/Squeak-SemanticText:main/packages'].
+			spec repository: 'github://hpi-swa-lab/Squeak-SemanticText:main/packages'].
 		spec baseline: 'SqueakHistory' with: [
 			spec
-				repository: 'github://LinqLover/squeak-history:stream-github--hpi-swa-lab--squeak-inbox-talk/packages';
+				repository: 'github://hpi-swa/squeak-history:master/packages';
 				loads: 'SqueakHistory'].
 		
 		"packages"
