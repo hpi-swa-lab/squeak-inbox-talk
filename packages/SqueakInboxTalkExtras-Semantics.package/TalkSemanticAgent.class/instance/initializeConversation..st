@@ -9,6 +9,7 @@ initializeConversation: aConversation
 	1. Call the search() function once with different exact and semantic terms. You should pass between 1 and 10 terms for each parameter.
 	2. Open the most relevant results to analyze their contents. You should open between 3 and 10 results.
 	You may repeat this process multiple times if you need to revise your search terms.
+	Alternatively to the above, you can summarize recent activity on the mailing list. For this, call the getRecentConversations() function and then summarize the most important events at a high level. (Note that getRecentConversations() may take a while for larger time ranges. Always note this to the user BEFORE calling the function.)
 	
 	You may only include facts in your reply that are mentioned in the search results. Prove each of your statements with a footnote [1] and include a list of references at the bottom of your message. If you cannot clearly prove a statement, indicate unclarity.
 	

@@ -22,7 +22,7 @@ openResults: ids
 	^ (conversations collect: [:conversation |
 		JsonObject new
 			subject: (conversation simpleSubject truncateWithEllipsisTo: 80);
-			id: conversation initialMessage messageId;
+			id: (self idForConversation: conversation);
 			text: conversation fullTextForSummary;
 			yourself])
 				asJsonString
