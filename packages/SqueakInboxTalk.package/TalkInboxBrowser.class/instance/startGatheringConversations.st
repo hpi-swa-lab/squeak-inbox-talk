@@ -5,6 +5,7 @@ startGatheringConversations
 	self containingWindow ifNil: [^ self].
 	
 	conversations := newConversations := OrderedCollection with: #searching.
+	cachedConversationColumns := nil.
 	self
 		backgroundWorkerFor: #conversations
 		do: [:updateBlock |
@@ -14,7 +15,7 @@ startGatheringConversations
 					newConversations add: conversation beforeIndex: newConversations size.
 					updateBlock value].
 				
-				newConversations removeLast.
+				newConversations removeLast. "#searching"
 				updateBlock value] ifCurtailed: [
 				conversations := #().
 				self changed: #conversations]]

@@ -6,6 +6,7 @@ clearAllCaches
 	self terminateBackgroundWorkerFor: #conversations.
 	
 	allConversations := conversations := #().
+	cachedConversationColumns := nil.
 	"Invalidate lists in case clearing gets curtailed."
 	self inbox class clearAllCaches.
 	TalkProject clearAllCaches.

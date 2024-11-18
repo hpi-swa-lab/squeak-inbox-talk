@@ -18,7 +18,8 @@
 		"numberOfConversations",
 		"conversations",
 		"menuFilter",
-		"contents" ],
+		"contents",
+		"cachedConversationColumns" ],
 	"name" : "TalkInboxBrowser",
 	"pools" : [
 		 ],
