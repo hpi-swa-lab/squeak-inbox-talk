@@ -5,7 +5,7 @@ personCandidates
 	
 		"messages := TalkInbox squeakDev messages sorted: #date descending.
 		messages := messages select: [:ea | ea date year >= 2015].
-		authors := (messages collect: [:ea | ea author]) as: Bag.
+		authors := messages collect: [:ea | ea author] as: Bag.
 		messagesByAuthor := authors asSet
 			collect: [:author | author -> (messages select: [:ea | ea author = author])]
 			as: Dictionary.
@@ -20,7 +20,7 @@ personCandidates
 					select: [:ea | ea author = author])
 					pairsCollect: [:a :b | a date - b date])
 						sorted: #yourself descending)
-						first: 5)
+						take: 5)
 					]
 			as: OrderedDictionary)
 				sorted: [:assoc | assoc value first] ascending)
