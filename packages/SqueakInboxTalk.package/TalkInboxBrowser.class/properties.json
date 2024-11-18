@@ -3,11 +3,13 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"HiddenAnnouncementSelectors",
 		"Icons",
 		"InboxAgeForDanger",
 		"InboxAgeForWarning",
 		"SelfUpdateBranch",
 		"SelfUpdateMetacelloSpec",
+		"ShowAnnouncements",
 		"UseSimpleIcons" ],
 	"commentStamp" : "ct 7/24/2021 02:53",
 	"instvars" : [
@@ -19,7 +21,8 @@
 		"conversations",
 		"menuFilter",
 		"contents",
-		"cachedConversationColumns" ],
+		"cachedConversationColumns",
+		"pendingAnnouncements" ],
 	"name" : "TalkInboxBrowser",
 	"pools" : [
 		 ],

@@ -1,0 +1,4 @@
+testing
+isTalkAnnouncement
+
+	^ true

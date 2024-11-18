@@ -1,6 +1,4 @@
 feedback
 defaultFeedbackText
 
-	| latestTimeStamp |
-	latestTimeStamp := (self packageInfo methods collect: [:method | TimeStamp fromMethodTimeStamp: method timeStamp]) max.
-	^ '<br><br><i>Reported from {1}, for version of {2} last updated at {3}.</i>' asTextFromHtml format: {SystemVersion current. self appName. latestTimeStamp}
+	^ '<br><br><i>Reported from {1}, for version of {2} last updated at {3}.</i>' asTextFromHtml format: {SystemVersion current. self appName. self latestTimeStamp}

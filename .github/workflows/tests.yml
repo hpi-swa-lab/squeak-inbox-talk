@@ -3,7 +3,7 @@ name: Tests
 on: [push, workflow_dispatch]
 
 jobs:
-  build:
+  tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -11,9 +11,21 @@ jobs:
         uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-image: Squeak64-Trunk
-      - run: smalltalkci -s ${{ steps.smalltalkci.outputs.smalltalk-image }}
+      - run: smalltalkci -s ${{ steps.smalltalkci.outputs.smalltalk-image }} tests.smalltalk.ston
         timeout-minutes: 15
         env:
           # for uploading coverage reports
           GITHUB_TOKEN: ${{ github.token }}
+
+  jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: smalltalkci
+        uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-image: Squeak64-Trunk
+      - run: smalltalkci -s ${{ steps.smalltalkci.outputs.smalltalk-image }} jobs.smalltalk.ston
+        timeout-minutes: 15
+        env:
           SIT_GIST_TOKEN: ${{ secrets.SIT_GIST_TOKEN }}

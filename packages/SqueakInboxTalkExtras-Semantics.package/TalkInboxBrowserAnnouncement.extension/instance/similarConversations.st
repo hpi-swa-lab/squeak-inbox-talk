@@ -1,0 +1,4 @@
+*SqueakInboxTalkExtras-Semantics-Core
+similarConversations
+
+	^ #()

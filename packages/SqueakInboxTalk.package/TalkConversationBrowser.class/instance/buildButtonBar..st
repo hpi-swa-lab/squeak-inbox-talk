@@ -9,7 +9,7 @@ buildButtonBar: aBuilder
 				model: self;
 				label: 'Reply';
 				action: #reply;
-				enabled: #hasActualMessageSelected;
+				enabled: #canReply;
 				yourself);
 			add: (aBuilder pluggableActionButtonSpec new
 				model: self;

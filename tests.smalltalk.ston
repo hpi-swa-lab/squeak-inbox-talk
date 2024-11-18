@@ -1,0 +1,18 @@
+SmalltalkCISpec {
+	#loading : [
+		SCIMetacelloLoadSpec {
+			#baseline : 'SqueakInboxTalk',
+			#directory : 'packages',
+			#platforms : [ #squeak ],
+			#load : [ 'tests' ]
+		}
+	],
+	#testing : {
+		#packages : [ 'SqueakInboxTalkTests' ],
+		#coverage : {
+			#packages : [ 'SqueakInboxTalk' ],
+			#categories : [ 'SqueakInboxTalk-Base', 'SqueakInboxTalk-Core', 'SqueakInboxTalk-MailingLists' ],
+			#format : #coveralls
+		}
+	}
+}

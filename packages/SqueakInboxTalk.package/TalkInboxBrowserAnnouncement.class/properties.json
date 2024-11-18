@@ -1,0 +1,17 @@
+{
+	"category" : "SqueakInboxTalk-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 11/18/2024 21:07",
+	"instvars" : [
+		"date",
+		"subject",
+		"content",
+		"selector" ],
+	"name" : "TalkInboxBrowserAnnouncement",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

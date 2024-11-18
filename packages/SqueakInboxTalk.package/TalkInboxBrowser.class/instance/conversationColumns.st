@@ -13,7 +13,14 @@ conversationColumns
 				ifFalse:
 					[((cachedConversationColumns ifNil: [cachedConversationColumns := Dictionary new])
 						at: columnIndex ifAbsentPut: [WeakIdentityKeyDictionary new])
-							at: conversation ifAbsentPut: [columnBlock value: conversation]]
+							at: conversation ifAbsentPut:
+								[| text |
+								text := columnBlock value: conversation.
+								conversation isTalkAnnouncement ifTrue:
+									[text := text asText
+										addAttribute: TextEmphasis bold;
+										yourself].
+								text]]
 				ifTrue:
 					[columnIndex = 1
 						ifTrue: [

@@ -1,4 +1,5 @@
 scripts
 postLoad
 
-	self postLoadMailingLists
+	self postLoadGeneric.
+	self postLoadMailingLists.

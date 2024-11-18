@@ -17,7 +17,9 @@ baseline: spec
 				requires: 'SqueakHistory';
 				postLoadDoIt: #postLoad].
 		spec package: 'SqueakInboxTalkExtras-Semantics' with: [
-			spec requires: #('SqueakInboxTalk' 'SemanticText')].
+			spec
+				requires: #('SqueakInboxTalk' 'SemanticText');
+				postLoadDoIt: #postLoadGeneric].
 		"test packages"
 		spec package: 'SqueakInboxTalkTests' with: [spec requires: #(#app)].
 		

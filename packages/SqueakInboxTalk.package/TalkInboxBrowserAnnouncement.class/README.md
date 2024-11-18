@@ -1,0 +1,1 @@
+I display an announcement about new updates or features in an inbox browser. For that, I mimick the interface of a conversation and also that of a message (so I can be displayed in a conversation browser as well).

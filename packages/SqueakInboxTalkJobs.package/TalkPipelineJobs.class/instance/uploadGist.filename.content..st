@@ -1,4 +1,4 @@
-badges
+gists
 uploadGist: gistId filename: filename content: aString
 
 	| client request result |

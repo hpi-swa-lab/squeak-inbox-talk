@@ -2,5 +2,6 @@ initialize-release
 cleanUp: aggressive
 
 	aggressive ifTrue: [
-		UseSimpleIcons := nil].
-	Icons := Dictionary new
+		InboxAgeForDanger := InboxAgeForWarning := SelfUpdateMetacelloSpec := SelfUpdateBranch := ShowAnnouncements := UseSimpleIcons := nil].
+	HiddenAnnouncementSelectors := nil.
+	Icons := Dictionary new.

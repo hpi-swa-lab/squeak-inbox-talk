@@ -1,4 +1,4 @@
-tests
+jobs
 testFlagsBadge
 
 	| flags flagsCount |
