@@ -22,10 +22,12 @@ baseline: spec
 				postLoadDoIt: #postLoadGeneric].
 		"test packages"
 		spec package: 'SqueakInboxTalkTests' with: [spec requires: #(#app)].
+		spec package: 'SqueakInboxTalkJobs' with: [spec requires: #withAllExtras].
 		
 		"groups"
 		spec
 			group: #app with: 'SqueakInboxTalk';
 			group: #default with: #(#app #tests);
 			group: #tests with: 'SqueakInboxTalkTests';
-			group: #withAllExtras with: #(app 'SqueakInboxTalkExtras-Semantics')]
+			group: #jobs with: 'SqueakInboxTalkJobs';
+			group: #withAllExtras with: #(app 'SqueakInboxTalkExtras-Semantics')].
