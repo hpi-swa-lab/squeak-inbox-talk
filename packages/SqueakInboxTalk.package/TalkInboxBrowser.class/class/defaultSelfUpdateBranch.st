@@ -12,7 +12,7 @@ defaultSelfUpdateBranch
 				version := repo projectVersion.
 				^ version = 'master' ifTrue: ['main'] ifFalse: [version]]].
 	
-	squeakVersion := SystemVersion current version.
+	squeakVersion := SystemVersion current.
 	squeakVersion isAlpha ifTrue: [^ 'main'].
 	squeakVersion majorMinorVersion = 'Squeak6.0' ifTrue: [^ 'squeak60'].
 	^ 'main'
