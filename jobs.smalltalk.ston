@@ -4,7 +4,7 @@ SmalltalkCISpec {
 			#baseline : 'SqueakInboxTalk',
 			#directory : 'packages',
 			#platforms : [ #squeak ],
-			#load : [ 'tests' ]
+			#load : [ 'jobs' ]
 		}
 	],
 	#testing : {
