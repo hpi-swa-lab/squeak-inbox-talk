@@ -2,6 +2,7 @@
 	"class" : {
 		"inbox:messageId:" : "ct 8/16/2023 15:39" },
 	"instance" : {
+		"asStringOrText" : "ct 11/21/2024 04:17",
 		"browse" : "ct 8/16/2023 15:27",
 		"dataKey" : "ct 8/16/2023 15:37",
 		"hyperkittyUrl" : "ct 8/16/2023 15:27",
@@ -11,4 +12,5 @@
 		"messageId" : "ct 8/16/2023 14:33",
 		"messageId:" : "ct 8/16/2023 14:33",
 		"openInHyperkitty" : "ct 8/16/2023 15:27",
+		"printOn:" : "ct 2/9/2024 12:46",
 		"tryToResolve" : "ct 8/26/2023 00:44" } }
