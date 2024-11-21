@@ -45,7 +45,7 @@ New changes:
 			format:
 				(Dictionary new
 					at: #appName put: self appName;
-					at: #codeInstallUpdates put: 'code:// TalkInboxBrowser selfUpdate. nil';
+					at: #codeInstallUpdates put: 'code:// TalkInboxBrowser selfUpdate ifTrue: [self inform: ''Updates were installed'']'; "todo: test"
 					at: #changesUrl put:
 						('https://github.com/{1}/{2}/commits/{3}' format: {
 							self githubRepositoryParams first.

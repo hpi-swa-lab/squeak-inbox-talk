@@ -9,7 +9,8 @@ selfUpdate
 		title: ('Updating {1}' format: {self appName})
 		trueChoice: ('Yes, install latest {1} updates now' format: {'Squeak'})
 		falseChoice: ('Skip latest {1} updates (not recommended)' format: {'Squeak'}))
-			ifNil: [^ self])
+			ifNil: [^ false])
 			ifTrue: [MCMcmUpdater default doUpdate: true].
 	
-	^ self selfUpdateFromMetacello
+	self selfUpdateFromMetacello.
+	^ true
