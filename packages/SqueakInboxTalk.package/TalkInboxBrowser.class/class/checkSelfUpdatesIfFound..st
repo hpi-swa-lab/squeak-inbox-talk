@@ -15,4 +15,6 @@ checkSelfUpdatesIfFound: dateBlock
 			ifPresent: [:selfUpdateTimeStamp | selfUpdateTimeStamp > packageInfoAndTimeStamp value]
 			ifAbsent: [true]].
 	
-	^ hasUpdates ifTrue: [dateBlock value: selfUpdateTimeStamps max asDateAndTime]
+	^ hasUpdates ifTrue:
+		[dateBlock value:
+			(selfUpdateTimeStamps max asDateAndTime asLocalAt: DateAndTime localOffset) "timestamps dont have timezones"]
