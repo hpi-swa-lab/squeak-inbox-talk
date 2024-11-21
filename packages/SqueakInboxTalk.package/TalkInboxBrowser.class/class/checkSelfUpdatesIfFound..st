@@ -2,7 +2,7 @@ self-updating
 checkSelfUpdatesIfFound: dateBlock
 
 	| selfUpdateTimeStamps response selfUpdateTimeStampsUrl hasUpdates |
-	selfUpdateTimeStampsUrl := 'https://gist.githubusercontent.com/LinqLover/36dd3c4a155eed5aa7e874415cd60eea/raw/{1}.json' format: {('latestTimeStamps/{1}' format: {self selfUpdateBranch}) asFileName encodeForHTTP}.
+	selfUpdateTimeStampsUrl := 'https://gist.githubusercontent.com/LinqLover/36dd3c4a155eed5aa7e874415cd60eea/raw/{1}.json' format: {('latestTimeStamps/{1}' format: {'refs/heads/' , self selfUpdateBranch}) asFileName encodeForHTTP}.
 	response := WebClient httpGet: selfUpdateTimeStampsUrl.
 	response isSuccess ifFalse: [^ false].
 	
